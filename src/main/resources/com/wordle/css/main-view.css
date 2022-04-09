@@ -1,0 +1,13 @@
+.title-label {
+    -fx-pref-width: 208px;
+    -fx-prev-height: 42px;
+    -fx-font-family: 'Roboto';
+    -fx-font-style: normal;
+    -fx-font-weight: 700;
+    -fx-font-size: 36px;
+    -fx-text-alignment: center;
+}
+
+.main-display {
+    -fx-background-color: white;
+}
