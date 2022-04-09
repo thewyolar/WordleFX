@@ -42,12 +42,12 @@
                         <Insets top="9.0" />
                      </padding>
                      <HBox.margin>
-                        <Insets left="85.0" />
+                        <Insets left="85.0" right="30.0" />
                      </HBox.margin>
                   </Label>
-                  <Pane prefHeight="50.0" prefWidth="50.0">
+                  <Pane prefHeight="50.0" prefWidth="35.0">
                      <children>
-                        <ImageView fx:id="statisticsIcon" fitHeight="24.0" fitWidth="24.0" layoutX="40.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="statisticsIcon" fitHeight="24.0" fitWidth="24.0" layoutX="6.0" layoutY="16.0" onMouseClicked="#showStatistics" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../image/statistics.png" />
                            </image></ImageView>
@@ -55,9 +55,9 @@
                      <HBox.margin>
                         <Insets left="35.0" />
                      </HBox.margin></Pane>
-                  <Pane prefHeight="50.0" prefWidth="50.0">
+                  <Pane prefHeight="50.0" prefWidth="35.0">
                      <children>
-                        <ImageView fx:id="settingsIcon" fitHeight="24.0" fitWidth="24.0" layoutX="18.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="settingsIcon" fitHeight="24.0" fitWidth="24.0" layoutX="6.0" layoutY="16.0" onMouseClicked="#showSettings" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../image/settings.png" />
                            </image></ImageView>
