@@ -15,7 +15,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane prefHeight="638.0" prefWidth="456.0" styleClass="main-screeb" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.wordle.controller.MainController">
+<BorderPane prefHeight="659.0" prefWidth="476.0" styleClass="main-screen" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.wordle.controller.MainController">
 
    <stylesheets>
       <URL value="@../css/main-view.css" />
@@ -28,7 +28,7 @@
                <children>
                   <Pane prefHeight="50.0" prefWidth="50.0">
                      <children>
-                        <ImageView fx:id="helpIcon" fitHeight="24.0" fitWidth="24.0" layoutX="11.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" onMouseClicked="#showHelp">
+                        <ImageView fx:id="helpIcon" fitHeight="24.0" fitWidth="24.0" layoutX="11.0" layoutY="16.0" onMouseClicked="#showHelp" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../image/help.png" />
                            </image></ImageView>
