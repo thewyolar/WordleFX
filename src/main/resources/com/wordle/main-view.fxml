@@ -19,7 +19,7 @@
                <children>
                   <Pane prefHeight="50.0" prefWidth="50.0">
                      <children>
-                        <ImageView fx:id="help" fitHeight="30.0" fitWidth="30.0" layoutX="11.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="help" fitHeight="24.0" fitWidth="24.0" layoutX="11.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@images/help.png" />
                            </image>
@@ -38,7 +38,7 @@
                   </Label>
                   <Pane prefHeight="50.0" prefWidth="50.0">
                      <children>
-                        <ImageView fitHeight="30.0" fitWidth="50.0" layoutX="11.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="35.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@images/statistics.png" />
                            </image>
@@ -49,7 +49,7 @@
                      </HBox.margin></Pane>
                   <Pane prefHeight="50.0" prefWidth="50.0">
                      <children>
-                        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="11.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="11.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@images/settings.png" />
                            </image>
