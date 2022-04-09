@@ -39,7 +39,7 @@ public class MainController {
     private ImageView statisticsIcon;
 
     @FXML
-    void showHelp(MouseEvent event) {
+    void showHelp(MouseEvent event) throws IOException {
         HelpWindow.display();
     }
 }
