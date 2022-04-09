@@ -18,14 +18,4 @@ public class MainController {
     @FXML
     public ImageView settingsIcon;
 
-
-    public void createGrid() {
-        for (int i = 1; i <= 6; i++) {
-            for (int j = 1; j <= 5; j++) {
-                Label label = new Label();
-                label.getStyleClass().add("default-tile");
-                gridPane.add(label, j, i);
-            }
-        }
-    }
 }

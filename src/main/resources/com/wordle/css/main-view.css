@@ -127,17 +127,6 @@
     -fx-background-radius: 4px;
 }
 
-.keyboardTileSymbol {
-    -fx-background-color: -key-background-color;
-    -fx-text-fill: -text-fill-color;
-    -fx-font-size: 25px;
-    -fx-min-width: 58px;
-    -fx-min-height: 58px;
-    -fx-text-alignment: center;
-    -fx-alignment: center;
-    -fx-background-radius: 4px;
-}
-
 .big-font {
     -fx-font-size: 22px;
 }

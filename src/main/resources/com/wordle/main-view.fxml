@@ -131,12 +131,8 @@
    <bottom>
       <VBox prefHeight="194.0" prefWidth="451.0" BorderPane.alignment="CENTER">
          <children>
-            <GridPane alignment="CENTER_RIGHT" maxWidth="445.0" prefHeight="48.0" prefWidth="414.0">
-              <columnConstraints>
-                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <GridPane layoutX="20.0" layoutY="35.0" prefHeight="30.0" prefWidth="414.0">
+               <columnConstraints>
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -145,29 +141,30 @@
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-              </columnConstraints>
-              <rowConstraints>
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-              </rowConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
                <children>
-                  <Label minWidth="36.0" prefHeight="58.0" prefWidth="33.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="Й">
-                     <GridPane.margin>
-                        <Insets left="10.0" />
-                     </GridPane.margin></Label>
-                  <Label prefHeight="58.0" prefWidth="33.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="Ц" GridPane.columnIndex="1" />
-                  <Label styleClass="keyboardTile" stylesheets="@css/main-view.css" text="У" GridPane.columnIndex="2" />
-                  <Label styleClass="keyboardTile" stylesheets="@css/main-view.css" text="К" GridPane.columnIndex="3" />
-                  <Label styleClass="keyboardTile" stylesheets="@css/main-view.css" text="Е" GridPane.columnIndex="4" />
-                  <Label styleClass="keyboardTile" stylesheets="@css/main-view.css" text="Н" GridPane.columnIndex="5" />
-                  <Label styleClass="keyboardTile" stylesheets="@css/main-view.css" text="Г" GridPane.columnIndex="6" />
-                  <Label styleClass="keyboardTile" stylesheets="@css/main-view.css" text="Ш" GridPane.columnIndex="7" />
-                  <Label styleClass="keyboardTile" stylesheets="@css/main-view.css" text="Щ" GridPane.columnIndex="8" />
-                  <Label styleClass="keyboardTile" stylesheets="@css/main-view.css" text="З" GridPane.columnIndex="9" />
-                  <Label styleClass="keyboardTile" stylesheets="@css/main-view.css" text="Х" GridPane.columnIndex="10" />
-                  <Label prefHeight="58.0" prefWidth="111.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="Ъ" GridPane.columnIndex="11" />
+                  <Label maxWidth="30.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="Й" />
+                  <Label maxWidth="30.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="Ц" GridPane.columnIndex="1" />
+                  <Label maxWidth="30.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="У" GridPane.columnIndex="2" />
+                  <Label maxWidth="30.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="К" GridPane.columnIndex="3" />
+                  <Label maxWidth="30.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="Е" GridPane.columnIndex="4" />
+                  <Label maxWidth="30.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="Н" GridPane.columnIndex="5" />
+                  <Label maxWidth="30.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="Г" GridPane.columnIndex="6" />
+                  <Label maxWidth="30.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="Ш" GridPane.columnIndex="7" />
+                  <Label maxWidth="30.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="Щ" GridPane.columnIndex="8" />
+                  <Label maxWidth="30.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="З" GridPane.columnIndex="9" />
+                  <Label maxWidth="30.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="Х" GridPane.columnIndex="10" />
+                  <Label styleClass="keyboardTile" stylesheets="@css/main-view.css" text="Ъ" GridPane.columnIndex="11" />
                </children>
                <VBox.margin>
-                  <Insets left="10.0" right="10.0" />
+                  <Insets left="17.0" right="15.0" top="10.0" />
                </VBox.margin>
             </GridPane>
             <GridPane prefHeight="30.0" prefWidth="414.0">
@@ -201,13 +198,11 @@
                   <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="Э" GridPane.columnIndex="10" />
                </children>
                <VBox.margin>
-                  <Insets left="10.0" right="10.0" top="25.0" />
+                  <Insets left="12.0" right="12.0" top="35.0" />
                </VBox.margin>
             </GridPane>
-            <GridPane>
-              <columnConstraints>
-                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <GridPane layoutX="20.0" layoutY="86.0" prefHeight="30.0" prefWidth="414.0">
+               <columnConstraints>
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -217,26 +212,28 @@
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-              </columnConstraints>
-              <rowConstraints>
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-              </rowConstraints>
-               <VBox.margin>
-                  <Insets left="10.0" right="10.0" top="35.0" />
-               </VBox.margin>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
                <children>
-                  <Label minWidth="46.0" prefHeight="58.0" prefWidth="72.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="⌫" />
-                  <Label prefHeight="58.0" prefWidth="37.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="Я" GridPane.columnIndex="1" />
-                  <Label styleClass="keyboardTile" stylesheets="@css/main-view.css" text="Ч" GridPane.columnIndex="2" />
-                  <Label styleClass="keyboardTile" stylesheets="@css/main-view.css" text="С" GridPane.columnIndex="3" />
-                  <Label styleClass="keyboardTile" stylesheets="@css/main-view.css" text="М" GridPane.columnIndex="4" />
-                  <Label styleClass="keyboardTile" stylesheets="@css/main-view.css" text="И" GridPane.columnIndex="5" />
-                  <Label styleClass="keyboardTile" stylesheets="@css/main-view.css" text="Т" GridPane.columnIndex="6" />
-                  <Label styleClass="keyboardTile" stylesheets="@css/main-view.css" text="Ь" GridPane.columnIndex="7" />
-                  <Label styleClass="keyboardTile" stylesheets="@css/main-view.css" text="Б" GridPane.columnIndex="8" />
-                  <Label styleClass="keyboardTile" stylesheets="@css/main-view.css" text="Ю" GridPane.columnIndex="9" />
-                  <Label minWidth="41.0" prefHeight="58.0" prefWidth="62.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="Ввод" GridPane.columnIndex="10" />
+                  <Label maxWidth="35.0" prefHeight="58.0" prefWidth="46.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="⌫" />
+                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="Ы" GridPane.columnIndex="1" />
+                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="В" GridPane.columnIndex="2" />
+                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="А" GridPane.columnIndex="3" />
+                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="П" GridPane.columnIndex="4" />
+                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="Р" GridPane.columnIndex="5" />
+                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="О" GridPane.columnIndex="6" />
+                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="Л" GridPane.columnIndex="7" />
+                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="Д" GridPane.columnIndex="8" />
+                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="Ж" GridPane.columnIndex="9" />
+                  <Label maxWidth="46.0" prefHeight="58.0" prefWidth="46.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="Ввод" GridPane.columnIndex="10" />
                </children>
+               <VBox.margin>
+                  <Insets left="8.0" right="8.0" top="35.0" />
+               </VBox.margin>
             </GridPane>
          </children>
       </VBox>
