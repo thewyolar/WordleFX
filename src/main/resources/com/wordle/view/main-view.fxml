@@ -18,7 +18,7 @@
 <BorderPane prefHeight="638.0" prefWidth="456.0" styleClass="main-screeb" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.wordle.controller.MainController">
 
    <stylesheets>
-      <URL value="@css/main-view.css" />
+      <URL value="@../css/main-view.css" />
    </stylesheets>
 
    <top>
@@ -28,11 +28,12 @@
                <children>
                   <Pane prefHeight="50.0" prefWidth="50.0">
                      <children>
-                        <ImageView fx:id="helpIcon" fitHeight="24.0" fitWidth="24.0" layoutX="11.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="helpIcon" fitHeight="24.0" fitWidth="24.0" layoutX="11.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" onMouseClicked="#showHelp">
                            <image>
-                              <Image url="@images/help.png" />
+                              <Image url="@../images/help.png" />
                            </image></ImageView>
-                     </children></Pane>
+                     </children>
+                  </Pane>
                   <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="42.0" prefWidth="180.0" text="WORDLE" textAlignment="CENTER">
                      <font>
                         <Font name="Arial Black" size="28.0" />
@@ -48,7 +49,7 @@
                      <children>
                         <ImageView fx:id="statisticsIcon" fitHeight="24.0" fitWidth="24.0" layoutX="40.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@images/statistics.png" />
+                              <Image url="@../images/statistics.png" />
                            </image></ImageView>
                      </children>
                      <HBox.margin>
@@ -58,7 +59,7 @@
                      <children>
                         <ImageView fx:id="settingsIcon" fitHeight="24.0" fitWidth="24.0" layoutX="18.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@images/settings.png" />
+                              <Image url="@../images/settings.png" />
                            </image></ImageView>
                      </children>
                   </Pane>
@@ -91,39 +92,39 @@
             <RowConstraints maxHeight="150.6000244140625" minHeight="10.0" prefHeight="68.59999389648436" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Label styleClass="default-tile" stylesheets="@css/main-view.css">
+            <Label styleClass="default-tile" stylesheets="@../css/main-view.css">
                <GridPane.margin>
                   <Insets />
                </GridPane.margin></Label>
-            <Label prefWidth="66.0" styleClass="default-tile" stylesheets="@css/main-view.css" GridPane.columnIndex="1" />
-            <Label styleClass="default-tile" stylesheets="@css/main-view.css" GridPane.columnIndex="2" />
-            <Label styleClass="default-tile" stylesheets="@css/main-view.css" GridPane.columnIndex="3" />
-            <Label styleClass="default-tile" stylesheets="@css/main-view.css" GridPane.columnIndex="4" />
-            <Label styleClass="default-tile" stylesheets="@css/main-view.css" GridPane.rowIndex="1" />
-            <Label styleClass="default-tile" stylesheets="@css/main-view.css" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-            <Label styleClass="default-tile" stylesheets="@css/main-view.css" GridPane.columnIndex="3" GridPane.rowIndex="1" />
-            <Label styleClass="default-tile" stylesheets="@css/main-view.css" GridPane.columnIndex="4" GridPane.rowIndex="1" />
-            <Label styleClass="default-tile" stylesheets="@css/main-view.css" GridPane.rowIndex="2" />
-            <Label styleClass="default-tile" stylesheets="@css/main-view.css" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <Label styleClass="default-tile" stylesheets="@css/main-view.css" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <Label styleClass="default-tile" stylesheets="@css/main-view.css" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-            <Label styleClass="default-tile" stylesheets="@css/main-view.css" GridPane.columnIndex="3" GridPane.rowIndex="2" />
-            <Label styleClass="default-tile" stylesheets="@css/main-view.css" GridPane.columnIndex="4" GridPane.rowIndex="2" />
-            <Label styleClass="default-tile" stylesheets="@css/main-view.css" GridPane.rowIndex="3" />
-            <Label styleClass="default-tile" stylesheets="@css/main-view.css" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <Label styleClass="default-tile" stylesheets="@css/main-view.css" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-            <Label styleClass="default-tile" stylesheets="@css/main-view.css" GridPane.columnIndex="3" GridPane.rowIndex="3" />
-            <Label styleClass="default-tile" stylesheets="@css/main-view.css" GridPane.columnIndex="4" GridPane.rowIndex="3" />
-            <Label styleClass="default-tile" stylesheets="@css/main-view.css" GridPane.rowIndex="4" />
-            <Label styleClass="default-tile" stylesheets="@css/main-view.css" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-            <Label styleClass="default-tile" stylesheets="@css/main-view.css" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-            <Label styleClass="default-tile" stylesheets="@css/main-view.css" GridPane.columnIndex="3" GridPane.rowIndex="4" />
-            <Label styleClass="default-tile" stylesheets="@css/main-view.css" GridPane.columnIndex="4" GridPane.rowIndex="4" />
-            <Label styleClass="default-tile" stylesheets="@css/main-view.css" GridPane.rowIndex="5" />
-            <Label styleClass="default-tile" stylesheets="@css/main-view.css" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-            <Label styleClass="default-tile" stylesheets="@css/main-view.css" GridPane.columnIndex="2" GridPane.rowIndex="5" />
-            <Label styleClass="default-tile" stylesheets="@css/main-view.css" GridPane.columnIndex="3" GridPane.rowIndex="5" />
-            <Label styleClass="default-tile" stylesheets="@css/main-view.css" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+            <Label prefWidth="66.0" styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="1" />
+            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="2" />
+            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="3" />
+            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="4" />
+            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.rowIndex="1" />
+            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.rowIndex="2" />
+            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.rowIndex="3" />
+            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.rowIndex="4" />
+            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.rowIndex="5" />
+            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="4" GridPane.rowIndex="5" />
          </children>
       </GridPane>
    </center>
@@ -150,18 +151,18 @@
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                </rowConstraints>
                <children>
-                  <Label maxWidth="30.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="Й" />
-                  <Label maxWidth="30.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="Ц" GridPane.columnIndex="1" />
-                  <Label maxWidth="30.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="У" GridPane.columnIndex="2" />
-                  <Label maxWidth="30.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="К" GridPane.columnIndex="3" />
-                  <Label maxWidth="30.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="Е" GridPane.columnIndex="4" />
-                  <Label maxWidth="30.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="Н" GridPane.columnIndex="5" />
-                  <Label maxWidth="30.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="Г" GridPane.columnIndex="6" />
-                  <Label maxWidth="30.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="Ш" GridPane.columnIndex="7" />
-                  <Label maxWidth="30.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="Щ" GridPane.columnIndex="8" />
-                  <Label maxWidth="30.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="З" GridPane.columnIndex="9" />
-                  <Label maxWidth="30.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="Х" GridPane.columnIndex="10" />
-                  <Label styleClass="keyboardTile" stylesheets="@css/main-view.css" text="Ъ" GridPane.columnIndex="11" />
+                  <Label maxWidth="30.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="Й" />
+                  <Label maxWidth="30.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="Ц" GridPane.columnIndex="1" />
+                  <Label maxWidth="30.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="У" GridPane.columnIndex="2" />
+                  <Label maxWidth="30.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="К" GridPane.columnIndex="3" />
+                  <Label maxWidth="30.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="Е" GridPane.columnIndex="4" />
+                  <Label maxWidth="30.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="Н" GridPane.columnIndex="5" />
+                  <Label maxWidth="30.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="Г" GridPane.columnIndex="6" />
+                  <Label maxWidth="30.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="Ш" GridPane.columnIndex="7" />
+                  <Label maxWidth="30.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="Щ" GridPane.columnIndex="8" />
+                  <Label maxWidth="30.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="З" GridPane.columnIndex="9" />
+                  <Label maxWidth="30.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="Х" GridPane.columnIndex="10" />
+                  <Label styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="Ъ" GridPane.columnIndex="11" />
                </children>
                <VBox.margin>
                   <Insets left="17.0" right="15.0" top="10.0" />
@@ -185,17 +186,17 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="Ф" />
-                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="Ы" GridPane.columnIndex="1" />
-                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="В" GridPane.columnIndex="2" />
-                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="А" GridPane.columnIndex="3" />
-                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="П" GridPane.columnIndex="4" />
-                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="Р" GridPane.columnIndex="5" />
-                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="О" GridPane.columnIndex="6" />
-                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="Л" GridPane.columnIndex="7" />
-                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="Д" GridPane.columnIndex="8" />
-                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="Ж" GridPane.columnIndex="9" />
-                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="Э" GridPane.columnIndex="10" />
+                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="Ф" />
+                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="Ы" GridPane.columnIndex="1" />
+                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="В" GridPane.columnIndex="2" />
+                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="А" GridPane.columnIndex="3" />
+                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="П" GridPane.columnIndex="4" />
+                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="Р" GridPane.columnIndex="5" />
+                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="О" GridPane.columnIndex="6" />
+                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="Л" GridPane.columnIndex="7" />
+                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="Д" GridPane.columnIndex="8" />
+                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="Ж" GridPane.columnIndex="9" />
+                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="Э" GridPane.columnIndex="10" />
                </children>
                <VBox.margin>
                   <Insets left="12.0" right="12.0" top="35.0" />
@@ -219,17 +220,17 @@
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                </rowConstraints>
                <children>
-                  <Label maxWidth="35.0" prefHeight="58.0" prefWidth="46.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="⌫" />
-                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="Ы" GridPane.columnIndex="1" />
-                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="В" GridPane.columnIndex="2" />
-                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="А" GridPane.columnIndex="3" />
-                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="П" GridPane.columnIndex="4" />
-                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="Р" GridPane.columnIndex="5" />
-                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="О" GridPane.columnIndex="6" />
-                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="Л" GridPane.columnIndex="7" />
-                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="Д" GridPane.columnIndex="8" />
-                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="Ж" GridPane.columnIndex="9" />
-                  <Label maxWidth="46.0" prefHeight="58.0" prefWidth="46.0" styleClass="keyboardTile" stylesheets="@css/main-view.css" text="Ввод" GridPane.columnIndex="10" />
+                  <Label maxWidth="35.0" prefHeight="58.0" prefWidth="46.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="⌫" />
+                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="Ы" GridPane.columnIndex="1" />
+                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="В" GridPane.columnIndex="2" />
+                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="А" GridPane.columnIndex="3" />
+                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="П" GridPane.columnIndex="4" />
+                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="Р" GridPane.columnIndex="5" />
+                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="О" GridPane.columnIndex="6" />
+                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="Л" GridPane.columnIndex="7" />
+                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="Д" GridPane.columnIndex="8" />
+                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="Ж" GridPane.columnIndex="9" />
+                  <Label maxWidth="46.0" prefHeight="58.0" prefWidth="46.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="Ввод" GridPane.columnIndex="10" />
                </children>
                <VBox.margin>
                   <Insets left="8.0" right="8.0" top="35.0" />

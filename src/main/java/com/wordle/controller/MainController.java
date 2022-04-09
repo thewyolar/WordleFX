@@ -1,9 +1,11 @@
 package com.wordle.controller;
 
+import com.wordle.HelpWindow;
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.GridPane;
+
+import java.io.IOException;
 
 public class MainController {
     @FXML
@@ -20,4 +22,8 @@ public class MainController {
     public GridPane keyboardRow2;
     @FXML
     public GridPane keyboardRow3;
+
+    public void showHelp() {
+        HelpWindow.display();
+    }
 }

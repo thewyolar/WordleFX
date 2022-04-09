@@ -3,6 +3,7 @@ module com.wordle.wordlefx {
     requires javafx.fxml;
 
     requires org.kordamp.bootstrapfx.core;
+    requires javafx.graphics;
 
     opens com.wordle to javafx.fxml;
     exports com.wordle;
