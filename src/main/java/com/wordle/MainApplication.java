@@ -1,7 +1,9 @@
 package com.wordle;
 
+import com.wordle.controller.MainController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
@@ -17,9 +19,12 @@ import java.util.stream.Stream;
 public class MainApplication extends Application {
 
     public static final ArrayList<String> dictionaryWords = new ArrayList<>();
+    private static Stage stageReference;
 
     @Override
     public void start(Stage stage) throws IOException {
+        initializeWordList();
+        stageReference = stage;
         FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("main-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("Wordle");

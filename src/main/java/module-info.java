@@ -6,4 +6,6 @@ module com.wordle.wordlefx {
 
     opens com.wordle to javafx.fxml;
     exports com.wordle;
+    exports com.wordle.controller;
+    opens com.wordle.controller to javafx.fxml;
 }
