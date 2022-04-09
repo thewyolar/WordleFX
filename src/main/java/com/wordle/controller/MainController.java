@@ -1,6 +1,8 @@
 package com.wordle.controller;
 
 import com.wordle.HelpWindow;
+import com.wordle.SettingsWindow;
+import com.wordle.StatisticsWindow;
 import javafx.fxml.FXML;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
@@ -41,5 +43,15 @@ public class MainController {
     @FXML
     void showHelp(MouseEvent event) throws IOException {
         HelpWindow.display();
+    }
+
+    @FXML
+    void showStatistics(MouseEvent event) throws IOException {
+        StatisticsWindow.display();
+    }
+
+    @FXML
+    void showSettings(MouseEvent event) throws IOException {
+        SettingsWindow.display();
     }
 }
