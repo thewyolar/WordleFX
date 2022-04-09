@@ -3,27 +3,43 @@ package com.wordle.controller;
 import com.wordle.HelpWindow;
 import javafx.fxml.FXML;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
 
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 
 public class MainController {
     @FXML
-    public GridPane gridPane;
-    @FXML
-    public ImageView helpIcon;
-    @FXML
-    public ImageView statisticsIcon;
-    @FXML
-    public ImageView settingsIcon;
-    @FXML
-    public GridPane keyboardRow1;
-    @FXML
-    public GridPane keyboardRow2;
-    @FXML
-    public GridPane keyboardRow3;
+    private ResourceBundle resources;
 
-    public void showHelp() {
+    @FXML
+    private URL location;
+
+    @FXML
+    private GridPane gridPane;
+
+    @FXML
+    private ImageView helpIcon;
+
+    @FXML
+    private GridPane keyboardRow1;
+
+    @FXML
+    private GridPane keyboardRow2;
+
+    @FXML
+    private GridPane keyboardRow3;
+
+    @FXML
+    private ImageView settingsIcon;
+
+    @FXML
+    private ImageView statisticsIcon;
+
+    @FXML
+    void showHelp(MouseEvent event) {
         HelpWindow.display();
     }
 }
