@@ -17,10 +17,10 @@
     -fx-font-size: 30px;
     -fx-font-weight: bold;
     -fx-border-width: 2px;
-    -fx-min-width: 62px;
-    -fx-min-height: 62px;
-    -fx-pref-width: 65px;
-    -fx-pref-height: 65px;
+    -fx-min-width: 35px;
+    -fx-min-height: 35px;
+    -fx-pref-width: 55px;
+    -fx-pref-height: 55px;
     -fx-text-alignment: center;
     -fx-alignment: center;
 }

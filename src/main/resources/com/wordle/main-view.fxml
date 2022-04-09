@@ -72,32 +72,30 @@
          </children>
       </VBox>
    </top>
+
    <center>
-      <GridPane maxHeight="498.0" maxWidth="374.0" prefHeight="498.0" prefWidth="374.0" BorderPane.alignment="TOP_CENTER">
+      <GridPane maxHeight="360.0" maxWidth="300.0" prefHeight="397.0" prefWidth="313.0" translateY="5.0" BorderPane.alignment="TOP_CENTER">
         <columnConstraints>
-          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="91.00000762939453" minWidth="10.0" prefWidth="58.8" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="104.0000244140625" minWidth="10.0" prefWidth="60.6000244140625" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="124.20001220703124" minWidth="10.0" prefWidth="58.999975585937506" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="96.20001220703125" minWidth="10.0" prefWidth="62.20002441406248" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="98.4000244140625" minWidth="10.0" prefWidth="61.20002441406251" />
         </columnConstraints>
         <rowConstraints>
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="72.80000305175781" minHeight="10.0" prefHeight="71.19999694824219" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="84.79999542236328" minHeight="10.0" prefHeight="67.99999999999999" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="163.2" minHeight="10.0" prefHeight="71.19999999999999" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="153.0000061035156" minHeight="10.0" prefHeight="62.600012207031256" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="137.19998779296873" minHeight="10.0" prefHeight="73.40000610351564" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="150.6000244140625" minHeight="10.0" prefHeight="68.59999389648436" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
             <Label styleClass="default-tile" stylesheets="@css/main-view.css">
                <GridPane.margin>
                   <Insets />
-               </GridPane.margin>
-               <padding>
-                  <Insets top="15.0" />
-               </padding></Label>
-            <Label styleClass="default-tile" stylesheets="@css/main-view.css" GridPane.columnIndex="1" />
+               </GridPane.margin></Label>
+            <Label prefWidth="66.0" styleClass="default-tile" stylesheets="@css/main-view.css" GridPane.columnIndex="1" />
             <Label styleClass="default-tile" stylesheets="@css/main-view.css" GridPane.columnIndex="2" />
             <Label styleClass="default-tile" stylesheets="@css/main-view.css" GridPane.columnIndex="3" />
             <Label styleClass="default-tile" stylesheets="@css/main-view.css" GridPane.columnIndex="4" />
