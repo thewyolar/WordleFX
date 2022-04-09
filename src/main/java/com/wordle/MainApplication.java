@@ -1,9 +1,7 @@
 package com.wordle;
 
-import com.wordle.controller.MainController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
@@ -13,12 +11,13 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Objects;
 import java.util.stream.Stream;
 
 public class MainApplication extends Application {
 
-    public static final ArrayList<String> dictionaryWords = new ArrayList<>();
+    public static final ArrayList<String> dictionaryWords = new ArrayList<String>();
     private static Stage stageReference;
 
     @Override
@@ -31,6 +30,7 @@ public class MainApplication extends Application {
         stage.setScene(scene);
         stage.getIcons().add(new Image(Objects.requireNonNull(getClass().getResourceAsStream("images/icon.png"))));
         stage.show();
+        System.out.println(dictionaryWords);
     }
 
     public static void main(String[] args) {
