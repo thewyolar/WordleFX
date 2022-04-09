@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import java.net.URL?>
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
 <BorderPane prefHeight="638.0" prefWidth="456.0" styleClass="main-screeb" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.wordle.controller.MainController">
 
@@ -29,7 +33,45 @@
       </VBox>
    </top>
    <right>
-      <ScrollPane prefHeight="598.0" prefWidth="456.0" BorderPane.alignment="CENTER" />
+      <ScrollPane prefHeight="598.0" prefWidth="456.0" BorderPane.alignment="CENTER">
+         <content>
+            <VBox prefHeight="583.0" prefWidth="428.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Угадайте загаданное слово в игре Wordle с шести попыток. У всех одинаковое слово, поэтому, пожалуйста, без спойлеров!" textAlignment="JUSTIFY" wrappingWidth="416.5367546081543">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" top="10.0" />
+                     </VBox.margin>
+                  </Text>
+                  <StackPane alignment="TOP_CENTER" prefHeight="74.0" prefWidth="441.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="После каждой попытки цвет букв будет меняться, чтобы показать, какие буквы есть в загаданном слове! Например, мы пытаемся отгадать слово" textAlignment="JUSTIFY" wrappingWidth="418.0407590866089">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <StackPane.margin>
+                              <Insets left="20.0" top="10.0" />
+                           </StackPane.margin>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ГОСТЬ." wrappingWidth="47.236328125">
+                           <StackPane.margin>
+                              <Insets right="20.0" top="48.0" />
+                           </StackPane.margin>
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </StackPane>
+                  <Line endX="339.0" startX="-100.0" stroke="#aeaeae" />
+               </children>
+            </VBox>
+         </content></ScrollPane>
    </right>
    
 </BorderPane>
