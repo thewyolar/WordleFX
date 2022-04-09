@@ -30,7 +30,7 @@
                      <children>
                         <ImageView fx:id="helpIcon" fitHeight="24.0" fitWidth="24.0" layoutX="11.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" onMouseClicked="#showHelp">
                            <image>
-                              <Image url="@../images/help.png" />
+                              <Image url="@../image/help.png" />
                            </image></ImageView>
                      </children>
                   </Pane>
@@ -49,7 +49,7 @@
                      <children>
                         <ImageView fx:id="statisticsIcon" fitHeight="24.0" fitWidth="24.0" layoutX="40.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../images/statistics.png" />
+                              <Image url="@../image/statistics.png" />
                            </image></ImageView>
                      </children>
                      <HBox.margin>
@@ -59,7 +59,7 @@
                      <children>
                         <ImageView fx:id="settingsIcon" fitHeight="24.0" fitWidth="24.0" layoutX="18.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../images/settings.png" />
+                              <Image url="@../image/settings.png" />
                            </image></ImageView>
                      </children>
                   </Pane>
