@@ -9,7 +9,6 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
 
 <BorderPane fx:id="BorderPane" prefHeight="659.0" prefWidth="476.0" styleClass="main-screen" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.wordle.controller.MainController">
 
@@ -37,14 +36,14 @@
          <children>
             <HBox prefHeight="62.0" prefWidth="456.0">
                <children>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Темная тема">
-                     <HBox.margin>
-                        <Insets left="20.0" top="10.0" />
-                     </HBox.margin>
+                  <Label text="Темная тема">
                      <font>
                         <Font size="14.0" />
                      </font>
-                  </Text>
+                     <HBox.margin>
+                        <Insets left="20.0" top="20.0" />
+                     </HBox.margin>
+                  </Label>
                   <ToggleButton mnemonicParsing="false" text="ToggleButton" textAlignment="RIGHT">
                      <HBox.margin>
                         <Insets left="255.0" top="10.0" />
@@ -55,14 +54,14 @@
             <Line endX="355.0" startX="-100.0" stroke="#aeaeae" />
             <HBox prefHeight="74.0" prefWidth="456.0">
                <children>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Режим для дальтоников">
-                     <font>
-                        <Font size="14.0" />
-                     </font>
+                  <Label text="Режим для дальтоников">
                      <HBox.margin>
                         <Insets left="20.0" top="20.0" />
                      </HBox.margin>
-                  </Text>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
                   <ToggleButton mnemonicParsing="false" text="ToggleButton" textAlignment="RIGHT">
                      <HBox.margin>
                         <Insets left="180.0" top="20.0" />
@@ -73,14 +72,14 @@
             <Line endX="355.0" layoutX="111.0" layoutY="73.0" startX="-100.0" stroke="#aeaeae" />
             <HBox prefHeight="73.0" prefWidth="456.0">
                <children>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Кнопка Ввод слева">
+                  <Label text="Кнопка Ввод слева">
                      <font>
                         <Font size="14.0" />
                      </font>
                      <HBox.margin>
                         <Insets left="20.0" top="20.0" />
                      </HBox.margin>
-                  </Text>
+                  </Label>
                   <ToggleButton mnemonicParsing="false" text="ToggleButton" textAlignment="RIGHT">
                      <HBox.margin>
                         <Insets left="215.0" top="20.0" />
@@ -91,14 +90,14 @@
             <Line endX="355.0" layoutX="111.0" layoutY="149.0" startX="-100.0" stroke="#aeaeae" />
             <HBox prefHeight="70.0" prefWidth="456.0">
                <children>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Режим для слабовидящих">
-                     <font>
-                        <Font size="14.0" />
-                     </font>
+                  <Label text="Режим для слабовидящих">
                      <HBox.margin>
                         <Insets left="20.0" top="20.0" />
                      </HBox.margin>
-                  </Text>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
                   <ToggleButton mnemonicParsing="false" text="ToggleButton" textAlignment="RIGHT">
                      <HBox.margin>
                         <Insets left="170.0" top="20.0" />
@@ -107,6 +106,60 @@
                </children>
             </HBox>
             <Line endX="355.0" layoutX="111.0" layoutY="149.0" startX="-100.0" stroke="#aeaeae" />
+            <VBox prefHeight="95.0" prefWidth="456.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Связаться с автором">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" top="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label text="Email" textFill="#838383" underline="true">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="195.0" top="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label text="|" textFill="#838383">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" top="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label text="Telegram" textFill="#838383" underline="true">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" top="20.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Label text="Оригинальная версия Wordle" textFill="#838383" underline="true">
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <Line endX="355.0" layoutX="111.0" layoutY="296.0" startX="-100.0" stroke="#aeaeae" />
+            <Line endX="355.0" layoutX="111.0" layoutY="296.0" startX="-100.0" stroke="#aeaeae">
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </Line>
          </children>
       </VBox>
    </center>
