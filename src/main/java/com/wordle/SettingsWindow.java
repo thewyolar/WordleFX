@@ -10,6 +10,8 @@ import java.io.IOException;
 
 public class SettingsWindow {
 
+    private static Stage stageReference;
+
     public static void display() throws IOException {
         Stage stage = new Stage();
         FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("view/settings-view.fxml"));
