@@ -1,6 +1,7 @@
 package com.wordle;
 
 import javafx.application.Application;
+import javafx.application.HostServices;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
@@ -33,6 +34,10 @@ public class MainApplication extends Application {
 
     public static void main(String[] args) {
         launch();
+    }
+
+    public static void quit() {
+        stageReference.close();
     }
 
     public void initializeWordList() {

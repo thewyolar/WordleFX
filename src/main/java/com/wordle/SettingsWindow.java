@@ -1,5 +1,7 @@
 package com.wordle;
 
+import com.wordle.controller.SettingsController;
+import javafx.application.HostServices;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
@@ -9,8 +11,6 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class SettingsWindow {
-
-    private static Stage stageReference;
 
     public static void display() throws IOException {
         Stage stage = new Stage();
