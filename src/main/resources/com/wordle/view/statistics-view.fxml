@@ -3,17 +3,12 @@
 <?import java.net.URL?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.Pane?>
-<?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
 <BorderPane prefHeight="659.0" prefWidth="476.0" styleClass="main-screen" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.wordle.controller.MainController">
 
@@ -26,43 +21,17 @@
          <children>
             <HBox prefHeight="47.0" prefWidth="451.0">
                <children>
-                  <Pane prefHeight="50.0" prefWidth="50.0">
-                     <children>
-                        <ImageView fx:id="helpIcon" fitHeight="24.0" fitWidth="24.0" layoutX="11.0" layoutY="16.0" onMouseClicked="#showHelp" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../image/help.png" />
-                           </image></ImageView>
-                     </children>
-                  </Pane>
-                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="42.0" prefWidth="180.0" text="WORDLE" textAlignment="CENTER">
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="51.0" prefWidth="447.0" text="СТАТИСТИКА#1" textAlignment="CENTER">
                      <font>
-                        <Font name="Arial Black" size="28.0" />
+                        <Font name="Arial Bold" size="18.0" />
                      </font>
                      <padding>
-                        <Insets top="9.0" />
+                        <Insets top="5.0" />
                      </padding>
                      <HBox.margin>
-                        <Insets left="85.0" right="30.0" />
+                        <Insets />
                      </HBox.margin>
                   </Label>
-                  <Pane prefHeight="50.0" prefWidth="35.0">
-                     <children>
-                        <ImageView fx:id="statisticsIcon" fitHeight="24.0" fitWidth="24.0" layoutX="6.0" layoutY="16.0" onMouseClicked="#showStatistics" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../image/statistics.png" />
-                           </image></ImageView>
-                     </children>
-                     <HBox.margin>
-                        <Insets left="35.0" />
-                     </HBox.margin></Pane>
-                  <Pane prefHeight="50.0" prefWidth="35.0">
-                     <children>
-                        <ImageView fx:id="settingsIcon" fitHeight="24.0" fitWidth="24.0" layoutX="6.0" layoutY="16.0" onMouseClicked="#showSettings" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../image/settings.png" />
-                           </image></ImageView>
-                     </children>
-                  </Pane>
                </children>
             </HBox>
             <Line endX="355.0" startX="-100.0" stroke="#aeaeae">
@@ -73,171 +42,83 @@
          </children>
       </VBox>
    </top>
-
    <center>
-      <GridPane fx:id="gridPane" alignment="TOP_CENTER" maxHeight="360.0" maxWidth="300.0" prefHeight="397.0" prefWidth="313.0" translateY="5.0" BorderPane.alignment="TOP_CENTER">
-        <columnConstraints>
-          <ColumnConstraints hgrow="SOMETIMES" maxWidth="91.00000762939453" minWidth="10.0" prefWidth="58.8" />
-          <ColumnConstraints hgrow="SOMETIMES" maxWidth="104.0000244140625" minWidth="10.0" prefWidth="59.00001220703125" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="124.20001220703124" minWidth="10.0" prefWidth="58.99998779296874" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="96.20001220703125" minWidth="10.0" prefWidth="59.199987792968756" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="98.4000244140625" minWidth="10.0" prefWidth="64.80001220703124" />
-        </columnConstraints>
-        <rowConstraints>
-          <RowConstraints maxHeight="72.80000305175781" minHeight="10.0" prefHeight="71.19999694824219" vgrow="SOMETIMES" />
-          <RowConstraints maxHeight="84.79999542236328" minHeight="10.0" prefHeight="67.99999999999999" vgrow="SOMETIMES" />
-          <RowConstraints maxHeight="163.2" minHeight="10.0" prefHeight="71.19999999999999" vgrow="SOMETIMES" />
-            <RowConstraints maxHeight="153.0000061035156" minHeight="10.0" prefHeight="62.600012207031256" vgrow="SOMETIMES" />
-            <RowConstraints maxHeight="137.19998779296873" minHeight="10.0" prefHeight="73.40000610351564" vgrow="SOMETIMES" />
-            <RowConstraints maxHeight="150.6000244140625" minHeight="10.0" prefHeight="68.59999389648436" vgrow="SOMETIMES" />
-        </rowConstraints>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
          <children>
-            <Label styleClass="default-tile" stylesheets="@../css/main-view.css">
-               <GridPane.margin>
-                  <Insets />
-               </GridPane.margin></Label>
-            <Label prefWidth="66.0" styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="1" />
-            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="2" />
-            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="3" />
-            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="4" />
-            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.rowIndex="1" />
-            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="3" GridPane.rowIndex="1" />
-            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="4" GridPane.rowIndex="1" />
-            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.rowIndex="2" />
-            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="3" GridPane.rowIndex="2" />
-            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="4" GridPane.rowIndex="2" />
-            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.rowIndex="3" />
-            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="3" GridPane.rowIndex="3" />
-            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="4" GridPane.rowIndex="3" />
-            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.rowIndex="4" />
-            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="3" GridPane.rowIndex="4" />
-            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="4" GridPane.rowIndex="4" />
-            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.rowIndex="5" />
-            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="2" GridPane.rowIndex="5" />
-            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="3" GridPane.rowIndex="5" />
-            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="4" GridPane.rowIndex="5" />
-         </children>
-      </GridPane>
-   </center>
-
-   <bottom>
-      <VBox prefHeight="194.0" prefWidth="451.0" BorderPane.alignment="CENTER">
-         <children>
-            <GridPane fx:id="keyboardRow1" layoutX="20.0" layoutY="35.0" prefHeight="30.0" prefWidth="414.0">
-               <columnConstraints>
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-               </columnConstraints>
-               <rowConstraints>
-                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-               </rowConstraints>
+            <HBox alignment="CENTER" prefHeight="45.0" prefWidth="456.0">
                <children>
-                  <Label maxWidth="30.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="Й" />
-                  <Label maxWidth="30.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="Ц" GridPane.columnIndex="1" />
-                  <Label maxWidth="30.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="У" GridPane.columnIndex="2" />
-                  <Label maxWidth="30.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="К" GridPane.columnIndex="3" />
-                  <Label maxWidth="30.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="Е" GridPane.columnIndex="4" />
-                  <Label maxWidth="30.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="Н" GridPane.columnIndex="5" />
-                  <Label maxWidth="30.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="Г" GridPane.columnIndex="6" />
-                  <Label maxWidth="30.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="Ш" GridPane.columnIndex="7" />
-                  <Label maxWidth="30.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="Щ" GridPane.columnIndex="8" />
-                  <Label maxWidth="30.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="З" GridPane.columnIndex="9" />
-                  <Label maxWidth="30.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="Х" GridPane.columnIndex="10" />
-                  <Label styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="Ъ" GridPane.columnIndex="11" />
+                  <Label alignment="TOP_CENTER" contentDisplay="TOP" text="0" textAlignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label alignment="TOP_CENTER" contentDisplay="TOP" text="100%" textAlignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="80.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label alignment="TOP_CENTER" contentDisplay="TOP" text="0" textAlignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="80.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label alignment="TOP_CENTER" contentDisplay="TOP" text="0" textAlignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="80.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
                </children>
-               <VBox.margin>
-                  <Insets left="17.0" right="15.0" top="10.0" />
-               </VBox.margin>
-            </GridPane>
-            <GridPane fx:id="keyboardRow2" prefHeight="30.0" prefWidth="414.0">
-              <columnConstraints>
-                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-              </columnConstraints>
-              <rowConstraints>
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-              </rowConstraints>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="31.0" prefWidth="456.0">
                <children>
-                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="Ф" />
-                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="Ы" GridPane.columnIndex="1" />
-                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="В" GridPane.columnIndex="2" />
-                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="А" GridPane.columnIndex="3" />
-                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="П" GridPane.columnIndex="4" />
-                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="Р" GridPane.columnIndex="5" />
-                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="О" GridPane.columnIndex="6" />
-                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="Л" GridPane.columnIndex="7" />
-                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="Д" GridPane.columnIndex="8" />
-                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="Ж" GridPane.columnIndex="9" />
-                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="Э" GridPane.columnIndex="10" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Сыграно">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="30.0" top="-15.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Побед всего" wrappingWidth="85.4710693359375">
+                     <HBox.margin>
+                        <Insets left="35.0" top="-15.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Побед подряд сейчас" textAlignment="CENTER" wrappingWidth="92.82757568359375">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="35.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Подряд максимум" textAlignment="CENTER" wrappingWidth="77.154296875">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
                </children>
-               <VBox.margin>
-                  <Insets left="12.0" right="12.0" top="35.0" />
-               </VBox.margin>
-            </GridPane>
-            <GridPane fx:id="keyboardRow3" layoutX="20.0" layoutY="86.0" prefHeight="30.0" prefWidth="414.0">
-               <columnConstraints>
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-               </columnConstraints>
-               <rowConstraints>
-                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-               </rowConstraints>
-               <children>
-                  <Label maxWidth="35.0" prefHeight="58.0" prefWidth="46.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="⌫" />
-                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="Ы" GridPane.columnIndex="1" />
-                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="В" GridPane.columnIndex="2" />
-                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="А" GridPane.columnIndex="3" />
-                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="П" GridPane.columnIndex="4" />
-                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="Р" GridPane.columnIndex="5" />
-                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="О" GridPane.columnIndex="6" />
-                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="Л" GridPane.columnIndex="7" />
-                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="Д" GridPane.columnIndex="8" />
-                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="Ж" GridPane.columnIndex="9" />
-                  <Label maxWidth="46.0" prefHeight="58.0" prefWidth="46.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="Ввод" GridPane.columnIndex="10" />
-               </children>
-               <VBox.margin>
-                  <Insets left="8.0" right="8.0" top="35.0" />
-               </VBox.margin>
-            </GridPane>
+            </HBox>
          </children>
       </VBox>
-   </bottom>
+   </center>
    
 </BorderPane>
