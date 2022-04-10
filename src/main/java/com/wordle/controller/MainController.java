@@ -40,18 +40,16 @@ public class MainController {
     @FXML
     private ImageView statisticsIcon;
 
-    @FXML
-    void showHelp(MouseEvent event) throws IOException {
+    public void showHelp(MouseEvent event) throws IOException {
         HelpWindow.display();
     }
 
-    @FXML
-    void showStatistics(MouseEvent event) throws IOException {
+    public void showStatistics(MouseEvent event) throws IOException {
         StatisticsWindow.display();
     }
 
-    @FXML
-    void showSettings(MouseEvent event) throws IOException {
+
+    public void showSettings(MouseEvent event) throws IOException {
         SettingsWindow.display();
     }
 }
