@@ -14,12 +14,6 @@ import java.util.ResourceBundle;
 
 public class MainController {
     @FXML
-    private ResourceBundle resources;
-
-    @FXML
-    private URL location;
-
-    @FXML
     private GridPane gridPane;
 
     @FXML
@@ -47,7 +41,6 @@ public class MainController {
     public void showStatistics(MouseEvent event) throws IOException {
         StatisticsWindow.display();
     }
-
 
     public void showSettings(MouseEvent event) throws IOException {
         SettingsWindow.display();
