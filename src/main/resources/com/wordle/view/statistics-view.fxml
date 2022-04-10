@@ -44,9 +44,9 @@
       </VBox>
    </top>
    <center>
-      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+      <VBox prefHeight="359.0" prefWidth="456.0" BorderPane.alignment="CENTER">
          <children>
-            <VBox prefHeight="409.0" prefWidth="456.0">
+            <VBox prefHeight="386.0" prefWidth="456.0">
                <children>
                   <HBox alignment="CENTER" prefHeight="45.0" prefWidth="456.0">
                      <children>
@@ -122,7 +122,7 @@
                   </HBox>
                   <Label alignment="CENTER" text="РАСПРЕДЕЛЕНИЕ ПОПЫТОК" textAlignment="CENTER">
                      <font>
-                        <Font name="Arial Bold" size="13.0" />
+                        <Font name="Arial Bold" size="14.0" />
                      </font>
                      <VBox.margin>
                         <Insets left="130.0" top="15.0" />
@@ -145,15 +145,99 @@
                         </ProgressBar>
                      </children>
                   </HBox>
-                  <HBox prefHeight="34.0" prefWidth="456.0" />
-                  <HBox prefHeight="32.0" prefWidth="456.0" />
-                  <HBox prefHeight="34.0" prefWidth="456.0" />
-                  <HBox prefHeight="34.0" prefWidth="456.0" />
-                  <HBox prefHeight="34.0" prefWidth="456.0" />
+                  <HBox prefHeight="34.0" prefWidth="456.0">
+                     <children>
+                        <Label text="2">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <ProgressBar prefWidth="200.0" progress="0.0">
+                           <HBox.margin>
+                              <Insets left="20.0" top="5.0" />
+                           </HBox.margin>
+                        </ProgressBar>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="32.0" prefWidth="456.0">
+                     <children>
+                        <Label text="3">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <ProgressBar prefWidth="200.0" progress="0.0">
+                           <HBox.margin>
+                              <Insets left="20.0" top="5.0" />
+                           </HBox.margin>
+                        </ProgressBar>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="34.0" prefWidth="456.0">
+                     <children>
+                        <Label text="4">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <ProgressBar prefWidth="200.0" progress="0.0">
+                           <HBox.margin>
+                              <Insets left="20.0" top="5.0" />
+                           </HBox.margin>
+                        </ProgressBar>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="34.0" prefWidth="456.0">
+                     <children>
+                        <Label text="5">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <ProgressBar prefWidth="200.0" progress="0.0">
+                           <HBox.margin>
+                              <Insets left="20.0" top="5.0" />
+                           </HBox.margin>
+                        </ProgressBar>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="34.0" prefWidth="456.0">
+                     <children>
+                        <Label text="6">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <ProgressBar prefWidth="200.0" progress="0.0">
+                           <HBox.margin>
+                              <Insets left="20.0" top="5.0" />
+                           </HBox.margin>
+                        </ProgressBar>
+                     </children>
+                  </HBox>
                </children>
             </VBox>
+            <Line endX="355.0" startX="-100.0" stroke="#aeaeae" />
          </children>
       </VBox>
    </center>
+   <bottom>
+      <HBox prefHeight="196.0" prefWidth="456.0" BorderPane.alignment="CENTER" />
+   </bottom>
    
 </BorderPane>
