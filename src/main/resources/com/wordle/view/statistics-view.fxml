@@ -3,6 +3,7 @@
 <?import java.net.URL?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
@@ -45,78 +46,112 @@
    <center>
       <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
          <children>
-            <HBox alignment="CENTER" prefHeight="45.0" prefWidth="456.0">
+            <VBox prefHeight="409.0" prefWidth="456.0">
                <children>
-                  <Label alignment="TOP_CENTER" contentDisplay="TOP" text="0" textAlignment="CENTER">
+                  <HBox alignment="CENTER" prefHeight="45.0" prefWidth="456.0">
+                     <children>
+                        <Label alignment="TOP_CENTER" contentDisplay="TOP" text="0" textAlignment="CENTER">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label alignment="TOP_CENTER" contentDisplay="TOP" text="100%" textAlignment="CENTER">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="80.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label alignment="TOP_CENTER" contentDisplay="TOP" text="0" textAlignment="CENTER">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="80.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label alignment="TOP_CENTER" contentDisplay="TOP" text="0" textAlignment="CENTER">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="80.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="31.0" prefWidth="456.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Сыграно">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="30.0" top="-15.0" />
+                           </HBox.margin>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Побед всего" wrappingWidth="85.4710693359375">
+                           <HBox.margin>
+                              <Insets left="35.0" top="-15.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Побед подряд сейчас" textAlignment="CENTER" wrappingWidth="92.82757568359375">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="35.0" />
+                           </HBox.margin>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Подряд максимум" textAlignment="CENTER" wrappingWidth="77.154296875">
+                           <HBox.margin>
+                              <Insets left="15.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <Label alignment="CENTER" text="РАСПРЕДЕЛЕНИЕ ПОПЫТОК" textAlignment="CENTER">
                      <font>
-                        <Font size="24.0" />
+                        <Font name="Arial Bold" size="13.0" />
                      </font>
-                     <HBox.margin>
-                        <Insets top="10.0" />
-                     </HBox.margin>
+                     <VBox.margin>
+                        <Insets left="130.0" top="15.0" />
+                     </VBox.margin>
                   </Label>
-                  <Label alignment="TOP_CENTER" contentDisplay="TOP" text="100%" textAlignment="CENTER">
-                     <font>
-                        <Font size="24.0" />
-                     </font>
-                     <HBox.margin>
-                        <Insets left="80.0" top="10.0" />
-                     </HBox.margin>
-                  </Label>
-                  <Label alignment="TOP_CENTER" contentDisplay="TOP" text="0" textAlignment="CENTER">
-                     <font>
-                        <Font size="24.0" />
-                     </font>
-                     <HBox.margin>
-                        <Insets left="80.0" top="10.0" />
-                     </HBox.margin>
-                  </Label>
-                  <Label alignment="TOP_CENTER" contentDisplay="TOP" text="0" textAlignment="CENTER">
-                     <font>
-                        <Font size="24.0" />
-                     </font>
-                     <HBox.margin>
-                        <Insets left="80.0" top="10.0" />
-                     </HBox.margin>
-                  </Label>
+                  <HBox prefHeight="48.0" prefWidth="456.0">
+                     <children>
+                        <Label text="1">
+                           <HBox.margin>
+                              <Insets left="20.0" top="15.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <ProgressBar prefWidth="200.0" progress="0.0">
+                           <HBox.margin>
+                              <Insets left="20.0" top="20.0" />
+                           </HBox.margin>
+                        </ProgressBar>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="34.0" prefWidth="456.0" />
+                  <HBox prefHeight="32.0" prefWidth="456.0" />
+                  <HBox prefHeight="34.0" prefWidth="456.0" />
+                  <HBox prefHeight="34.0" prefWidth="456.0" />
+                  <HBox prefHeight="34.0" prefWidth="456.0" />
                </children>
-            </HBox>
-            <HBox alignment="CENTER" prefHeight="31.0" prefWidth="456.0">
-               <children>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Сыграно">
-                     <font>
-                        <Font size="13.0" />
-                     </font>
-                     <HBox.margin>
-                        <Insets left="30.0" top="-15.0" />
-                     </HBox.margin>
-                  </Text>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Побед всего" wrappingWidth="85.4710693359375">
-                     <HBox.margin>
-                        <Insets left="35.0" top="-15.0" />
-                     </HBox.margin>
-                     <font>
-                        <Font size="13.0" />
-                     </font>
-                  </Text>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Побед подряд сейчас" textAlignment="CENTER" wrappingWidth="92.82757568359375">
-                     <font>
-                        <Font size="13.0" />
-                     </font>
-                     <HBox.margin>
-                        <Insets left="35.0" />
-                     </HBox.margin>
-                  </Text>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Подряд максимум" textAlignment="CENTER" wrappingWidth="77.154296875">
-                     <HBox.margin>
-                        <Insets left="15.0" />
-                     </HBox.margin>
-                     <font>
-                        <Font size="13.0" />
-                     </font>
-                  </Text>
-               </children>
-            </HBox>
+            </VBox>
          </children>
       </VBox>
    </center>
