@@ -2,6 +2,8 @@ package com.wordle;
 
 import com.wordle.controller.SettingsController;
 import javafx.application.HostServices;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
@@ -16,6 +18,17 @@ public class SettingsWindow {
         Stage stage = new Stage();
         FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("view/settings-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
+
+        HostServices hostServices = (HostServices)MainApplication.getStage().getProperties().get("hostServices");
+        SettingsController settingsController = fxmlLoader.getController();
+
+        settingsController.wordleHyperlink.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                hostServices.showDocument("https://www.nytimes.com/games/wordle/index.html");
+            }
+        });
+
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.setTitle("Настройки");
         stage.setScene(scene);

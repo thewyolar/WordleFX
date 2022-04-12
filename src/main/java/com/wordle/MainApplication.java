@@ -19,6 +19,8 @@ public class MainApplication extends Application {
     public static final ArrayList<String> dictionaryWords = new ArrayList<String>();
     private static Stage stageReference;
 
+    public static Stage getStage() { return stageReference; }
+
     @Override
     public void start(Stage stage) throws IOException {
         initializeWordList();
@@ -27,6 +29,7 @@ public class MainApplication extends Application {
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("Wordle");
         stage.setScene(scene);
+        stage.getProperties().put("hostServices", this.getHostServices());
         stage.getIcons().add(new Image(Objects.requireNonNull(getClass().getResourceAsStream("image/icon.png"))));
         stage.show();
     }
