@@ -19,8 +19,6 @@ public class MainApplication extends Application {
     public static final ArrayList<String> dictionaryWords = new ArrayList<String>();
     private static Stage stageReference;
 
-    public static Stage getStage() { return stageReference; }
-
     @Override
     public void start(Stage stage) throws IOException {
         initializeWordList();
@@ -37,6 +35,8 @@ public class MainApplication extends Application {
     public static void main(String[] args) {
         launch();
     }
+
+    public static Stage getStage() { return stageReference; }
 
     public static void quit() {
         stageReference.close();
