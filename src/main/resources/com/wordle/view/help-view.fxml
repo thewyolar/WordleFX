@@ -177,7 +177,7 @@
                               <Insets left="20.0" top="10.0" />
                            </HBox.margin>
                         </Text>
-                        <ImageView fitHeight="41.0" fitWidth="103.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="gameButton" fitHeight="41.0" fitWidth="103.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../image/gamebutton.png" />
                            </image>

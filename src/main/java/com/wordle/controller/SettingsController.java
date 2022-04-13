@@ -9,11 +9,17 @@ public class SettingsController {
     private BorderPane borderPane;
 
     @FXML
-    public Hyperlink emailHyperlink;
+    private Hyperlink emailHyperlink;
 
     @FXML
-    public Hyperlink telegramHyperlink;
+    private Hyperlink telegramHyperlink;
 
     @FXML
-    public Hyperlink wordleHyperlink;
+    private Hyperlink wordleHyperlink;
+
+    public Hyperlink getEmailHyperlink() { return emailHyperlink; }
+
+    public Hyperlink getTelegramHyperlink() { return telegramHyperlink; }
+
+    public Hyperlink getWordleHyperlink() { return wordleHyperlink; }
 }
