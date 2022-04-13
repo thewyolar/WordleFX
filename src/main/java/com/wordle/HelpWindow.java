@@ -22,7 +22,6 @@ public class HelpWindow {
         helpController.getGameButton().setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent mouseEvent) {
-
                 stage.close();
             }
         });
