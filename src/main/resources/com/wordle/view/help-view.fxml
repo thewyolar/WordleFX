@@ -14,7 +14,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane prefHeight="638.0" prefWidth="457.0" styleClass="main-screen" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.wordle.controller.HelpController">
+<BorderPane prefHeight="659.0" prefWidth="476.0" styleClass="main-screen" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.wordle.controller.HelpController">
 
    <stylesheets>
       <URL value="@../css/main-view.css" />
@@ -35,13 +35,13 @@
       </VBox>
    </top>
    <bottom>
-      <ScrollPane prefHeight="773.0" prefWidth="534.0" BorderPane.alignment="CENTER">
+      <ScrollPane maxWidth="548.0" prefHeight="580.0" prefWidth="456.0" BorderPane.alignment="TOP_CENTER">
          <content>
             <VBox prefHeight="760.0" prefWidth="398.0">
                <children>
                   <VBox prefHeight="127.0" prefWidth="373.0">
                      <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Угадайте загаданное слово в игре Wordle с шести попыток. У всех одинаковое слово, поэтому, пожалуйста, без спойлеров!" textAlignment="JUSTIFY" wrappingWidth="416.5367546081543">
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Угадайте загаданное слово в игре Wordle с шести попыток. У всех одинаковое слово, поэтому, пожалуйста, без спойлеров!" textAlignment="JUSTIFY" wrappingWidth="399.5367546081543">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -49,9 +49,9 @@
                               <Insets left="20.0" top="10.0" />
                            </VBox.margin>
                         </Text>
-                        <StackPane alignment="TOP_CENTER" prefHeight="74.0" prefWidth="441.0">
+                        <StackPane alignment="TOP_CENTER" prefHeight="67.0" prefWidth="394.0">
                            <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="После каждой попытки цвет букв будет меняться, чтобы показать, какие буквы есть в загаданном слове! Например, мы пытаемся отгадать слово" textAlignment="JUSTIFY" wrappingWidth="416.4408459663391">
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="После каждой попытки цвет букв будет меняться, чтобы показать, какие буквы есть в загаданном слове! Например, мы пытаемся отгадать слово" textAlignment="JUSTIFY" wrappingWidth="400.4408459663391" StackPane.alignment="TOP_LEFT">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
@@ -61,7 +61,7 @@
                               </Text>
                               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ГОСТЬ." wrappingWidth="47.236328125">
                                  <StackPane.margin>
-                                    <Insets right="16.0" top="48.0" />
+                                    <Insets left="35.0" top="48.0" />
                                  </StackPane.margin>
                                  <font>
                                     <Font name="System Bold" size="14.0" />
@@ -77,7 +77,7 @@
                   <Line endX="335.0" startX="-100.0" stroke="#aeaeae" />
                   <VBox prefHeight="127.0" prefWidth="440.0">
                      <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Первым мы ввели слово Ребус. Буква С есть в загаданном слове, но стоит в другом месте." textAlignment="JUSTIFY" wrappingWidth="416.64886474609375">
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Первым мы ввели слово Ребус. Буква С есть в загаданном слове, но стоит в другом месте." textAlignment="JUSTIFY" wrappingWidth="401.64886474609375">
                            <VBox.margin>
                               <Insets left="20.0" top="10.0" />
                            </VBox.margin>
@@ -96,9 +96,9 @@
                      </children>
                   </VBox>
                   <Line endX="335.0" startX="-100.0" stroke="#aeaeae" />
-                  <VBox prefHeight="200.0" prefWidth="440.0">
+                  <VBox fillWidth="false" prefHeight="200.0" prefWidth="440.0">
                      <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Затем ввели слово Сосна. Буква С и О есть в загаданном слове и стоят на правильных местах." textAlignment="JUSTIFY" wrappingWidth="419.7296142578125">
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Затем ввели слово Сосна. Буква С и О есть в загаданном слове и стоят на правильных местах." textAlignment="JUSTIFY" wrappingWidth="400.7296142578125">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -114,7 +114,7 @@
                               <Insets left="20.0" top="10.0" />
                            </VBox.margin>
                         </ImageView>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Обратите внимание, что если в введенном слове две одинаковых буквы, а в загаданном слове только одна такая буква, то выделяется только одна буква." textAlignment="JUSTIFY" wrappingWidth="417.26524735689145">
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Обратите внимание, что если в введенном слове две одинаковых буквы, а в загаданном слове только одна такая буква, то выделяется только одна буква." textAlignment="JUSTIFY" wrappingWidth="402.26524735689145">
                            <VBox.margin>
                               <Insets left="20.0" top="10.0" />
                            </VBox.margin>
@@ -127,7 +127,7 @@
                   <Line endX="335.0" layoutX="111.0" layoutY="263.0" startX="-100.0" stroke="#aeaeae" />
                   <VBox prefHeight="108.0" prefWidth="440.0">
                      <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Если слово угадано правильно, то все буквы будут выделены!">
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Если слово угадано правильно, то все буквы будут выделены!" wrappingWidth="399.8701171875">
                            <VBox.margin>
                               <Insets left="20.0" top="10.0" />
                            </VBox.margin>
@@ -148,7 +148,7 @@
                   <Line endX="335.0" layoutX="111.0" layoutY="435.0" startX="-100.0" stroke="#aeaeae" />
                   <VBox prefHeight="164.0" prefWidth="440.0">
                      <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Если буквы нет в загаданном слове, то она выделяется серым. Также важно знать, что в загаданном слове могут быть одинаковые буквы. По правилам русских кроссвордов буква Ё в словах заменена на E!" textAlignment="JUSTIFY" wrappingWidth="419.9769163131714">
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Если буквы нет в загаданном слове, то она выделяется серым. Также важно знать, что в загаданном слове могут быть одинаковые буквы. По правилам русских кроссвордов буква Ё в словах заменена на E!" textAlignment="JUSTIFY" wrappingWidth="406.9769163131714">
                            <VBox.margin>
                               <Insets left="20.0" top="10.0" />
                            </VBox.margin>
@@ -182,7 +182,7 @@
                               <Image url="@../image/gamebutton.png" />
                            </image>
                            <HBox.margin>
-                              <Insets left="55.0" top="10.0" />
+                              <Insets left="45.0" top="10.0" />
                            </HBox.margin>
                         </ImageView>
                      </children>
