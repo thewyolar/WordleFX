@@ -1,11 +1,9 @@
 package com.wordle;
 
 import com.wordle.controller.HelpController;
-import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
-import javafx.scene.input.MouseEvent;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
@@ -19,12 +17,7 @@ public class HelpWindow {
         Scene scene = new Scene(fxmlLoader.load());
 
         HelpController helpController = fxmlLoader.getController();
-        helpController.getGameButton().setOnMouseClicked(new EventHandler<MouseEvent>() {
-            @Override
-            public void handle(MouseEvent mouseEvent) {
-                stage.close();
-            }
-        });
+        helpController.getGameButton().setOnMouseClicked(mouseEvent -> stage.close());
 
 
         stage.initModality(Modality.APPLICATION_MODAL);

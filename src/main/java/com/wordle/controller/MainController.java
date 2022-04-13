@@ -5,7 +5,6 @@ import com.wordle.SettingsWindow;
 import com.wordle.StatisticsWindow;
 import javafx.fxml.FXML;
 import javafx.scene.image.ImageView;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
 
 import java.io.IOException;
@@ -32,15 +31,15 @@ public class MainController {
     @FXML
     private ImageView statisticsIcon;
 
-    public void showHelp(MouseEvent event) throws IOException {
+    public void showHelp() throws IOException {
         HelpWindow.display();
     }
 
-    public void showStatistics(MouseEvent event) throws IOException {
+    public void showStatistics() throws IOException {
         StatisticsWindow.display();
     }
 
-    public void showSettings(MouseEvent event) throws IOException {
+    public void showSettings() throws IOException {
         SettingsWindow.display();
     }
 }
