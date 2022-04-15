@@ -1,4 +1,4 @@
-module com.wordle.wordlefx {
+module com.wordle {
     requires javafx.controls;
     requires javafx.fxml;
 

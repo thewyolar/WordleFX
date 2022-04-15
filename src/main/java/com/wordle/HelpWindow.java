@@ -19,7 +19,6 @@ public class HelpWindow {
         HelpController helpController = fxmlLoader.getController();
         helpController.getGameButton().setOnMouseClicked(mouseEvent -> stage.close());
 
-
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.setTitle("Правила игры");
         stage.setScene(scene);

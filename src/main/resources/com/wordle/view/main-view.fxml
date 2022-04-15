@@ -92,14 +92,11 @@
             <RowConstraints maxHeight="150.6000244140625" minHeight="10.0" prefHeight="68.59999389648436" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Label styleClass="default-tile" stylesheets="@../css/main-view.css">
-               <GridPane.margin>
-                  <Insets />
-               </GridPane.margin></Label>
-            <Label prefWidth="66.0" styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="1" />
-            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="2" />
-            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="3" />
-            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="4" />
+            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.rowIndex="0" />
+            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="4" GridPane.rowIndex="0" />
             <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.rowIndex="1" />
             <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="2" GridPane.rowIndex="1" />
             <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="3" GridPane.rowIndex="1" />
