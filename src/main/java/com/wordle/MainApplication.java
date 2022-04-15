@@ -17,7 +17,7 @@ import java.util.stream.Stream;
 
 public class MainApplication extends Application {
 
-    public static final ArrayList<String> dictionaryWords = new ArrayList<String>();
+    private static final ArrayList<String> dictionaryWords = new ArrayList<>();
     private static Stage stageReference;
 
     @Override
@@ -46,13 +46,14 @@ public class MainApplication extends Application {
     public static Stage getStage() {
         return stageReference; }
 
+    public static ArrayList<String> getDictionaryWords() {
+        return dictionaryWords; }
+
     public static void quit() {
-        stageReference.close();
-    }
+        stageReference.close(); }
 
     public static void showAlert() {
-        AlertWindow.display(stageReference);
-    }
+        AlertWindow.display(stageReference); }
 
     public void initializeWordList() {
         InputStream dictionary = getClass().getResourceAsStream("dictionary.txt");

@@ -16,8 +16,6 @@ import java.util.ArrayList;
 import java.util.Objects;
 import java.util.Random;
 
-import static com.wordle.MainApplication.dictionaryWords;
-
 public class MainHandler {
 
     private final String[] firstRowLetters = {"Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P"};
@@ -226,11 +224,11 @@ public class MainHandler {
     }
 
     public void getRandomWord() {
-        winningWord = dictionaryWords.get(new Random().nextInt(dictionaryWords.size()));
+        winningWord = MainApplication.getDictionaryWords().get(new Random().nextInt(MainApplication.getDictionaryWords().size()));
     }
 
     private boolean isValidGuess(String guess) {
-        return binarySearch(dictionaryWords, guess);
+        return binarySearch(MainApplication.getDictionaryWords(), guess);
     }
 
     public void resetGame(GridPane gridPane, GridPane keyboardRow1, GridPane keyboardRow2, GridPane keyboardRow3) {
