@@ -67,7 +67,7 @@ public class ResultWindow {
         scene.getStylesheets()
                 .add(Objects.requireNonNull(ResultWindow.class.getResource("css/main-view.css"))
                         .toExternalForm());
-        stage.getIcons().add(new Image(Objects.requireNonNull(ResultWindow.class.getResourceAsStream("images/icon.png"))));
+        //stage.getIcons().add(new Image(Objects.requireNonNull(ResultWindow.class.getResourceAsStream("images/icon.png"))));
         stage.setScene(scene);
         stage.showAndWait();
     }
