@@ -154,7 +154,6 @@ public class MainHandler {
         if (keyEvent.getCode() == KeyCode.ENTER) {
             onEnterPressed(gridPane, keyboardRow1, keyboardRow2, keyboardRow3);
         }
-        System.out.println(winningWord);
     }
 
     private void onBackspacePressed(GridPane gridPane) {
