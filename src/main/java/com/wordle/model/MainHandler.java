@@ -66,10 +66,10 @@ public class MainHandler {
         return null;
     }
 
-    private void setLabelStyleClass(GridPane gridPane, int searchRow, int searchColumn, String styleclass) {
+    private void setLabelStyleClass(GridPane gridPane, int searchRow, int searchColumn, String styleClass) {
         Label label = getLabel(gridPane, searchRow, searchColumn);
         if (label != null) {
-            label.getStyleClass().add(styleclass);
+            label.getStyleClass().add(styleClass);
         }
     }
 
