@@ -36,7 +36,7 @@ public class MainApplication extends Application {
         stage.getIcons().add(new Image(Objects.requireNonNull(getClass().getResourceAsStream("image/icon.png"))));
         stage.show();
 
-        scene.setOnKeyReleased(keyEvent -> mainController.onKeyPressed(keyEvent));
+        scene.setOnKeyPressed(keyEvent -> mainController.onKeyPressed(keyEvent));
     }
 
     public static void main(String[] args) {

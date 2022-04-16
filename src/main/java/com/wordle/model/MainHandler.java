@@ -171,8 +171,6 @@ public class MainHandler {
     }
 
     private void onLetterPressed(GridPane gridPane, KeyEvent keyEvent) {
-        // this is to make it so that when the user types a letter but the row is full
-        // it doesn't change the last letter instead
         if (Objects.equals(getLabelText(gridPane, CURRENT_ROW, CURRENT_COLUMN), "")) {
             setLabelText(gridPane, CURRENT_ROW, CURRENT_COLUMN, keyEvent.getText());
             Label label = getLabel(gridPane, CURRENT_ROW, CURRENT_COLUMN);
@@ -263,8 +261,8 @@ public class MainHandler {
                 label.getStyleClass().add("keyboardTile");
             }
 
-        CURRENT_COLUMN = 1;
-        CURRENT_ROW = 1;
+        CURRENT_COLUMN = 0;
+        CURRENT_ROW = 0;
     }
 
     private boolean binarySearch(ArrayList<String> list, String string) {
