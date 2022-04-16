@@ -140,7 +140,7 @@
 }
 
 .correct-result-tile {
-    -fx-background-color: -correct-color;
+    -fx-background-color: lime;
     -fx-border-color: black;
     -fx-border-width: 1px;
     -fx-min-width: 20px;
@@ -152,7 +152,7 @@
 }
 
 .present-result-tile {
-    -fx-background-color: -present-color;
+    -fx-background-color: yellow;
     -fx-border-color: black;
     -fx-border-width: 1px;
     -fx-min-width: 20px;

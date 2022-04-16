@@ -76,8 +76,4 @@ public class MainController {
         gridPane.setVisible(false);
         vboxBottom.setVisible(false);
     }
-
-    /*public void checkGridPane() {
-        for
-    }*/
 }

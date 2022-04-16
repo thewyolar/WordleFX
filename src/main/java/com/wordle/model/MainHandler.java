@@ -74,6 +74,13 @@ public class MainHandler {
         }
     }
 
+    private static String getLabelStyleClass(GridPane gridPane, int searchRow, int searchColumn) {
+        Label label = getLabel(gridPane, searchRow, searchColumn);
+        if (label != null)
+            return String.valueOf(label.getStyleClass());
+        return null;
+    }
+
     private void clearLabelStyleClass(GridPane gridPane, int searchRow, int searchColumn) {
         Label label = getLabel(gridPane, searchRow, searchColumn);
         if (label != null) {
@@ -151,9 +158,21 @@ public class MainHandler {
         for (int i = 0; i < mainGrid.getRowCount(); i++) {
             for (int j = 0; j < mainGrid.getColumnCount(); j++) {
                 if (!getLabelText(mainGrid, i, j).isEmpty()) {
-                    Label label = new Label();
-                    label.getStyleClass().add("default-result-tile");
-                    resultGrid.add(label, j, i);
+                    if (getLabelStyleClass(mainGrid, i, j) == "correct-letter") {
+                        Label label = new Label();
+                        label.getStyleClass().add("correct-result-tile");
+                        resultGrid.add(label, j, i);
+                    }
+                    else if (getLabelStyleClass(mainGrid, i, j) == "present-letter") {
+                        Label label = new Label();
+                        label.getStyleClass().add("present-result-tile");
+                        resultGrid.add(label, j, i);
+                    }
+                    else {
+                        Label label = new Label();
+                        label.getStyleClass().add("default-result-tile");
+                        resultGrid.add(label, j, i);
+                    }
                 }
             }
         }
