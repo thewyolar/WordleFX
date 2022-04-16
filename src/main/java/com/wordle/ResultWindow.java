@@ -25,6 +25,7 @@ public class ResultWindow {
     public static void display(boolean guessed, String winningWord) throws IOException {
         Stage stage = new Stage();
         stage.initModality(Modality.APPLICATION_MODAL);
+        //stage.initModality(Modality.TRANSPARENT);
 
         FXMLLoader fxmlLoader = new FXMLLoader(ResultWindow.class.getResource("view/result-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
