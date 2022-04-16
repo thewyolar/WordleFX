@@ -24,18 +24,18 @@ public class ResultWindow {
         Stage stage = new Stage();
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.initStyle(StageStyle.TRANSPARENT);
-        stage.setMaxWidth(500);
-        stage.setMaxHeight(460);
+        stage.setWidth(400);
+        stage.setHeight(300);
 
         VBox root = new VBox(15);
         root.setAlignment(Pos.CENTER);
 
         Label mainLabel = new Label();
         if (guessed) {
-            mainLabel.setText("           You won! \n The winning word was");
+            mainLabel.setText("You won! \nThe winning word was");
             mainLabel.getStyleClass().setAll("lead", "big-font");
         } else {
-            mainLabel.setText("           You lost! \n The winning word was");
+            mainLabel.setText("You lost! \nThe winning word was");
             mainLabel.getStyleClass().setAll("big-font");
         }
         Label winningWordLabel = new Label(winningWord.toUpperCase());
@@ -62,11 +62,10 @@ public class ResultWindow {
         buttonsVBox.getChildren().addAll(playAgainButton, quitButton);
 
         root.getChildren().addAll(mainLabel, winningWordLabel, buttonsVBox);
-        Scene scene = new Scene(root, 300, 260);
+        Scene scene = new Scene(root);
         scene.getStylesheets().add(BootstrapFX.bootstrapFXStylesheet());
-        scene.getStylesheets().add(Objects.requireNonNull(ResultWindow.class.getResource("css/main-view.css")).toExternalForm());
-        //stage.getIcons().add(new Image(Objects.requireNonNull(ResultWindow.class.getResourceAsStream("images/icon.png"))));
         stage.setScene(scene);
+        stage.getIcons().add(new Image(Objects.requireNonNull(ResultWindow.class.getResourceAsStream("image/icon.png"))));
         stage.showAndWait();
     }
 }
