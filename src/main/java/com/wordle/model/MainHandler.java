@@ -136,7 +136,7 @@ public class MainHandler {
 
             if (currentCharacter.equals(winningCharacter))
                 styleClass = "keyboardCorrectColor";
-            else if (winningWord.contains("" + currentCharacter))
+            else if (winningWord.contains(currentCharacter))
                 styleClass = "keyboardPresentColor";
             else
                 styleClass = "keyboardWrongColor";
