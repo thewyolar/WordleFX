@@ -45,7 +45,7 @@ public class ResultWindow {
         if (!guessed) {
             winningWordLabel.setVisible(true);
             winningWordLabel.setStyle("-fx-font-size: 16px;");
-            winningWordLabel.setText("Загаданное слово: " + winningWord.toUpperCase().toString());
+            winningWordLabel.setText("Загаданное слово: " + winningWord.toUpperCase());
         }
 
         /*Button playAgainButton = new Button("PLAY AGAIN");
