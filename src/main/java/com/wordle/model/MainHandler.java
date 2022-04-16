@@ -36,7 +36,7 @@ public class MainHandler {
             label.setText(input.toUpperCase());
     }
 
-    private Label getLabel(GridPane gridPane, int searchRow, int searchColumn) {
+    private static Label getLabel(GridPane gridPane, int searchRow, int searchColumn) {
         for (Node child : gridPane.getChildren()) {
             Integer r = GridPane.getRowIndex(child);
             Integer c = GridPane.getColumnIndex(child);
@@ -60,7 +60,7 @@ public class MainHandler {
         return null;
     }
 
-    private String getLabelText(GridPane gridPane, int searchRow, int searchColumn) {
+    private static String getLabelText(GridPane gridPane, int searchRow, int searchColumn) {
         Label label = getLabel(gridPane, searchRow, searchColumn);
         if (label != null)
             return label.getText().toLowerCase();
@@ -145,6 +145,18 @@ public class MainHandler {
         for (int j = 0; j <= MAX_COLUMN; j++)
             input.append(getLabelText(gridPane, CURRENT_ROW, j));
         return input.toString();
+    }
+
+    public static void fillResultGrid(GridPane mainGrid, GridPane resultGrid) {
+        for (int i = 0; i < mainGrid.getRowCount(); i++) {
+            for (int j = 0; j < mainGrid.getColumnCount(); j++) {
+                if (!getLabelText(mainGrid, i, j).isEmpty()) {
+                    Label label = new Label();
+                    label.getStyleClass().add("default-result-tile");
+                    resultGrid.add(label, j, i);
+                }
+            }
+        }
     }
 
     public void onKeyPressed(GridPane gridPane, GridPane keyboardRow1, GridPane keyboardRow2, GridPane keyboardRow3, KeyEvent keyEvent) throws IOException {

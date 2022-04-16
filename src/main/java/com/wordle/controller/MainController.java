@@ -49,6 +49,8 @@ public class MainController {
 
     public BorderPane getBorderPane() { return borderPane; }
 
+    public GridPane getGridPane() { return gridPane; }
+
     public void showHelp() throws IOException {
         HelpWindow.display();
     }
@@ -74,4 +76,8 @@ public class MainController {
         gridPane.setVisible(false);
         vboxBottom.setVisible(false);
     }
+
+    /*public void checkGridPane() {
+        for
+    }*/
 }

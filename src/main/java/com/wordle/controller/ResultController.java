@@ -1,6 +1,11 @@
 package com.wordle.controller;
 
+import com.wordle.MainApplication;
+import com.wordle.model.MainHandler;
+import javafx.collections.ObservableArray;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.scene.Node;
 import javafx.scene.control.Label;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
@@ -18,13 +23,7 @@ public class ResultController {
 
     public Label getWinnnigWordLabel() { return winnnigWordLabel; }
 
-    public void fillResultGrid() {
-        for (int i = 0; i < 5; i++) {
-            for (int j = 0; j < 6; j++) {
-                Label label = new Label();
-                label.getStyleClass().add("default-result-tile");
-                gridPane.add(label, i, j);
-            }
-        }
+    public void createResultGrid() {
+        MainHandler.fillResultGrid(MainApplication.getController().getGridPane(), gridPane);
     }
 }

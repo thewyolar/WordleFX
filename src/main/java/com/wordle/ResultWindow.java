@@ -3,20 +3,14 @@ package com.wordle;
 import com.wordle.controller.MainController;
 import com.wordle.controller.ResultController;
 import javafx.fxml.FXMLLoader;
-import javafx.geometry.Pos;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.layout.Background;
-import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.Pane;
-import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
-import org.kordamp.bootstrapfx.BootstrapFX;
 
 import java.io.IOException;
 import java.util.Objects;
@@ -45,7 +39,7 @@ public class ResultWindow {
         mainController.invisibleMainApplication();
 
         ResultController resultController = fxmlLoader.getController();
-        resultController.fillResultGrid();
+        resultController.createResultGrid();
 
         Label winningWordLabel = resultController.getWinnnigWordLabel();
         if (!guessed) {
@@ -53,6 +47,7 @@ public class ResultWindow {
             winningWordLabel.setStyle("-fx-font-size: 16px;");
             winningWordLabel.setText("Загаданное слово: " + winningWord.toUpperCase().toString());
         }
+
         /*Button playAgainButton = new Button("PLAY AGAIN");
         playAgainButton.getStyleClass().setAll("btn", "btn-primary");
         playAgainButton.setOnMouseClicked(me -> {
