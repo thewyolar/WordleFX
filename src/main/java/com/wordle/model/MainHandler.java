@@ -140,6 +140,11 @@ public class MainHandler {
                 styleClass = "keyboardPresentColor";
             else
                 styleClass = "keyboardWrongColor";
+
+            if (keyboardLabel != null) {
+                keyboardLabel.getStyleClass().clear();
+                keyboardLabel.getStyleClass().add(styleClass);
+            }
         }
     }
 
