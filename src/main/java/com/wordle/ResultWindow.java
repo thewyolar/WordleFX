@@ -2,8 +2,6 @@ package com.wordle;
 
 import com.wordle.controller.MainController;
 import com.wordle.controller.ResultController;
-import javafx.animation.Animation;
-import javafx.animation.FadeTransition;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
@@ -13,7 +11,6 @@ import javafx.scene.paint.Color;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
-import javafx.util.Duration;
 
 import java.io.IOException;
 import java.util.Objects;
