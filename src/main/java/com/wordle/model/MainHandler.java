@@ -159,12 +159,12 @@ public class MainHandler {
         for (int i = 0; i < mainGrid.getRowCount(); i++) {
             for (int j = 0; j < mainGrid.getColumnCount(); j++) {
                 if (!getLabelText(mainGrid, i, j).isEmpty()) {
-                    if (getLabelStyleClass(mainGrid, i, j) == "correct-letter") {
+                    if (getLabelStyleClass(mainGrid, i, j).contains("correct-letter")) {
                         Label label = new Label();
                         label.getStyleClass().add("correct-result-tile");
                         resultGrid.add(label, j, i);
                     }
-                    else if (getLabelStyleClass(mainGrid, i, j) == "present-letter") {
+                    else if (getLabelStyleClass(mainGrid, i, j).contains("present-letter")) {
                         Label label = new Label();
                         label.getStyleClass().add("present-result-tile");
                         resultGrid.add(label, j, i);
