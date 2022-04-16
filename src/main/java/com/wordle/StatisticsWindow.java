@@ -16,6 +16,7 @@ public class StatisticsWindow {
         Scene scene = new Scene(fxmlLoader.load());
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.setTitle("Статистика");
+        stage.setResizable(false);
         stage.setScene(scene);
         stage.getIcons().add(new Image(StatisticsWindow.class.getResourceAsStream("image/icon.png")));
         stage.showAndWait();

@@ -15,14 +15,14 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane prefHeight="659.0" prefWidth="476.0" styleClass="main-screen" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.wordle.controller.MainController">
+<BorderPane fx:id="borderPane" prefHeight="659.0" prefWidth="476.0" styleClass="main-screen" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.wordle.controller.MainController">
 
    <stylesheets>
       <URL value="@../css/main-view.css" />
    </stylesheets>
 
    <top>
-      <VBox prefHeight="56.0" prefWidth="451.0" BorderPane.alignment="CENTER">
+      <VBox fx:id="vboxTop" prefHeight="56.0" prefWidth="451.0" BorderPane.alignment="CENTER">
          <children>
             <HBox prefHeight="47.0" prefWidth="451.0">
                <children>
@@ -127,7 +127,7 @@
    </center>
 
    <bottom>
-      <VBox prefHeight="194.0" prefWidth="451.0" BorderPane.alignment="CENTER">
+      <VBox fx:id="vboxBottom" prefHeight="194.0" prefWidth="451.0" BorderPane.alignment="CENTER">
          <children>
             <GridPane fx:id="keyboardRow1" layoutX="20.0" layoutY="35.0" prefHeight="30.0" prefWidth="414.0">
                <columnConstraints>

@@ -8,7 +8,6 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.util.Duration;
-import org.kordamp.bootstrapfx.BootstrapFX;
 
 public class AlertWindow {
 
@@ -22,12 +21,13 @@ public class AlertWindow {
         text.setStyle("-fx-font-size: 16px;");
 
         StackPane root = new StackPane(text);
-        root.setStyle("-fx-background-radius: 3; " + "-fx-background-color: rgba(0, 0, 0, 0.8); -fx-padding: 10;");
+        root.setStyle("-fx-background-radius: 3; -fx-background-color: rgba(0, 0, 0, 0.8); -fx-padding: 10;");
         root.setOpacity(0);
 
         Scene scene = new Scene(root);
         scene.setFill(Color.TRANSPARENT);
         stage.setScene(scene);
+        stage.setResizable(false);
         stage.show();
 
         FadeTransition fadeTransition = new FadeTransition(Duration.millis(750), root);

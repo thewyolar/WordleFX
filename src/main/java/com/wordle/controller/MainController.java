@@ -7,13 +7,21 @@ import com.wordle.model.MainHandler;
 import javafx.fxml.FXML;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyEvent;
+import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
+import javafx.scene.layout.VBox;
 
 import java.io.IOException;
 
 public class MainController {
 
     private final MainHandler mainHandler = new MainHandler();
+
+    @FXML
+    private BorderPane borderPane;
+
+    @FXML
+    private VBox vboxTop;
 
     @FXML
     private GridPane gridPane;
@@ -36,6 +44,11 @@ public class MainController {
     @FXML
     private ImageView statisticsIcon;
 
+    @FXML
+    private VBox vboxBottom;
+
+    public BorderPane getBorderPane() { return borderPane; }
+
     public void showHelp() throws IOException {
         HelpWindow.display();
     }
@@ -52,7 +65,13 @@ public class MainController {
         mainHandler.getRandomWord();
     }
 
-    public void onKeyPressed(KeyEvent keyEvent) {
+    public void onKeyPressed(KeyEvent keyEvent) throws IOException {
         mainHandler.onKeyPressed(gridPane, keyboardRow1, keyboardRow2, keyboardRow3, keyEvent);
+    }
+
+    public void invisibleMainApplication() {
+        vboxTop.setVisible(false);
+        gridPane.setVisible(false);
+        vboxBottom.setVisible(false);
     }
 }

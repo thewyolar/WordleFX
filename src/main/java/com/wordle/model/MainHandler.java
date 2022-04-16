@@ -12,6 +12,7 @@ import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.GridPane;
 import javafx.util.Duration;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Objects;
@@ -146,7 +147,7 @@ public class MainHandler {
         return input.toString();
     }
 
-    public void onKeyPressed(GridPane gridPane, GridPane keyboardRow1, GridPane keyboardRow2, GridPane keyboardRow3, KeyEvent keyEvent) {
+    public void onKeyPressed(GridPane gridPane, GridPane keyboardRow1, GridPane keyboardRow2, GridPane keyboardRow3, KeyEvent keyEvent) throws IOException {
         if (keyEvent.getCode() == KeyCode.BACK_SPACE) {
             onBackspacePressed(gridPane);
         } else if (keyEvent.getCode().isLetterKey() || keyEvent.getCode().getName().equals("Undefined")) {
@@ -192,7 +193,7 @@ public class MainHandler {
         }
     }
 
-    private void onEnterPressed(GridPane gridPane, GridPane keyboardRow1, GridPane keyboardRow2, GridPane keyboardRow3) {
+    private void onEnterPressed(GridPane gridPane, GridPane keyboardRow1, GridPane keyboardRow2, GridPane keyboardRow3) throws IOException {
         if (CURRENT_ROW <= MAX_ROW && CURRENT_COLUMN == MAX_COLUMN) {
             String guess = getWordFromCurrentRow(gridPane).toLowerCase();
             if (guess.equals(winningWord)) {
@@ -204,7 +205,7 @@ public class MainHandler {
                 updateKeyboardColors(gridPane, keyboardRow1, keyboardRow2, keyboardRow3);
                 if (CURRENT_ROW == MAX_ROW) {
                     ResultWindow.display(false, winningWord);
-                    if (ResultWindow.resetGame.get())
+                    if (ResultWindow.getResetGame())
                         resetGame(gridPane, keyboardRow1, keyboardRow2, keyboardRow3);
                 }
                 CURRENT_ROW++;
@@ -212,11 +213,11 @@ public class MainHandler {
             } else {
                 MainApplication.showAlert();
             }
-            if (ResultWindow.resetGame.get()) {
+            if (ResultWindow.getResetGame()) {
                 resetGame(gridPane, keyboardRow1, keyboardRow2, keyboardRow3);
-                ResultWindow.resetGame.set(false);
+                ResultWindow.setResetGame(false);
             }
-            if (ResultWindow.quitApplication.get())
+            if (ResultWindow.getQuitApplication())
                 MainApplication.quit();
         }
     }

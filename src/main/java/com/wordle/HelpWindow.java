@@ -21,6 +21,7 @@ public class HelpWindow {
 
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.setTitle("Правила игры");
+        stage.setResizable(false);
         stage.setScene(scene);
         stage.getIcons().add(new Image(HelpWindow.class.getResourceAsStream("image/icon.png")));
         stage.showAndWait();

@@ -18,6 +18,7 @@ import java.util.stream.Stream;
 public class MainApplication extends Application {
 
     private static final ArrayList<String> dictionaryWords = new ArrayList<>();
+    private static MainController mainControllerReference;
     private static Stage stageReference;
 
     @Override
@@ -28,32 +29,38 @@ public class MainApplication extends Application {
         Scene scene = new Scene(fxmlLoader.load());
 
         MainController mainController = fxmlLoader.getController();
+        mainControllerReference = mainController;
         mainController.getRandomWord();
 
         stage.setTitle("Wordle");
         stage.setScene(scene);
+        stage.setResizable(false);
         stage.getProperties().put("hostServices", this.getHostServices());
         stage.getIcons().add(new Image(Objects.requireNonNull(getClass().getResourceAsStream("image/icon.png"))));
         stage.show();
 
-        scene.setOnKeyPressed(keyEvent -> mainController.onKeyPressed(keyEvent));
+        scene.setOnKeyPressed(keyEvent -> {
+            try {
+                mainController.onKeyPressed(keyEvent);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        });
     }
 
     public static void main(String[] args) {
         launch();
     }
 
-    public static Stage getStage() {
-        return stageReference; }
+    public static Stage getStage() { return stageReference; }
 
-    public static ArrayList<String> getDictionaryWords() {
-        return dictionaryWords; }
+    public static MainController getController() { return mainControllerReference; }
 
-    public static void quit() {
-        stageReference.close(); }
+    public static ArrayList<String> getDictionaryWords() { return dictionaryWords; }
 
-    public static void showAlert() {
-        AlertWindow.display(stageReference); }
+    public static void quit() { stageReference.close(); }
+
+    public static void showAlert() { AlertWindow.display(stageReference); }
 
     public void initializeWordList() {
         InputStream dictionary = getClass().getResourceAsStream("dictionary.txt");

@@ -1,69 +1,73 @@
 package com.wordle;
 
-import javafx.beans.property.BooleanProperty;
-import javafx.beans.property.SimpleBooleanProperty;
+import com.wordle.controller.MainController;
+import com.wordle.controller.ResultController;
+import javafx.fxml.FXMLLoader;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
+import javafx.scene.layout.Background;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import org.kordamp.bootstrapfx.BootstrapFX;
 
+import java.io.IOException;
 import java.util.Objects;
 
 public class ResultWindow {
 
-    public static BooleanProperty resetGame = new SimpleBooleanProperty(false);
-    public static BooleanProperty quitApplication = new SimpleBooleanProperty(false);
+    private static boolean resetGame = false;
+    private static boolean quitApplication = false;
 
-    public static void display(boolean guessed, String winningWord) {
+    public static boolean getResetGame() { return resetGame; }
+
+    public static void setResetGame(boolean value) { resetGame = value; }
+
+    public static boolean getQuitApplication() { return quitApplication; }
+
+    public static void display(boolean guessed, String winningWord) throws IOException {
         Stage stage = new Stage();
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.initStyle(StageStyle.TRANSPARENT);
-        stage.setWidth(400);
-        stage.setHeight(300);
 
-        VBox root = new VBox(15);
-        root.setAlignment(Pos.CENTER);
+        FXMLLoader fxmlLoader = new FXMLLoader(ResultWindow.class.getResource("view/result-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
 
-        Label mainLabel = new Label();
-        if (guessed) {
-            mainLabel.setText("You won! \nThe winning word was");
-            mainLabel.getStyleClass().setAll("lead", "big-font");
-        } else {
-            mainLabel.setText("You lost! \nThe winning word was");
-            mainLabel.getStyleClass().setAll("big-font");
+        MainController mainController = MainApplication.getController();
+        mainController.getBorderPane().setBackground(Background.fill(Color.rgb(17, 24, 39)));
+        mainController.invisibleMainApplication();
+
+        ResultController resultController = fxmlLoader.getController();
+        resultController.fillResultGrid();
+
+        Label winningWordLabel = resultController.getWinnnigWordLabel();
+        if (!guessed) {
+            winningWordLabel.setVisible(true);
+            winningWordLabel.setStyle("-fx-font-size: 16px;");
+            winningWordLabel.setText("Загаданное слово: " + winningWord.toUpperCase().toString());
         }
-        Label winningWordLabel = new Label(winningWord.toUpperCase());
-        winningWordLabel.getStyleClass().setAll("h2", "strong");
-
-        VBox buttonsVBox = new VBox(5);
-        buttonsVBox.setAlignment(Pos.CENTER);
-
-        Button playAgainButton = new Button("PLAY AGAIN");
+        /*Button playAgainButton = new Button("PLAY AGAIN");
         playAgainButton.getStyleClass().setAll("btn", "btn-primary");
         playAgainButton.setOnMouseClicked(me -> {
-            resetGame.set(true);
+            resetGame = true;
             stage.close();
         });
 
         Button quitButton = new Button("  QUIT");
         quitButton.getStyleClass().setAll("btn", "btn-warning");
         quitButton.setOnMouseClicked(me -> {
-            resetGame.set(false);
-            quitApplication.set(true);
+            resetGame = false;
+            quitApplication = true;
             stage.close();
-        });
+        });*/
 
-        buttonsVBox.getChildren().addAll(playAgainButton, quitButton);
-
-        root.getChildren().addAll(mainLabel, winningWordLabel, buttonsVBox);
-        Scene scene = new Scene(root);
-        scene.getStylesheets().add(BootstrapFX.bootstrapFXStylesheet());
         stage.setScene(scene);
         stage.getIcons().add(new Image(Objects.requireNonNull(ResultWindow.class.getResourceAsStream("image/icon.png"))));
         stage.showAndWait();
