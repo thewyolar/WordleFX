@@ -13,6 +13,7 @@ import javafx.scene.layout.GridPane;
 import javafx.util.Duration;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Objects;
 import java.util.Random;
 
@@ -148,7 +149,7 @@ public class MainHandler {
     public void onKeyPressed(GridPane gridPane, GridPane keyboardRow1, GridPane keyboardRow2, GridPane keyboardRow3, KeyEvent keyEvent) {
         if (keyEvent.getCode() == KeyCode.BACK_SPACE) {
             onBackspacePressed(gridPane);
-        } else if (keyEvent.getCode().isLetterKey()) {
+        } else if (keyEvent.getCode().isLetterKey() || keyEvent.getCode().getName().equals("Undefined")) {
             onLetterPressed(gridPane, keyEvent);
         }
         if (keyEvent.getCode() == KeyCode.ENTER) {
