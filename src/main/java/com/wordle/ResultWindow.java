@@ -41,7 +41,7 @@ public class ResultWindow {
         ResultController resultController = fxmlLoader.getController();
         resultController.createResultGrid();
 
-        Label winningWordLabel = resultController.getWinnnigWordLabel();
+        Label winningWordLabel = resultController.getWinningWordLabel();
         if (!guessed) {
             winningWordLabel.setVisible(true);
             winningWordLabel.setStyle("-fx-font-size: 16px;");

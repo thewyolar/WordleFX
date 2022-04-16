@@ -16,11 +16,11 @@ public class ResultController {
     private GridPane gridPane;
 
     @FXML
-    private Label winnnigWordLabel;
+    private Label winningWordLabel;
 
     public BorderPane getBorderPane() { return borderPane; }
 
-    public Label getWinnnigWordLabel() { return winnnigWordLabel; }
+    public Label getWinningWordLabel() { return winningWordLabel; }
 
     public void createResultGrid() {
         MainHandler.fillResultGrid(MainApplication.getController().getGridPane(), gridPane);
