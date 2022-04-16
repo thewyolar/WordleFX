@@ -23,7 +23,7 @@ public class ResultWindow {
     public static void display(boolean guessed, String winningWord) {
         Stage stage = new Stage();
         stage.initModality(Modality.APPLICATION_MODAL);
-        stage.initStyle(StageStyle.UTILITY);
+        stage.initStyle(StageStyle.TRANSPARENT);
         stage.setMaxWidth(500);
         stage.setMaxHeight(460);
 
@@ -64,9 +64,7 @@ public class ResultWindow {
         root.getChildren().addAll(mainLabel, winningWordLabel, buttonsVBox);
         Scene scene = new Scene(root, 300, 260);
         scene.getStylesheets().add(BootstrapFX.bootstrapFXStylesheet());
-        scene.getStylesheets()
-                .add(Objects.requireNonNull(ResultWindow.class.getResource("css/main-view.css"))
-                        .toExternalForm());
+        scene.getStylesheets().add(Objects.requireNonNull(ResultWindow.class.getResource("css/main-view.css")).toExternalForm());
         //stage.getIcons().add(new Image(Objects.requireNonNull(ResultWindow.class.getResourceAsStream("images/icon.png"))));
         stage.setScene(scene);
         stage.showAndWait();
