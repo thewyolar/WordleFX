@@ -21,7 +21,7 @@ public class MainHandler {
 
     private final String[] firstRowLetters = {"Й", "Ц", "У", "К", "Е", "Н", "Г", "Ш", "Щ", "З", "Х", "Ъ"};
     private final String[] secondRowLetters = {"Ф", "Ы", "В", "А", "П", "Р", "О", "Л", "Д", "Ж", "Э"};
-    private final String[] thirdRowLetters = {"↵", "Я", "С", "М", "И", "Т", "Ь", "Б", "Ю", "←"};
+    private final String[] thirdRowLetters = {"Я", "С", "М", "И", "Т", "Ь", "Б", "Ю"};
 
     private int CURRENT_ROW = 0;
     private int CURRENT_COLUMN = 0;
@@ -113,7 +113,8 @@ public class MainHandler {
                 secondFadeTransition.setFromValue(0.2);
                 secondFadeTransition.setToValue(1);
 
-                new SequentialTransition(firstFadeTransition, secondFadeTransition).play();
+                SequentialTransition transition = new SequentialTransition(firstFadeTransition, secondFadeTransition);
+                transition.play();
             }
         }
     }
