@@ -19,9 +19,9 @@ import java.util.Random;
 
 public class MainHandler {
 
-    private final String[] firstRowLetters = {"Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P"};
-    private final String[] secondRowLetters = {"A", "S", "D", "F", "G", "H", "J", "K", "L"};
-    private final String[] thirdRowLetters = {"↵", "Z", "X", "C", "V", "B", "N", "M", "←"};
+    private final String[] firstRowLetters = {"Й", "Ц", "У", "К", "Е", "Н", "Г", "Ш", "Щ", "З", "Х", "Ъ"};
+    private final String[] secondRowLetters = {"Ф", "Ы", "В", "А", "П", "Р", "О", "Л", "Д", "Ж", "Э"};
+    private final String[] thirdRowLetters = {"↵", "Я", "С", "М", "И", "Т", "Ь", "Б", "Ю", "←"};
 
     private int CURRENT_ROW = 0;
     private int CURRENT_COLUMN = 0;

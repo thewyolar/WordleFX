@@ -221,15 +221,15 @@
                      <GridPane.margin>
                         <Insets right="5.0" />
                      </GridPane.margin></Label>
-                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="Ы" GridPane.columnIndex="1" />
-                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="В" GridPane.columnIndex="2" />
-                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="А" GridPane.columnIndex="3" />
-                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="П" GridPane.columnIndex="4" />
-                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="Р" GridPane.columnIndex="5" />
-                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="О" GridPane.columnIndex="6" />
-                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="Л" GridPane.columnIndex="7" />
-                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="Д" GridPane.columnIndex="8" />
-                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="Ж" GridPane.columnIndex="9" />
+                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="Я" GridPane.columnIndex="1" />
+                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="Ч" GridPane.columnIndex="2" />
+                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="С" GridPane.columnIndex="3" />
+                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="М" GridPane.columnIndex="4" />
+                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="И" GridPane.columnIndex="5" />
+                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="Т" GridPane.columnIndex="6" />
+                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="Ь" GridPane.columnIndex="7" />
+                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="Б" GridPane.columnIndex="8" />
+                  <Label maxWidth="35.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="Ю" GridPane.columnIndex="9" />
                   <Label maxWidth="45.0" prefHeight="58.0" prefWidth="46.0" styleClass="keyboardTile" stylesheets="@../css/main-view.css" text="Ввод" GridPane.columnIndex="10" />
                </children>
                <VBox.margin>
