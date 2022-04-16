@@ -29,14 +29,9 @@ public class ResultWindow {
     public static void display(boolean guessed, String winningWord) throws IOException {
         Stage stage = new Stage();
         stage.initModality(Modality.APPLICATION_MODAL);
-        stage.initStyle(StageStyle.TRANSPARENT);
 
         FXMLLoader fxmlLoader = new FXMLLoader(ResultWindow.class.getResource("view/result-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
-
-        MainController mainController = MainApplication.getController();
-        mainController.getBorderPane().setBackground(Background.fill(Color.rgb(17, 24, 39)));
-        mainController.invisibleMainApplication();
 
         ResultController resultController = fxmlLoader.getController();
         resultController.createResultGrid();
@@ -64,6 +59,7 @@ public class ResultWindow {
         });*/
 
         stage.setScene(scene);
+        stage.setResizable(false);
         stage.getIcons().add(new Image(Objects.requireNonNull(ResultWindow.class.getResourceAsStream("image/icon.png"))));
         stage.showAndWait();
     }
