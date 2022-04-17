@@ -233,7 +233,9 @@ public class MainHandler {
             if (guess.equals(winningWord)) {
                 updateRowColors(gridPane, CURRENT_ROW);
                 updateKeyboardColors(gridPane, keyboardRow1, keyboardRow2, keyboardRow3);
+                System.out.println(getLabelStyleClass(gridPane, 0, 0));
                 ResultWindow.display(true, winningWord);
+                System.out.println(getLabelStyleClass(gridPane, 0, 0));
             } else if (isValidGuess(guess)) {
                 updateRowColors(gridPane, CURRENT_ROW);
                 updateKeyboardColors(gridPane, keyboardRow1, keyboardRow2, keyboardRow3);
