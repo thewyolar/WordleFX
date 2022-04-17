@@ -12,7 +12,9 @@ import javafx.scene.text.Text;
 import javafx.util.Duration;
 
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
 
 public class ResultController {
 
@@ -34,7 +36,13 @@ public class ResultController {
                 new KeyFrame(Duration.seconds(1),
                         e -> {
                             DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("HH:mm:ss");
-                            timer.setText(dateTimeFormatter.format(LocalDateTime.now()));
+                            LocalTime currentDateTime = LocalTime.now();
+                            long delta = ChronoUnit.SECONDS.between(currentDateTime, LocalTime.MAX);
+                            int hours = (int)Math.floor(delta / 3600);
+                            int minutes = (int)Math.floor((delta - hours * 3600) / 60);
+                            int seconds = (int)Math.floor(delta - hours * 3600 - minutes * 60);
+                            String elapsedTime = hours + 3 + ":" + minutes + ":" + seconds;
+                            timer.setText(elapsedTime);
                         }));
 
         timeline.setCycleCount(Timeline.INDEFINITE);
