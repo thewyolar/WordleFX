@@ -5,4 +5,3 @@
     <img src="src/main/resources/com/wordle/image/screenshots/screenshot1.png" style="width: 40%;">
     <img src="src/main/resources/com/wordle/image/screenshots/screenshot2.png" style="width: 40%;">
 </div>
-# Installation
