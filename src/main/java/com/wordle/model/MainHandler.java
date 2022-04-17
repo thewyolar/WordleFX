@@ -117,7 +117,6 @@ public class MainHandler {
                 transition.play();
             }
         }
-        System.out.println(getLabelStyleClass(gridPane, 0, 0));
     }
 
     private void updateKeyboardColors(GridPane gridPane, GridPane keyboardRow1, GridPane keyboardRow2, GridPane keyboardRow3) {
@@ -205,7 +204,7 @@ public class MainHandler {
     }
 
     private void onLetterPressed(GridPane gridPane, KeyEvent keyEvent) {
-        if (Objects.equals(getLabelText(gridPane, CURRENT_ROW, CURRENT_COLUMN), "")) {
+        if (getLabelText(gridPane, CURRENT_ROW, CURRENT_COLUMN).isEmpty()) {
             setLabelText(gridPane, CURRENT_ROW, CURRENT_COLUMN, keyEvent.getText());
             Label label = getLabel(gridPane, CURRENT_ROW, CURRENT_COLUMN);
             ScaleTransition firstScaleTransition = new ScaleTransition(Duration.millis(100), label);
