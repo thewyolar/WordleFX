@@ -86,7 +86,7 @@
                   <Insets left="30.0" top="10.0" />
                </VBox.margin>
             </GridPane>
-            <Label fx:id="winnnigWordLabel" alignment="CENTER" layoutX="10.0" layoutY="172.0" prefHeight="18.0" prefWidth="499.0" text="Label" visible="false" />
+            <Label fx:id="winningWordLabel" alignment="CENTER" layoutX="10.0" layoutY="172.0" prefHeight="18.0" prefWidth="499.0" text="Label" visible="false" />
             <Line endX="350.0" startX="-100.0" stroke="#838383">
                <VBox.margin>
                   <Insets top="10.0" />
