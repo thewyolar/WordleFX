@@ -217,7 +217,9 @@ public class MainHandler {
             secondScaleTransition.toXProperty().setValue(1);
             secondScaleTransition.fromYProperty().setValue(1.1);
             secondScaleTransition.toYProperty().setValue(1);
-            new SequentialTransition(firstScaleTransition, secondScaleTransition).play();
+
+            SequentialTransition transition = new SequentialTransition(firstScaleTransition, secondScaleTransition);
+            transition.play();
 
             setLabelStyleClass(gridPane, CURRENT_ROW, CURRENT_COLUMN, "tile-with-letter");
             if (CURRENT_COLUMN < MAX_COLUMN)
