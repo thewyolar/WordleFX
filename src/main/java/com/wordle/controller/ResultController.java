@@ -11,9 +11,7 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.text.Text;
 import javafx.util.Duration;
 
-import java.time.LocalDateTime;
 import java.time.LocalTime;
-import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 
 public class ResultController {
@@ -36,7 +34,7 @@ public class ResultController {
                 new KeyFrame(Duration.seconds(1),
                         e -> {
                             LocalTime currentTime = LocalTime.now();
-                            int hours, minutes, seconds = 0;
+                            int hours, minutes, seconds;
                             long delta;
                             String elapsedTime;
                             if (currentTime.getHour() > 3) {
