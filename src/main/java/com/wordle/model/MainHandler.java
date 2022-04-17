@@ -159,7 +159,7 @@ public class MainHandler {
         for (int i = 0; i < mainGrid.getRowCount(); i++) {
             for (int j = 0; j < mainGrid.getColumnCount(); j++) {
                 if (!getLabelText(mainGrid, i, j).isEmpty()) {
-                    if (getLabelStyleClass(mainGrid, i, j).contains("correct-letter") /*|| getLabelStyleClass(mainGrid, i, j).contains("default-tile")*/) {
+                    if (getLabelStyleClass(mainGrid, i, j).contains("correct-letter") || getLabelStyleClass(mainGrid, i, j).contains("default-tile")) {
                         Label label = new Label();
                         label.getStyleClass().add("correct-result-tile");
                         resultGrid.add(label, j, i);
@@ -233,9 +233,7 @@ public class MainHandler {
             if (guess.equals(winningWord)) {
                 updateRowColors(gridPane, CURRENT_ROW);
                 updateKeyboardColors(gridPane, keyboardRow1, keyboardRow2, keyboardRow3);
-                System.out.println(getLabelStyleClass(gridPane, 0, 0));
                 ResultWindow.display(true, winningWord);
-                System.out.println(getLabelStyleClass(gridPane, 0, 0));
             } else if (isValidGuess(guess)) {
                 updateRowColors(gridPane, CURRENT_ROW);
                 updateKeyboardColors(gridPane, keyboardRow1, keyboardRow2, keyboardRow3);
