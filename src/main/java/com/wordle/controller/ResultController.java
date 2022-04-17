@@ -36,21 +36,21 @@ public class ResultController {
                             LocalTime currentTime = LocalTime.now();
                             int hours, minutes, seconds;
                             long delta;
-                            String elapsedTime;
+                            LocalTime elapsedTime;
                             if (currentTime.getHour() > 3) {
                                 delta = ChronoUnit.SECONDS.between(currentTime, LocalTime.MAX);
                                 hours = (int)Math.floor(delta / 3600);
                                 minutes = (int)Math.floor((delta - hours * 3600) / 60);
                                 seconds = (int)Math.floor(delta - hours * 3600 - minutes * 60);
-                                elapsedTime = hours + 3 + ":" + minutes + ":" + seconds;
+                                elapsedTime = LocalTime.of(hours + 3, minutes, seconds);
                             } else {
                                 delta = ChronoUnit.SECONDS.between(currentTime, LocalTime.parse("03:00:00"));
                                 hours = (int)Math.floor(delta / 3600);
                                 minutes = (int)Math.floor((delta - hours * 3600) / 60);
                                 seconds = (int)Math.floor(delta - hours * 3600 - minutes * 60);
-                                elapsedTime = hours + ":" + minutes + ":" + seconds;
+                                elapsedTime = LocalTime.of(hours, minutes, seconds);
                             }
-                            timer.setText(elapsedTime);
+                            timer.setText(elapsedTime.toString());
                         }));
 
         timeline.setCycleCount(Timeline.INDEFINITE);
