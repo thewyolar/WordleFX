@@ -45,7 +45,10 @@
                   </Text>
                </children>
             </VBox>
-            <Line endX="-100.0" endY="170.0" startX="-100.0" stroke="#838383" />
+            <Line endX="-100.0" endY="160.0" startX="-100.0" startY="15.0" stroke="#838383">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin></Line>
             <VBox prefHeight="171.0" prefWidth="271.0">
                <children>
                   <ImageView fitHeight="41.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
@@ -53,7 +56,7 @@
                         <Image url="@../image/twitter.png" />
                      </image>
                      <VBox.margin>
-                        <Insets left="60.0" top="20.0" />
+                        <Insets left="60.0" top="10.0" />
                      </VBox.margin>
                   </ImageView>
                   <ImageView fitHeight="40.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
