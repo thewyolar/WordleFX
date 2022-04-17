@@ -36,8 +36,8 @@ public class ResultController {
                 new KeyFrame(Duration.seconds(1),
                         e -> {
                             DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("HH:mm:ss");
-                            LocalTime currentDateTime = LocalTime.now();
-                            long delta = ChronoUnit.SECONDS.between(currentDateTime, LocalTime.MAX);
+                            LocalTime currentTime = LocalTime.now();
+                            long delta = ChronoUnit.SECONDS.between(currentTime, LocalTime.MAX);
                             int hours = (int)Math.floor(delta / 3600);
                             int minutes = (int)Math.floor((delta - hours * 3600) / 60);
                             int seconds = (int)Math.floor(delta - hours * 3600 - minutes * 60);
