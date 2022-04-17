@@ -35,13 +35,23 @@ public class ResultController {
         Timeline timeline = new Timeline(
                 new KeyFrame(Duration.seconds(1),
                         e -> {
-                            DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("HH:mm:ss");
                             LocalTime currentTime = LocalTime.now();
-                            long delta = ChronoUnit.SECONDS.between(currentTime, LocalTime.MAX);
-                            int hours = (int)Math.floor(delta / 3600);
-                            int minutes = (int)Math.floor((delta - hours * 3600) / 60);
-                            int seconds = (int)Math.floor(delta - hours * 3600 - minutes * 60);
-                            String elapsedTime = hours + 3 + ":" + minutes + ":" + seconds;
+                            int hours, minutes, seconds = 0;
+                            long delta;
+                            String elapsedTime;
+                            if (currentTime.getHour() > 3) {
+                                delta = ChronoUnit.SECONDS.between(currentTime, LocalTime.MAX);
+                                hours = (int)Math.floor(delta / 3600);
+                                minutes = (int)Math.floor((delta - hours * 3600) / 60);
+                                seconds = (int)Math.floor(delta - hours * 3600 - minutes * 60);
+                                elapsedTime = hours + 3 + ":" + minutes + ":" + seconds;
+                            } else {
+                                delta = ChronoUnit.SECONDS.between(currentTime, LocalTime.parse("03:00:00"));
+                                hours = (int)Math.floor(delta / 3600);
+                                minutes = (int)Math.floor((delta - hours * 3600) / 60);
+                                seconds = (int)Math.floor(delta - hours * 3600 - minutes * 60);
+                                elapsedTime = hours + ":" + minutes + ":" + seconds;
+                            }
                             timer.setText(elapsedTime);
                         }));
 
