@@ -117,6 +117,7 @@ public class MainHandler {
                 transition.play();
             }
         }
+        System.out.println(getLabelStyleClass(gridPane, 0, 0));
     }
 
     private void updateKeyboardColors(GridPane gridPane, GridPane keyboardRow1, GridPane keyboardRow2, GridPane keyboardRow3) {
@@ -159,7 +160,6 @@ public class MainHandler {
         for (int i = 0; i < mainGrid.getRowCount(); i++) {
             for (int j = 0; j < mainGrid.getColumnCount(); j++) {
                 if (!getLabelText(mainGrid, i, j).isEmpty()) {
-                    String styleClass = String.valueOf(getLabel(mainGrid, i, j).getStyleClass());
                     if (getLabelStyleClass(mainGrid, i, j).contains("correct-letter") /*|| getLabelStyleClass(mainGrid, i, j).contains("default-tile")*/) {
                         Label label = new Label();
                         label.getStyleClass().add("correct-result-tile");
@@ -192,7 +192,7 @@ public class MainHandler {
     }
 
     private void onBackspacePressed(GridPane gridPane) {
-        if ((CURRENT_COLUMN == MAX_COLUMN || CURRENT_COLUMN == 0) && !Objects.equals(getLabelText(gridPane, CURRENT_ROW, CURRENT_COLUMN), "")) {
+        if ((CURRENT_COLUMN == MAX_COLUMN || CURRENT_COLUMN == 0) && !getLabelText(gridPane, CURRENT_ROW, CURRENT_COLUMN).isEmpty()) {
             setLabelText(gridPane, CURRENT_ROW, CURRENT_COLUMN, "");
             clearLabelStyleClass(gridPane, CURRENT_ROW, CURRENT_COLUMN);
             setLabelStyleClass(gridPane, CURRENT_ROW, CURRENT_COLUMN, "default-tile");
