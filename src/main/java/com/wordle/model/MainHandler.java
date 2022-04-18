@@ -305,9 +305,13 @@ public class MainHandler {
         while (low <= high) {
             int mid = low + (high - low) / 2;
             int comparison = string.compareTo(list.get(mid));
-            if (comparison == 0) return true;
-            if (comparison > 0) low = mid + 1;
-            else high = mid - 1;
+            if (comparison == 0)
+                return true;
+
+            if (comparison > 0)
+                low = mid + 1;
+            else
+                high = mid - 1;
         }
         return false;
     }
