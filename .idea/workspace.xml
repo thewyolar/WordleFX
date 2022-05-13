@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1e55c77-bdc5-43bd-8694-a681fae26d0b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/wordle/dictionary.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/wordle/dictionary.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/wordle/view/settings-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/wordle/view/settings-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +66,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1652456492832</updated>
-      <workItem from="1652456495131" duration="424000" />
+      <workItem from="1652456495131" duration="717000" />
     </task>
     <servers />
   </component>
