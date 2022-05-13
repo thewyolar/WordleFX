@@ -2,7 +2,11 @@ package com.wordle.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Hyperlink;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.Background;
+import javafx.scene.layout.BackgroundFill;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.paint.Color;
 import org.controlsfx.control.ToggleSwitch;
 
 public class SettingsController {
@@ -27,5 +31,12 @@ public class SettingsController {
 
     public Hyperlink getWordleHyperlink() { return wordleHyperlink; }
 
-    public ToggleSwitch getDarkThemeSwitcher() { return darkThemeSwitcher; }
+    public void switchTheme(MouseEvent mouseEvent) {
+        if (darkThemeSwitcher.isSelected()) {
+            borderPane.setStyle("-fx-background-color: #212529");
+        }
+        else {
+            borderPane.setStyle("-fx-background-color: white");
+        }
+    }
 }
