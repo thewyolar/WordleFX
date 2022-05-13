@@ -3,7 +3,7 @@ package com.wordle.controller;
 import com.wordle.HelpWindow;
 import com.wordle.SettingsWindow;
 import com.wordle.StatisticsWindow;
-import com.wordle.model.MainHandler;
+import com.wordle.MainHandler;
 import javafx.fxml.FXML;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyEvent;

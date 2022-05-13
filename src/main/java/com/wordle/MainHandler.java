@@ -1,4 +1,4 @@
-package com.wordle.model;
+package com.wordle;
 
 import com.wordle.MainApplication;
 import com.wordle.ResultWindow;

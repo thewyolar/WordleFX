@@ -1,7 +1,7 @@
 package com.wordle.controller;
 
 import com.wordle.MainApplication;
-import com.wordle.model.MainHandler;
+import com.wordle.MainHandler;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.fxml.FXML;
