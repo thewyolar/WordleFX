@@ -2,6 +2,7 @@ package com.wordle.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Hyperlink;
+import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Background;
 import javafx.scene.layout.BackgroundFill;
@@ -14,6 +15,15 @@ public class SettingsController {
     private BorderPane borderPane;
 
     @FXML
+    private Label darkThemeLabel;
+
+    @FXML
+    private Label settingsTitle;
+
+    @FXML
+    private ToggleSwitch darkThemeSwitcher;
+
+    @FXML
     private Hyperlink emailHyperlink;
 
     @FXML
@@ -21,9 +31,6 @@ public class SettingsController {
 
     @FXML
     private Hyperlink wordleHyperlink;
-
-    @FXML
-    private ToggleSwitch darkThemeSwitcher;
 
     public Hyperlink getEmailHyperlink() { return emailHyperlink; }
 
@@ -34,6 +41,7 @@ public class SettingsController {
     public void switchTheme(MouseEvent mouseEvent) {
         if (darkThemeSwitcher.isSelected()) {
             borderPane.setStyle("-fx-background-color: #212529");
+
         }
         else {
             borderPane.setStyle("-fx-background-color: white");

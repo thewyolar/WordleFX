@@ -20,7 +20,7 @@
    <top>
       <VBox prefHeight="56.0" prefWidth="451.0" BorderPane.alignment="CENTER">
          <children>
-            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="51.0" prefWidth="510.0" text="НАСТРОЙКИ" textAlignment="CENTER">
+            <Label fx:id="settingsTitle" alignment="CENTER" contentDisplay="CENTER" prefHeight="51.0" prefWidth="510.0" text="НАСТРОЙКИ" textAlignment="CENTER">
                <font>
                   <Font name="Arial Bold" size="18.0" />
                </font>
@@ -37,7 +37,7 @@
          <children>
             <HBox prefHeight="62.0" prefWidth="456.0">
                <children>
-                  <Label text="Темная тема">
+                  <Label fx:id="darkThemeLabel" text="Темная тема">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -57,7 +57,7 @@
                <children>
                   <HBox prefHeight="100.0" prefWidth="200.0">
                      <children>
-                        <Label text="Связаться с автором">
+                        <Label fx:id="contactLabel" text="Связаться с автором">
                            <font>
                               <Font size="14.0" />
                            </font>
