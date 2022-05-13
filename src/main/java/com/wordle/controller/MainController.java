@@ -71,9 +71,11 @@ public class MainController {
         mainHandler.onKeyPressed(gridPane, keyboardRow1, keyboardRow2, keyboardRow3, keyEvent);
     }
 
-    public void invisibleMainApplication() {
-        vboxTop.setVisible(false);
-        gridPane.setVisible(false);
-        vboxBottom.setVisible(false);
+    public void mainWindowLight() {
+
+    }
+
+    public void mainWindowDark() {
+
     }
 }

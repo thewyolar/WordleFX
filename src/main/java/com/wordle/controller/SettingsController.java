@@ -38,18 +38,26 @@ public class SettingsController {
 
     public Hyperlink getWordleHyperlink() { return wordleHyperlink; }
 
-    public void switchTheme(MouseEvent mouseEvent) {
+    public void settingsWindowLight() {
+        borderPane.setStyle("-fx-background-color: #212529");
+        darkThemeLabel.setStyle("-fx-text-fill: white");
+        settingsTitle.setStyle("-fx-text-fill: white");
+        contactLabel.setStyle("-fx-text-fill: white");
+    }
+
+    public void settingsWindowDark() {
+        borderPane.setStyle("-fx-background-color: white");
+        darkThemeLabel.setStyle("-fx-text-fill: black");
+        settingsTitle.setStyle("-fx-text-fill: black");
+        contactLabel.setStyle("-fx-text-fill: black");
+    }
+
+    public void switchSettingsWindowTheme(MouseEvent mouseEvent) {
         if (darkThemeSwitcher.isSelected()) {
-            borderPane.setStyle("-fx-background-color: #212529");
-            darkThemeLabel.setStyle("-fx-text-fill: white");
-            settingsTitle.setStyle("-fx-text-fill: white");
-            contactLabel.setStyle("-fx-text-fill: white");
+            settingsWindowLight();
         }
         else {
-            borderPane.setStyle("-fx-background-color: white");
-            darkThemeLabel.setStyle("-fx-text-fill: black");
-            settingsTitle.setStyle("-fx-text-fill: black");
-            contactLabel.setStyle("-fx-text-fill: black");
+            settingsWindowDark();
         }
     }
 }
