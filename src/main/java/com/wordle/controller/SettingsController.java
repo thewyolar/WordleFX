@@ -4,10 +4,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Hyperlink;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.Background;
-import javafx.scene.layout.BackgroundFill;
 import javafx.scene.layout.BorderPane;
-import javafx.scene.paint.Color;
 import org.controlsfx.control.ToggleSwitch;
 
 public class SettingsController {
@@ -19,6 +16,9 @@ public class SettingsController {
 
     @FXML
     private Label settingsTitle;
+
+    @FXML
+    private Label contactLabel;
 
     @FXML
     private ToggleSwitch darkThemeSwitcher;
@@ -41,10 +41,15 @@ public class SettingsController {
     public void switchTheme(MouseEvent mouseEvent) {
         if (darkThemeSwitcher.isSelected()) {
             borderPane.setStyle("-fx-background-color: #212529");
-
+            darkThemeLabel.setStyle("-fx-text-fill: white");
+            settingsTitle.setStyle("-fx-text-fill: white");
+            contactLabel.setStyle("-fx-text-fill: white");
         }
         else {
             borderPane.setStyle("-fx-background-color: white");
+            darkThemeLabel.setStyle("-fx-text-fill: black");
+            settingsTitle.setStyle("-fx-text-fill: black");
+            contactLabel.setStyle("-fx-text-fill: black");
         }
     }
 }
