@@ -4,12 +4,12 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ToggleButton?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.ToggleSwitch?>
 
 <BorderPane fx:id="borderPane" prefHeight="659.0" prefWidth="476.0" styleClass="main-screen" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.wordle.controller.SettingsController">
 
@@ -45,68 +45,14 @@
                         <Insets left="20.0" top="20.0" />
                      </HBox.margin>
                   </Label>
-                  <ToggleButton mnemonicParsing="false" text="ToggleButton" textAlignment="RIGHT">
+                  <ToggleSwitch prefHeight="18.0" prefWidth="34.0">
                      <HBox.margin>
-                        <Insets left="255.0" top="10.0" />
+                        <Insets left="280.0" top="20.0" />
                      </HBox.margin>
-                  </ToggleButton>
+                  </ToggleSwitch>
                </children>
             </HBox>
             <Line endX="355.0" startX="-100.0" stroke="#aeaeae" />
-            <HBox prefHeight="74.0" prefWidth="456.0">
-               <children>
-                  <Label text="Режим для дальтоников">
-                     <HBox.margin>
-                        <Insets left="20.0" top="20.0" />
-                     </HBox.margin>
-                     <font>
-                        <Font size="14.0" />
-                     </font>
-                  </Label>
-                  <ToggleButton mnemonicParsing="false" text="ToggleButton" textAlignment="RIGHT">
-                     <HBox.margin>
-                        <Insets left="180.0" top="20.0" />
-                     </HBox.margin>
-                  </ToggleButton>
-               </children>
-            </HBox>
-            <Line endX="355.0" layoutX="111.0" layoutY="73.0" startX="-100.0" stroke="#aeaeae" />
-            <HBox prefHeight="73.0" prefWidth="456.0">
-               <children>
-                  <Label text="Кнопка Ввод слева">
-                     <font>
-                        <Font size="14.0" />
-                     </font>
-                     <HBox.margin>
-                        <Insets left="20.0" top="20.0" />
-                     </HBox.margin>
-                  </Label>
-                  <ToggleButton mnemonicParsing="false" text="ToggleButton" textAlignment="RIGHT">
-                     <HBox.margin>
-                        <Insets left="215.0" top="20.0" />
-                     </HBox.margin>
-                  </ToggleButton>
-               </children>
-            </HBox>
-            <Line endX="355.0" layoutX="111.0" layoutY="149.0" startX="-100.0" stroke="#aeaeae" />
-            <HBox prefHeight="70.0" prefWidth="456.0">
-               <children>
-                  <Label text="Режим для слабовидящих">
-                     <HBox.margin>
-                        <Insets left="20.0" top="20.0" />
-                     </HBox.margin>
-                     <font>
-                        <Font size="14.0" />
-                     </font>
-                  </Label>
-                  <ToggleButton mnemonicParsing="false" text="ToggleButton" textAlignment="RIGHT">
-                     <HBox.margin>
-                        <Insets left="170.0" top="20.0" />
-                     </HBox.margin>
-                  </ToggleButton>
-               </children>
-            </HBox>
-            <Line endX="355.0" layoutX="111.0" layoutY="149.0" startX="-100.0" stroke="#aeaeae" />
             <VBox prefHeight="95.0" prefWidth="456.0">
                <children>
                   <HBox prefHeight="100.0" prefWidth="200.0">
@@ -149,7 +95,6 @@
                   </Hyperlink>
                </children>
             </VBox>
-            <Line endX="355.0" layoutX="111.0" layoutY="296.0" startX="-100.0" stroke="#aeaeae" />
             <Line endX="355.0" layoutX="111.0" layoutY="296.0" startX="-100.0" stroke="#aeaeae">
                <VBox.margin>
                   <Insets top="30.0" />
