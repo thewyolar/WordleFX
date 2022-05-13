@@ -47,7 +47,7 @@
                   </Label>
                   <ToggleSwitch prefHeight="18.0" prefWidth="34.0">
                      <HBox.margin>
-                        <Insets left="280.0" top="20.0" />
+                        <Insets left="300.0" top="20.0" />
                      </HBox.margin>
                   </ToggleSwitch>
                </children>
