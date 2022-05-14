@@ -27,6 +27,7 @@ public class MainHandler {
     private final int MAX_COLUMN = 4;
     private final int MAX_ROW = 5;
     private String winningWord;
+    public static int playedGames = 0;
 
     private void setLabelText(GridPane gridPane, int searchRow, int searchColumn, String input) {
         Label label = getLabel(gridPane, searchRow, searchColumn);
@@ -233,6 +234,7 @@ public class MainHandler {
         if (CURRENT_ROW <= MAX_ROW && CURRENT_COLUMN == MAX_COLUMN) {
             String guess = getWordFromCurrentRow(gridPane).toLowerCase();
             if (guess.equals(winningWord)) {
+                playedGames++;
                 updateRowColors(gridPane, CURRENT_ROW);
                 updateKeyboardColors(gridPane, keyboardRow1, keyboardRow2, keyboardRow3);
                 ResultWindow.display(true, winningWord);
@@ -240,6 +242,7 @@ public class MainHandler {
                 updateRowColors(gridPane, CURRENT_ROW);
                 updateKeyboardColors(gridPane, keyboardRow1, keyboardRow2, keyboardRow3);
                 if (CURRENT_ROW == MAX_ROW) {
+                    playedGames++;
                     ResultWindow.display(false, winningWord);
                     if (ResultWindow.getResetGame())
                         resetGame(gridPane, keyboardRow1, keyboardRow2, keyboardRow3);

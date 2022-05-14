@@ -52,7 +52,7 @@
                <children>
                   <HBox alignment="CENTER" prefHeight="45.0" prefWidth="456.0">
                      <children>
-                        <Label alignment="TOP_CENTER" contentDisplay="TOP" text="0" textAlignment="CENTER">
+                        <Label fx:id="playedGamesLabel" alignment="TOP_CENTER" contentDisplay="TOP" text="0" textAlignment="CENTER">
                            <font>
                               <Font size="24.0" />
                            </font>
@@ -60,7 +60,7 @@
                               <Insets top="10.0" />
                            </HBox.margin>
                         </Label>
-                        <Label alignment="TOP_CENTER" contentDisplay="TOP" text="100%" textAlignment="CENTER">
+                        <Label fx:id="totalWinsLabel" alignment="TOP_CENTER" contentDisplay="TOP" text="100%" textAlignment="CENTER">
                            <font>
                               <Font size="24.0" />
                            </font>
@@ -68,7 +68,7 @@
                               <Insets left="80.0" top="10.0" />
                            </HBox.margin>
                         </Label>
-                        <Label alignment="TOP_CENTER" contentDisplay="TOP" text="0" textAlignment="CENTER">
+                        <Label fx:id="winsInARowNow" alignment="TOP_CENTER" contentDisplay="TOP" text="0" textAlignment="CENTER">
                            <font>
                               <Font size="24.0" />
                            </font>
@@ -76,7 +76,7 @@
                               <Insets left="80.0" top="10.0" />
                            </HBox.margin>
                         </Label>
-                        <Label alignment="TOP_CENTER" contentDisplay="TOP" text="0" textAlignment="CENTER">
+                        <Label fx:id="consecutiveMaximum" alignment="TOP_CENTER" contentDisplay="TOP" text="0" textAlignment="CENTER">
                            <font>
                               <Font size="24.0" />
                            </font>
