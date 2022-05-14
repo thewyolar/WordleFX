@@ -27,7 +27,10 @@ public class MainHandler {
     private final int MAX_COLUMN = 4;
     private final int MAX_ROW = 5;
     private String winningWord;
-    public static int playedGames = 0;
+    private int playedGames = 0;
+    private int totalWins = 0;
+    private int winsInRowNow = 0;
+    private int winsInRowMax = 0;
 
     private void setLabelText(GridPane gridPane, int searchRow, int searchColumn, String input) {
         Label label = getLabel(gridPane, searchRow, searchColumn);
@@ -191,6 +194,7 @@ public class MainHandler {
         }
         PrintStream out = new PrintStream(System.out, true, "utf-8");
         out.println(winningWord);
+        System.out.println(playedGames);
     }
 
     private void onBackspacePressed(GridPane gridPane) {
