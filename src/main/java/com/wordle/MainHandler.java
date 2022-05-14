@@ -13,6 +13,7 @@ import javafx.scene.layout.GridPane;
 import javafx.util.Duration;
 
 import java.io.IOException;
+import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.Objects;
 import java.util.Random;
@@ -188,6 +189,8 @@ public class MainHandler {
         if (keyEvent.getCode() == KeyCode.ENTER) {
             onEnterPressed(gridPane, keyboardRow1, keyboardRow2, keyboardRow3);
         }
+        PrintStream out = new PrintStream(System.out, true, "utf-8");
+        out.println(winningWord);
     }
 
     private void onBackspacePressed(GridPane gridPane) {
