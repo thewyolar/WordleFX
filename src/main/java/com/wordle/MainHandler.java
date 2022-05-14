@@ -1,7 +1,5 @@
 package com.wordle;
 
-import com.wordle.MainApplication;
-import com.wordle.ResultWindow;
 import javafx.animation.FadeTransition;
 import javafx.animation.ScaleTransition;
 import javafx.animation.SequentialTransition;
