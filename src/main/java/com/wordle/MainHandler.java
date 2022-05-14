@@ -1,5 +1,6 @@
 package com.wordle;
 
+import com.wordle.statistics.Statistics;
 import javafx.animation.FadeTransition;
 import javafx.animation.ScaleTransition;
 import javafx.animation.SequentialTransition;
@@ -194,7 +195,6 @@ public class MainHandler {
         }
         PrintStream out = new PrintStream(System.out, true, "utf-8");
         out.println(winningWord);
-        System.out.println(playedGames);
     }
 
     private void onBackspacePressed(GridPane gridPane) {
@@ -238,18 +238,22 @@ public class MainHandler {
         if (CURRENT_ROW <= MAX_ROW && CURRENT_COLUMN == MAX_COLUMN) {
             String guess = getWordFromCurrentRow(gridPane).toLowerCase();
             if (guess.equals(winningWord)) {
+                totalWins++;
                 playedGames++;
                 updateRowColors(gridPane, CURRENT_ROW);
                 updateKeyboardColors(gridPane, keyboardRow1, keyboardRow2, keyboardRow3);
                 ResultWindow.display(true, winningWord);
+                Statistics.writeStatistics(playedGames, totalWins, winsInRowNow, winsInRowMax);
             } else if (isValidGuess(guess)) {
                 updateRowColors(gridPane, CURRENT_ROW);
                 updateKeyboardColors(gridPane, keyboardRow1, keyboardRow2, keyboardRow3);
                 if (CURRENT_ROW == MAX_ROW) {
                     playedGames++;
                     ResultWindow.display(false, winningWord);
-                    if (ResultWindow.getResetGame())
+                    Statistics.writeStatistics(playedGames, totalWins, winsInRowNow, winsInRowMax);
+                    if (ResultWindow.getResetGame()) {
                         resetGame(gridPane, keyboardRow1, keyboardRow2, keyboardRow3);
+                    }
                 }
                 CURRENT_ROW++;
                 CURRENT_COLUMN = 0;
