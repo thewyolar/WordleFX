@@ -6,7 +6,7 @@ import javafx.scene.control.Label;
 public class StatisticsController {
 
     @FXML
-    private Label consecutiveMaximum;
+    private Label winsInRowMaxLabel;
 
     @FXML
     private Label playedGamesLabel;
@@ -15,7 +15,7 @@ public class StatisticsController {
     private Label totalWinsLabel;
 
     @FXML
-    private Label winsInRowNow;
+    private Label winsInRowNowLabel;
 
     public void setPlayedGames(int value) {
         this.playedGamesLabel.setText(String.valueOf(value));
@@ -25,11 +25,11 @@ public class StatisticsController {
         this.totalWinsLabel.setText(String.valueOf(value));
     }
 
-    public void setWinsInARowNow(int value) {
-        this.winsInRowNow.setText(String.valueOf(value));
+    public void setWinsInRowNow(int value) {
+        this.winsInRowNowLabel.setText(String.valueOf(value));
     }
 
-    public void setConsecutiveMaximum(int value) {
-        this.consecutiveMaximum.setText(String.valueOf(value));
+    public void setWinsInRowMax(int value) {
+        this.winsInRowMaxLabel.setText(String.valueOf(value));
     }
 }
