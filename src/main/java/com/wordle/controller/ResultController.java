@@ -5,6 +5,7 @@ import com.wordle.MainHandler;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
@@ -26,40 +27,18 @@ public class ResultController {
     private Label winningWordLabel;
 
     @FXML
-    private Text timer;
+    private Button restartButton;
 
     @FXML
-    public void initialize() {
-        Timeline timeline = new Timeline(
-                new KeyFrame(Duration.seconds(1),
-                        e -> {
-                            LocalTime currentTime = LocalTime.now();
-                            int hours, minutes, seconds;
-                            long delta;
-                            LocalTime elapsedTime;
-                            if (currentTime.getHour() > 3) {
-                                delta = ChronoUnit.SECONDS.between(currentTime, LocalTime.MAX);
-                                hours = (int)Math.floor(delta / 3600);
-                                minutes = (int)Math.floor((delta - hours * 3600) / 60);
-                                seconds = (int)Math.floor(delta - hours * 3600 - minutes * 60);
-                                elapsedTime = LocalTime.of(hours + 3, minutes, seconds);
-                            } else {
-                                delta = ChronoUnit.SECONDS.between(currentTime, LocalTime.parse("03:00:00"));
-                                hours = (int)Math.floor(delta / 3600);
-                                minutes = (int)Math.floor((delta - hours * 3600) / 60);
-                                seconds = (int)Math.floor(delta - hours * 3600 - minutes * 60);
-                                elapsedTime = LocalTime.of(hours, minutes, seconds);
-                            }
-                            timer.setText(elapsedTime.toString());
-                        }));
-
-        timeline.setCycleCount(Timeline.INDEFINITE);
-        timeline.play();
-    }
+    private Button quitButton;
 
     public BorderPane getBorderPane() { return borderPane; }
 
     public Label getWinningWordLabel() { return winningWordLabel; }
+
+    public Button getRestartButton() { return restartButton; }
+
+    public Button getQuitButton() { return quitButton; }
 
     public void createResultGrid() {
         MainHandler.fillResultGrid(MainApplication.getController().getWordsGridPane(), gridPane);

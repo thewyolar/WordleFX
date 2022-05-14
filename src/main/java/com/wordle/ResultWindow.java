@@ -42,20 +42,16 @@ public class ResultWindow {
             winningWordLabel.setText("Загаданное слово: " + winningWord.toUpperCase());
         }
 
-        /*Button playAgainButton = new Button("PLAY AGAIN");
-        playAgainButton.getStyleClass().setAll("btn", "btn-primary");
-        playAgainButton.setOnMouseClicked(me -> {
+        resultController.getRestartButton().setOnMouseClicked(me -> {
             resetGame = true;
             stage.close();
         });
 
-        Button quitButton = new Button("  QUIT");
-        quitButton.getStyleClass().setAll("btn", "btn-warning");
-        quitButton.setOnMouseClicked(me -> {
+        resultController.getQuitButton().setOnMouseClicked(me -> {
             resetGame = false;
             quitApplication = true;
             stage.close();
-        });*/
+        });
 
         stage.setScene(scene);
         stage.setResizable(false);
