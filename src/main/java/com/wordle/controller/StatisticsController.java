@@ -20,4 +20,16 @@ public class StatisticsController {
     public void setPlayedGames(int value) {
         this.playedGamesLabel.setText(String.valueOf(value));
     }
+
+    public void setTotalWins(int value) {
+        this.totalWinsLabel.setText(String.valueOf(value));
+    }
+
+    public void setWinsInARowNow(int value) {
+        this.winsInARowNow.setText(String.valueOf(value));
+    }
+
+    public void setConsecutiveMaximum(int value) {
+        this.consecutiveMaximum.setText(String.valueOf(value));
+    }
 }
