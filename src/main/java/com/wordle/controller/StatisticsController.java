@@ -15,7 +15,7 @@ public class StatisticsController {
     private Label totalWinsLabel;
 
     @FXML
-    private Label winsInARowNow;
+    private Label winsInRowNow;
 
     public void setPlayedGames(int value) {
         this.playedGamesLabel.setText(String.valueOf(value));
@@ -26,7 +26,7 @@ public class StatisticsController {
     }
 
     public void setWinsInARowNow(int value) {
-        this.winsInARowNow.setText(String.valueOf(value));
+        this.winsInRowNow.setText(String.valueOf(value));
     }
 
     public void setConsecutiveMaximum(int value) {

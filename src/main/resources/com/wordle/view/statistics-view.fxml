@@ -68,7 +68,7 @@
                               <Insets left="80.0" top="10.0" />
                            </HBox.margin>
                         </Label>
-                        <Label fx:id="winsInARowNow" alignment="TOP_CENTER" contentDisplay="TOP" text="0" textAlignment="CENTER">
+                        <Label fx:id="winsInRowNow" alignment="TOP_CENTER" contentDisplay="TOP" text="0" textAlignment="CENTER">
                            <font>
                               <Font size="24.0" />
                            </font>
