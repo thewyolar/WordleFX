@@ -161,7 +161,7 @@ public class MainHandler {
             for (int j = 0; j < mainGrid.getColumnCount(); j++) {
                 if (!getLabelText(mainGrid, i, j).isEmpty()) {
                     String labelStyleClass = getLabelStyleClass(mainGrid, i, j);
-                    if (labelStyleClass.contains("correct-letter") /*|| labelStyleClass.contains("default-tile")*/) {
+                    if (labelStyleClass.contains("correct-letter")) {
                         Label label = new Label();
                         label.getStyleClass().add("correct-result-tile");
                         resultGrid.add(label, j, i);
