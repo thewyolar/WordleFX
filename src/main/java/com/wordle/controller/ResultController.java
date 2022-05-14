@@ -62,6 +62,6 @@ public class ResultController {
     public Label getWinningWordLabel() { return winningWordLabel; }
 
     public void createResultGrid() {
-        MainHandler.fillResultGrid(MainApplication.getController().getGridPane(), gridPane);
+        MainHandler.fillResultGrid(MainApplication.getController().getWordsGridPane(), gridPane);
     }
 }

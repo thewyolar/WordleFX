@@ -3,10 +3,12 @@ package com.wordle;
 import com.wordle.controller.ResultController;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 import java.io.IOException;
 import java.util.Objects;
@@ -24,8 +26,8 @@ public class ResultWindow {
 
     public static void display(boolean guessed, String winningWord) throws IOException {
         Stage stage = new Stage();
-        stage.initModality(Modality.APPLICATION_MODAL);
-        //stage.initModality(Modality.TRANSPARENT);
+        //stage.initModality(Modality.APPLICATION_MODAL);
+        stage.initStyle(StageStyle.UNDECORATED);
 
         FXMLLoader fxmlLoader = new FXMLLoader(ResultWindow.class.getResource("view/result-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());

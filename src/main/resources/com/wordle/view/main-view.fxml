@@ -34,7 +34,7 @@
                            </image></ImageView>
                      </children>
                   </Pane>
-                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="42.0" prefWidth="180.0" text="WORDLE" textAlignment="CENTER">
+                  <Label fx:id="gameTitleLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="42.0" prefWidth="180.0" text="WORDLE" textAlignment="CENTER">
                      <font>
                         <Font name="Arial Black" size="28.0" />
                      </font>
@@ -75,7 +75,7 @@
    </top>
 
    <center>
-      <GridPane fx:id="gridPane" alignment="TOP_CENTER" maxHeight="360.0" maxWidth="300.0" prefHeight="397.0" prefWidth="313.0" translateY="5.0" BorderPane.alignment="TOP_CENTER">
+      <GridPane fx:id="wordsGridPane" alignment="TOP_CENTER" maxHeight="360.0" maxWidth="300.0" prefHeight="397.0" prefWidth="313.0" translateY="5.0" BorderPane.alignment="TOP_CENTER">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" maxWidth="91.00000762939453" minWidth="10.0" prefWidth="58.8" />
           <ColumnConstraints hgrow="SOMETIMES" maxWidth="104.0000244140625" minWidth="10.0" prefWidth="59.00001220703125" />

@@ -5,6 +5,7 @@ import com.wordle.SettingsWindow;
 import com.wordle.StatisticsWindow;
 import com.wordle.MainHandler;
 import javafx.fxml.FXML;
+import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.BorderPane;
@@ -18,13 +19,16 @@ public class MainController {
     private final MainHandler mainHandler = new MainHandler();
 
     @FXML
+    private Label gameTitleLabel;
+
+    @FXML
     private BorderPane borderPane;
 
     @FXML
     private VBox vboxTop;
 
     @FXML
-    private GridPane gridPane;
+    private GridPane wordsGridPane;
 
     @FXML
     private ImageView helpIcon;
@@ -49,7 +53,7 @@ public class MainController {
 
     public BorderPane getBorderPane() { return borderPane; }
 
-    public GridPane getGridPane() { return gridPane; }
+    public GridPane getWordsGridPane() { return wordsGridPane; }
 
     public void showHelp() throws IOException {
         HelpWindow.display();
@@ -68,14 +72,16 @@ public class MainController {
     }
 
     public void onKeyPressed(KeyEvent keyEvent) throws IOException {
-        mainHandler.onKeyPressed(gridPane, keyboardRow1, keyboardRow2, keyboardRow3, keyEvent);
+        mainHandler.onKeyPressed(wordsGridPane, keyboardRow1, keyboardRow2, keyboardRow3, keyEvent);
     }
 
     public void mainWindowLight() {
-
+        borderPane.setStyle("-fx-background-color: #212529");
+        gameTitleLabel.setStyle("-fx-text-fill: white");
     }
 
     public void mainWindowDark() {
-
+        borderPane.setStyle("-fx-background-color: white");
+        gameTitleLabel.setStyle("-fx-text-fill: black");
     }
 }

@@ -14,7 +14,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane prefHeight="659.0" prefWidth="476.0" styleClass="main-screen" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.wordle.controller.HelpController">
+<BorderPane fx:id="borderPane" prefHeight="659.0" prefWidth="476.0" styleClass="main-screen" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.wordle.controller.HelpController">
 
    <stylesheets>
       <URL value="@../css/main-view.css" />
@@ -25,7 +25,7 @@
          <children>
             <HBox prefHeight="56.0" prefWidth="456.0">
                <children>
-                  <Label alignment="CENTER" prefHeight="56.0" prefWidth="446.0" text="ПРАВИЛА ИГРЫ">
+                  <Label fx:id="gameRulesLabel" alignment="CENTER" prefHeight="56.0" prefWidth="446.0" text="ПРАВИЛА ИГРЫ">
                      <font>
                         <Font name="Arial Bold" size="18.0" />
                      </font>
@@ -35,7 +35,7 @@
       </VBox>
    </top>
    <bottom>
-      <ScrollPane maxWidth="548.0" prefHeight="580.0" prefWidth="456.0" BorderPane.alignment="TOP_CENTER">
+      <ScrollPane fx:id="scrollPane" maxWidth="548.0" prefHeight="580.0" prefWidth="456.0" BorderPane.alignment="TOP_CENTER">
          <content>
             <VBox prefHeight="760.0" prefWidth="398.0">
                <children>

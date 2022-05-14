@@ -1,5 +1,7 @@
 package com.wordle.controller;
 
+import com.wordle.HelpWindow;
+import com.wordle.MainApplication;
 import javafx.fxml.FXML;
 import javafx.scene.control.Hyperlink;
 import javafx.scene.control.Label;
@@ -8,6 +10,12 @@ import javafx.scene.layout.BorderPane;
 import org.controlsfx.control.ToggleSwitch;
 
 public class SettingsController {
+
+    MainController mainController = MainApplication.getController();
+    HelpController helpController = HelpWindow.getController();
+
+    private boolean lightTheme = true;
+
     @FXML
     private BorderPane borderPane;
 
@@ -55,9 +63,14 @@ public class SettingsController {
     public void switchSettingsWindowTheme(MouseEvent mouseEvent) {
         if (darkThemeSwitcher.isSelected()) {
             settingsWindowLight();
+            mainController.mainWindowLight();
+            //helpController.helpWindowLight();
         }
         else {
+            lightTheme = false;
             settingsWindowDark();
+            mainController.mainWindowDark();
+            //helpController.helpWindowDark();
         }
     }
 }
