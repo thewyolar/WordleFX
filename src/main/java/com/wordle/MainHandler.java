@@ -160,12 +160,13 @@ public class MainHandler {
         for (int i = 0; i < mainGrid.getRowCount(); i++) {
             for (int j = 0; j < mainGrid.getColumnCount(); j++) {
                 if (!getLabelText(mainGrid, i, j).isEmpty()) {
-                    if (getLabelStyleClass(mainGrid, i, j).contains("correct-letter") || getLabelStyleClass(mainGrid, i, j).contains("default-tile")) {
+                    String labelStyleClass = getLabelStyleClass(mainGrid, i, j);
+                    if (labelStyleClass.contains("correct-letter") /*|| labelStyleClass.contains("default-tile")*/) {
                         Label label = new Label();
                         label.getStyleClass().add("correct-result-tile");
                         resultGrid.add(label, j, i);
                     }
-                    else if (getLabelStyleClass(mainGrid, i, j).contains("present-letter")) {
+                    else if (labelStyleClass.contains("present-letter")) {
                         Label label = new Label();
                         label.getStyleClass().add("present-result-tile");
                         resultGrid.add(label, j, i);
