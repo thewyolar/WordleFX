@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public abstract class Statistics {
 
-    private static final File statisticsFile = new File("src/main/java/com/wordle/statistics/statistics.bin");
+    private static final File statisticsFile = new File("src/main/java/com/wordle/statistics/stats.bin");
 
     private static ArrayList<Integer> statisticsList = new ArrayList<>();
 
