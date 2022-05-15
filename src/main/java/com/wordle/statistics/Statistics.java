@@ -69,7 +69,7 @@ public abstract class Statistics {
         if ((secondList == null) || secondList.isEmpty())
             return firstList;
 
-        ArrayList<Integer> result = new ArrayList(firstList.size() + secondList.size()); // Закладываем размер достаточный для всех элементов
+        ArrayList<Integer> result = new ArrayList(firstList.size() + secondList.size());
         result.addAll(firstList);
         result.addAll(secondList);
 
