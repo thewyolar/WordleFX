@@ -13,9 +13,9 @@ import java.io.IOException;
 
 public class StatisticsWindow {
 
-    private static int[] statistics = Statistics.getStatistics();
-
     public static void display() throws IOException {
+        int[] statistics = Statistics.getStatistics();
+
         Stage stage = new Stage();
         FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("view/statistics-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
