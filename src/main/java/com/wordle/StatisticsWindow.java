@@ -16,9 +16,6 @@ public class StatisticsWindow {
 
     public static void display() throws IOException {
         int[] statistics = Statistics.getStatistics();
-        for (int i = 0; i < statistics.length; i++) {
-            System.out.println(statistics[i]);
-        }
 
         Stage stage = new Stage();
         FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("view/statistics-view.fxml"));

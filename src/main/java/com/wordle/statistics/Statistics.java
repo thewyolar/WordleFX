@@ -13,15 +13,57 @@ public abstract class Statistics {
         readStatistics();
         int[] result = new int[4];
         result[0] = statisticsList.size();
-
-        for (int i = 0; i < statisticsList.size(); i++) {
-            if (statisticsList.get(i) == 1)
-                result[1] += statisticsList.get(i);
-        }
+        result[1] = getTotalWins();
+        result[2] = getWinsInRowNow();
+        result[3] = getWinsInRowMax();
 
         System.out.println(statisticsList.toString());
 
         return result;
+    }
+
+    public static int getTotalWins() {
+        int totalWins = 0;
+
+        for (int i = 0; i < statisticsList.size(); i++) {
+            if (statisticsList.get(i) == 1)
+                totalWins += statisticsList.get(i);
+        }
+
+        return totalWins;
+    }
+
+    public static int getWinsInRowNow() {
+        int count = 0;
+        int lastZeroIndex = 0;
+
+        for (int i = 0; i < statisticsList.size(); i++) {
+            if (statisticsList.get(i) == 0)
+                lastZeroIndex = i;
+        }
+
+        for (int j = lastZeroIndex + 1; j < statisticsList.size(); j++) {
+            if (statisticsList.get(j) == 1)
+                count++;
+        }
+        return count;
+    }
+
+    public static int getWinsInRowMax() {
+        int count = 1;
+        int maxCount = 1;
+
+        for (int i = 1; i < statisticsList.size(); i++) {
+            if (statisticsList.get(i) == statisticsList.get(i - 1) && statisticsList.get(i) == 1) {
+                count++;
+                if (count > maxCount)
+                    maxCount = count;
+            }
+            else
+                count = 1;
+        }
+
+        return maxCount;
     }
 
     public static void readStatistics() {
@@ -51,7 +93,7 @@ public abstract class Statistics {
             }
             writeFile(statistics);
         } catch (IOException | ClassNotFoundException e) {
-            System.out.println(e.getMessage());
+            e.printStackTrace();
         }
     }
 
