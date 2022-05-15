@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d1e55c77-bdc5-43bd-8694-a681fae26d0b" name="Changes" comment="Update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wordle/statistics/Statistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wordle/statistics/Statistics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wordle/MainHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wordle/MainHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +100,7 @@
       <workItem from="1652606804860" duration="7482000" />
       <workItem from="1652615101611" duration="1247000" />
       <workItem from="1652616362328" duration="50000" />
-      <workItem from="1652629754069" duration="7677000" />
+      <workItem from="1652629754069" duration="8068000" />
     </task>
     <task id="LOCAL-00001" summary="Update">
       <created>1652460710442</created>
@@ -326,7 +326,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652637497853</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Update">
+      <created>1652637539845</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1652637539845</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -354,11 +361,6 @@
           <properties class="java.io.FileNotFoundException" package="java.io" />
           <option name="timeStamp" value="6" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/wordle/MainHandler.java</url>
-          <line>242</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

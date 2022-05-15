@@ -276,6 +276,7 @@ public class MainHandler {
 
     public void resetGame(GridPane gridPane, GridPane keyboardRow1, GridPane keyboardRow2, GridPane keyboardRow3) {
         getRandomWord();
+        statistics = new ArrayList<Integer>();
         Label label;
         for (Node child : gridPane.getChildren())
             if (child instanceof Label) {
