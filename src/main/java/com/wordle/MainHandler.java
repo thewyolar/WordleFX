@@ -28,10 +28,7 @@ public class MainHandler {
     private final int MAX_COLUMN = 4;
     private final int MAX_ROW = 5;
     private String winningWord;
-    private int playedGames = 0;
-    private int totalWins = 0;
-    private int winsInRowNow = 0;
-    private int winsInRowMax = 0;
+    private ArrayList<Integer> statistics = new ArrayList<Integer>();
 
     private void setLabelText(GridPane gridPane, int searchRow, int searchColumn, String input) {
         Label label = getLabel(gridPane, searchRow, searchColumn);
@@ -195,6 +192,7 @@ public class MainHandler {
         }
         PrintStream out = new PrintStream(System.out, true, "utf-8");
         out.println(winningWord);
+        System.out.println(statistics);
     }
 
     private void onBackspacePressed(GridPane gridPane) {
@@ -238,19 +236,18 @@ public class MainHandler {
         if (CURRENT_ROW <= MAX_ROW && CURRENT_COLUMN == MAX_COLUMN) {
             String guess = getWordFromCurrentRow(gridPane).toLowerCase();
             if (guess.equals(winningWord)) {
-                totalWins++;
-                playedGames++;
+                statistics.add(1);
                 updateRowColors(gridPane, CURRENT_ROW);
                 updateKeyboardColors(gridPane, keyboardRow1, keyboardRow2, keyboardRow3);
                 ResultWindow.display(true, winningWord);
-                Statistics.writeStatistics(playedGames, totalWins, winsInRowNow, winsInRowMax);
+                Statistics.writeStatistics(statistics);
             } else if (isValidGuess(guess)) {
                 updateRowColors(gridPane, CURRENT_ROW);
                 updateKeyboardColors(gridPane, keyboardRow1, keyboardRow2, keyboardRow3);
                 if (CURRENT_ROW == MAX_ROW) {
-                    playedGames++;
+                    statistics.add(0);
                     ResultWindow.display(false, winningWord);
-                    Statistics.writeStatistics(playedGames, totalWins, winsInRowNow, winsInRowMax);
+                    Statistics.writeStatistics(statistics);
                     if (ResultWindow.getResetGame()) {
                         resetGame(gridPane, keyboardRow1, keyboardRow2, keyboardRow3);
                     }

@@ -10,21 +10,23 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class StatisticsWindow {
 
     public static void display() throws IOException {
-        int[] statistics = Statistics.getStatistics();
+        ArrayList<Integer> statistics = Statistics.getStatistics();
+        System.out.println(statistics);
 
         Stage stage = new Stage();
         FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("view/statistics-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
 
         StatisticsController statisticsController = fxmlLoader.getController();
-        statisticsController.setPlayedGames(statistics[0]);
-        statisticsController.setTotalWins(statistics[1]);
-        statisticsController.setWinsInRowNow(statistics[2]);
-        statisticsController.setWinsInRowMax(statistics[3]);
+        statisticsController.setPlayedGames(statistics.size());
+        statisticsController.setTotalWins(0);
+        statisticsController.setWinsInRowNow(0);
+        statisticsController.setWinsInRowMax(0);
 
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.setTitle("Статистика");
