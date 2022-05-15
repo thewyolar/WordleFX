@@ -15,18 +15,20 @@ import java.util.ArrayList;
 public class StatisticsWindow {
 
     public static void display() throws IOException {
-        ArrayList<Integer> statistics = Statistics.getStatistics();
-        System.out.println(statistics);
+        int[] statistics = Statistics.getStatistics();
+        for (int i = 0; i < statistics.length; i++) {
+            System.out.println(statistics[i]);
+        }
 
         Stage stage = new Stage();
         FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("view/statistics-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
 
         StatisticsController statisticsController = fxmlLoader.getController();
-        statisticsController.setPlayedGames(statistics.size());
-        statisticsController.setTotalWins(0);
-        statisticsController.setWinsInRowNow(0);
-        statisticsController.setWinsInRowMax(0);
+        statisticsController.setPlayedGames(statistics[0]);
+        statisticsController.setTotalWins(statistics[1]);
+        statisticsController.setWinsInRowNow(statistics[2]);
+        statisticsController.setWinsInRowMax(statistics[3]);
 
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.setTitle("Статистика");
