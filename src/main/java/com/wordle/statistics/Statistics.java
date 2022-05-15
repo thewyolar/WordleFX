@@ -19,15 +19,7 @@ public abstract class Statistics {
                 result[1] += statisticsList.get(i);
         }
 
-        if (statisticsList.size() == 1) {
-            result[3] = statisticsList.get(statisticsList.size() - 1);
-        } else {
-            for (int j = 0; j < statisticsList.size() - 1; j++) {
-                if (statisticsList.get(j) == statisticsList.get(j + 1)) {
-                    result[3] += statisticsList.get(j) + statisticsList.get(j + 1);
-                }
-            }
-        }
+        System.out.println(statisticsList.toString());
 
         return result;
     }
