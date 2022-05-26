@@ -20,10 +20,7 @@ import java.io.IOException;
  */
 public class MainController {
 
-    /**
-     * mainHandler - содержит логику, необходимую для контроллера {@link MainController}
-     * используется для сохранения "чистоты" в контроллере
-     */
+    /** mainHandler - содержит логику, необходимую для работы контроллера {@link MainController} */
     private final MainHandler mainHandler = new MainHandler();
 
     /** gameTitleLabel - метка с названием игры  */

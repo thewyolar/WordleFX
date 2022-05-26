@@ -17,17 +17,38 @@ import java.util.ArrayList;
 import java.util.Objects;
 import java.util.Random;
 
+/**
+ * Класс, реализующий основную логику приложения
+ * используется для сохранения "чистоты" в контроллере {@link com.wordle.controller.MainController}
+ * @author Alexey Karabanov
+ */
 public class MainHandler {
 
+    /** firstRowLetters - список всех букв первой строки экранной клавиатуры */
     private final String[] firstRowLetters = {"Й", "Ц", "У", "К", "Е", "Н", "Г", "Ш", "Щ", "З", "Х", "Ъ"};
+
+    /** firstRowLetters - список всех букв средней строки экранной клавиатуры */
     private final String[] secondRowLetters = {"Ф", "Ы", "В", "А", "П", "Р", "О", "Л", "Д", "Ж", "Э"};
+
+    /** firstRowLetters - список всех букв последней строки экранной клавиатуры */
     private final String[] thirdRowLetters = {"Я", "С", "М", "И", "Т", "Ь", "Б", "Ю"};
 
+    /** CURRENT_ROW - содержит номер текущей строки */
     private int CURRENT_ROW = 0;
+
+    /** CURRENT_COLUMN - содержит номер текущего столбца */
     private int CURRENT_COLUMN = 0;
-    private final int MAX_COLUMN = 4;
+
+    /** MAX_COLUMN - содержит номер последней строки */
     private final int MAX_ROW = 5;
+
+    /** MAX_ROW - содержит номер последнего столбца */
+    private final int MAX_COLUMN = 4;
+
+    /** winningWord - загаданное слово */
     private String winningWord;
+
+    /** statistics - список, содержащий информацию о победах и проигрышах */
     private ArrayList<Integer> statistics = new ArrayList<Integer>();
 
     private void setLabelText(GridPane gridPane, int searchRow, int searchColumn, String input) {
