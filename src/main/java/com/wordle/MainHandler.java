@@ -115,6 +115,13 @@ public class MainHandler {
         return null;
     }
 
+    /**
+     * Устанавливает класс со стилями для метки
+     * @param gridPane - таблица, содержащая метки с буквами
+     * @param searchRow - номер строки с буквой
+     * @param searchColumn - номер столбца с буквой
+     * @param styleClass - название класса со стилями
+     */
     private void setLabelStyleClass(GridPane gridPane, int searchRow, int searchColumn, String styleClass) {
         Label label = getLabel(gridPane, searchRow, searchColumn);
         if (label != null) {
@@ -122,6 +129,12 @@ public class MainHandler {
         }
     }
 
+    /**
+     * Возвращает класс со стилями для метки по номеру строки и столбца
+     * @param gridPane - таблица, содержащая метки с буквами
+     * @param searchRow - номер строки с буквой
+     * @param searchColumn - номер столбца с буквой
+     */
     private static String getLabelStyleClass(GridPane gridPane, int searchRow, int searchColumn) {
         Label label = getLabel(gridPane, searchRow, searchColumn);
         if (label != null)
@@ -129,6 +142,12 @@ public class MainHandler {
         return null;
     }
 
+    /**
+     * Удаляет класс со стилями для метки по номеру строки и столбца
+     * @param gridPane - таблица, содержащая метки с буквами
+     * @param searchRow - номер строки с буквой
+     * @param searchColumn - номер столбца с буквой
+     */
     private void clearLabelStyleClass(GridPane gridPane, int searchRow, int searchColumn) {
         Label label = getLabel(gridPane, searchRow, searchColumn);
         if (label != null) {
@@ -136,6 +155,11 @@ public class MainHandler {
         }
     }
 
+    /**
+     * Обновляет цвет буквы из таблицу по номеру строки
+     * @param gridPane - таблица, содержащая метки с буквами
+     * @param searchRow - номер строки с буквой
+     */
     private void updateRowColors(GridPane gridPane, int searchRow) {
         for (int i = 0; i <= MAX_COLUMN; i++) {
             Label label = getLabel(gridPane, searchRow, i);
@@ -168,6 +192,13 @@ public class MainHandler {
         }
     }
 
+    /**
+     * Обновляет цвета всех клавиш на экранной клавиатуре в соответствии с введенным словом
+     * @param gridPane - таблица, содержащая метки с буквами
+     * @param keyboardRow1 - первая строка букв экранной клавиатуры
+     * @param keyboardRow2 - средняя строка букв экранной клавиатуры
+     * @param keyboardRow3 - последняя строка букв экранной клавиатуры
+     */
     private void updateKeyboardColors(GridPane gridPane, GridPane keyboardRow1, GridPane keyboardRow2, GridPane keyboardRow3) {
         String currentWord = getWordFromCurrentRow(gridPane).toLowerCase();
         for (int i = 0; i <= MAX_COLUMN; i++) {
@@ -197,6 +228,11 @@ public class MainHandler {
         }
     }
 
+    /**
+     * Возвращает слово из таблицы
+     * @param gridPane - таблица, содержащая слова
+     * @return возвращает слово из текущей строки
+     */
     private String getWordFromCurrentRow(GridPane gridPane) {
         StringBuilder input = new StringBuilder();
         for (int j = 0; j <= MAX_COLUMN; j++)
@@ -204,6 +240,11 @@ public class MainHandler {
         return input.toString();
     }
 
+    /**
+     * Заполняет окно с результатами {@link ResultWindow}
+     * @param mainGrid - таблица, содержащая введенные слова
+     * @param resultGrid - таблица для вывода результатов
+     */
     public static void fillResultGrid(GridPane mainGrid, GridPane resultGrid) {
         for (int i = 0; i < mainGrid.getRowCount(); i++) {
             for (int j = 0; j < mainGrid.getColumnCount(); j++) {
@@ -229,6 +270,15 @@ public class MainHandler {
         }
     }
 
+    /**
+     * Обрабатывает событие нажатия клавиши на клавиатуре
+     * @param gridPane - таблица, содержащая введенные слова
+     * @param keyboardRow1 - первая строка букв экранной клавиатуры
+     * @param keyboardRow2 - средняя строка букв экранной клавиатуры
+     * @param keyboardRow3 - последняя строка букв экранной клавиатуры
+     * @param keyEvent - событие, указывающее на то, что произошло нажатие клавиши
+     * @exception IOException - исключение ввода-вывода
+     */
     public void onKeyPressed(GridPane gridPane, GridPane keyboardRow1, GridPane keyboardRow2, GridPane keyboardRow3, KeyEvent keyEvent) throws IOException {
         if (keyEvent.getCode() == KeyCode.BACK_SPACE) {
             onBackspacePressed(gridPane);
@@ -243,6 +293,10 @@ public class MainHandler {
         System.out.println(statistics);
     }
 
+    /**
+     * Обрабатывает событие нажатия клавиши backspace
+     * @param gridPane - таблица, содержащая введенные слова
+     */
     private void onBackspacePressed(GridPane gridPane) {
         if ((CURRENT_COLUMN == MAX_COLUMN || CURRENT_COLUMN == 0) && !getLabelText(gridPane, CURRENT_ROW, CURRENT_COLUMN).isEmpty()) {
             setLabelText(gridPane, CURRENT_ROW, CURRENT_COLUMN, "");
@@ -256,10 +310,16 @@ public class MainHandler {
         }
     }
 
+    /**
+     * Обрабатывает событие нажатия клавиши с буквой
+     * @param gridPane - таблица, содержащая введенные слова
+     * @param keyEvent - событие, указывающее на то, что произошло нажатие клавиши
+     */
     private void onLetterPressed(GridPane gridPane, KeyEvent keyEvent) {
         if (getLabelText(gridPane, CURRENT_ROW, CURRENT_COLUMN).isEmpty()) {
             setLabelText(gridPane, CURRENT_ROW, CURRENT_COLUMN, keyEvent.getText());
             Label label = getLabel(gridPane, CURRENT_ROW, CURRENT_COLUMN);
+
             ScaleTransition firstScaleTransition = new ScaleTransition(Duration.millis(100), label);
             firstScaleTransition.fromXProperty().setValue(1);
             firstScaleTransition.toXProperty().setValue(1.1);
@@ -280,6 +340,14 @@ public class MainHandler {
         }
     }
 
+    /**
+     * Обрабатывает событие нажатия клавиши enter
+     * @param gridPane - таблица, содержащая введенные слова
+     * @param keyboardRow1 - первая строка букв экранной клавиатуры
+     * @param keyboardRow2 - средняя строка букв экранной клавиатуры
+     * @param keyboardRow3 - последняя строка букв экранной клавиатуры
+     * @exception IOException - исключение ввода-вывода
+     */
     private void onEnterPressed(GridPane gridPane, GridPane keyboardRow1, GridPane keyboardRow2, GridPane keyboardRow3) throws IOException {
         if (CURRENT_ROW <= MAX_ROW && CURRENT_COLUMN == MAX_COLUMN) {
             String guess = getWordFromCurrentRow(gridPane).toLowerCase();
@@ -314,14 +382,30 @@ public class MainHandler {
         }
     }
 
+    /**
+     * Выбирает случайное слово из словаря
+     */
     public void getRandomWord() {
         winningWord = MainApplication.getDictionaryWords().get(new Random().nextInt(MainApplication.getDictionaryWords().size()));
     }
 
+    /**
+     * Проверяет введенное слово на наличие в словаре
+     * для более быстрого поиска используется алгоритм бинарного поиска (словарь предварительно отсортирован по алфавиту)
+     * @param guess - проверяемое слово
+     * @return возвращает true, если слово присутствует в словаре, иначе - false
+     */
     private boolean isValidGuess(String guess) {
         return binarySearch(MainApplication.getDictionaryWords(), guess);
     }
 
+    /**
+     * Перезапускает игру
+     * @param gridPane - таблица, содержащая введенные слова
+     * @param keyboardRow1 - первая строка букв экранной клавиатуры
+     * @param keyboardRow2 - средняя строка букв экранной клавиатуры
+     * @param keyboardRow3 - последняя строка букв экранной клавиатуры
+     */
     public void resetGame(GridPane gridPane, GridPane keyboardRow1, GridPane keyboardRow2, GridPane keyboardRow3) {
         getRandomWord();
         statistics = new ArrayList<Integer>();
@@ -359,6 +443,12 @@ public class MainHandler {
         CURRENT_ROW = 0;
     }
 
+    /**
+     * Реализует алгоритм двоичного поиска
+     * @param list - список, по которому происходит поиск
+     * @param string - слово, которое нужно найти
+     * @return возвращает true, если слово найдено, иначе - false
+     */
     private boolean binarySearch(ArrayList<String> list, String string) {
         int low = 0, high = list.size() - 1;
         while (low <= high) {
@@ -375,6 +465,12 @@ public class MainHandler {
         return false;
     }
 
+    /**
+     * Проверяет содержит ли список слово или нет
+     * @param array - список для поиска слова
+     * @param letter - слово, которое нужно найти
+     * @return возвращает true, если слово присутствует, иначе - false
+     */
     private boolean contains(String[] array, String letter) {
         for (String string : array)
             if (string.equalsIgnoreCase(letter))

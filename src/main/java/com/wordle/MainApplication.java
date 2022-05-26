@@ -95,7 +95,7 @@ public class MainApplication extends Application {
     public static void showAlert() { AlertWindow.display(stageReference); }
 
     /**
-     * Иницилизация списка слов {@link MainApplication#dictionaryWords}
+     * Иницилизирует список слов {@link MainApplication#dictionaryWords}
      */
     public void initializeWordList() {
         InputStream dictionary = getClass().getResourceAsStream("dictionary.txt");
