@@ -15,12 +15,26 @@ import java.util.ArrayList;
 import java.util.Objects;
 import java.util.stream.Stream;
 
+/**
+ * Класс основного окна приложения
+ * @author Alexey Karabanov
+ */
 public class MainApplication extends Application {
 
+    /** dictionaryWords - список слов из словаря */
     private static final ArrayList<String> dictionaryWords = new ArrayList<>();
+
+    /** mainControllerReference - ссылка на объект класса MainController */
     private static MainController mainControllerReference;
+
+    /** stageReference - ссылка на объект класса основного окна приложения */
     private static Stage stageReference;
 
+    /**
+     * Метод для запуска приложения
+     * @param stage - графическое окно приложения
+     * @exception IOException - исключение ввода-вывода
+     */
     @Override
     public void start(Stage stage) throws IOException {
         initializeWordList();
@@ -52,16 +66,37 @@ public class MainApplication extends Application {
         launch();
     }
 
+    /**
+     * Возвращает значение поля {@link MainApplication#stageReference}
+     * @return возвращает ссылку на графическое окно приложения
+     */
     public static Stage getStage() { return stageReference; }
 
+    /**
+     * Возвращает значение поля {@link MainApplication#mainControllerReference}
+     * @return возвращает ссылку на контроллер графического окна приложения
+     */
     public static MainController getController() { return mainControllerReference; }
 
+    /**
+     * Возвращает значение поля {@link MainApplication#dictionaryWords}
+     * @return возвращает список слов из словаря
+     */
     public static ArrayList<String> getDictionaryWords() { return dictionaryWords; }
 
+    /**
+     * Метод для выхода из приложения
+     */
     public static void quit() { stageReference.close(); }
 
+    /**
+     * Запуск метода {@link AlertWindow#display(Stage)}
+     */
     public static void showAlert() { AlertWindow.display(stageReference); }
 
+    /**
+     * Иницилизация списка слов {@link MainApplication#dictionaryWords}
+     */
     public void initializeWordList() {
         InputStream dictionary = getClass().getResourceAsStream("dictionary.txt");
         Stream<String> dictionary_lines = new BufferedReader(new InputStreamReader(dictionary)).lines();
