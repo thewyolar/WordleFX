@@ -51,12 +51,26 @@ public class MainHandler {
     /** statistics - список, содержащий информацию о победах и проигрышах */
     private ArrayList<Integer> statistics = new ArrayList<Integer>();
 
+    /**
+     * Устанавливает текст метки, т.е. побуквенно вводит слово в таблицу
+     * @param gridPane - таблица для ввода слов
+     * @param searchRow - номер строки введенной буквы
+     * @param searchColumn - номер столбца введенной буквы
+     * @param input - введенная буква
+     */
     private void setLabelText(GridPane gridPane, int searchRow, int searchColumn, String input) {
         Label label = getLabel(gridPane, searchRow, searchColumn);
         if (label != null)
             label.setText(input.toUpperCase());
     }
 
+    /**
+     * Возвращает необходимый объект класса метки из таблицы
+     * @param gridPane - таблица, содержащая метки с буквами
+     * @param searchRow - номер строки с буквой
+     * @param searchColumn - номер столбца с буквой
+     * @return возвращает необходимую букву из таблицы
+     */
     private static Label getLabel(GridPane gridPane, int searchRow, int searchColumn) {
         for (Node child : gridPane.getChildren()) {
             Integer r = GridPane.getRowIndex(child);
@@ -69,6 +83,12 @@ public class MainHandler {
         return null;
     }
 
+    /**
+     * Возвращает из таблицы все объекты класса метки, содержащиеся в нужном слове
+     * @param gridPane - таблица, содержащая метки с буквами
+     * @param letter - слово, буквы которого нужно получить
+     * @return возвращает каждую букву нужного слова из таблицы
+     */
     private Label getLabel(GridPane gridPane, String letter) {
         Label label;
         for (Node child : gridPane.getChildren()) {
@@ -81,6 +101,13 @@ public class MainHandler {
         return null;
     }
 
+    /**
+     * Возвращает текст метки
+     * @param gridPane - таблица, содержащая метки с буквами
+     * @param searchRow - номер строки с буквой
+     * @param searchColumn - номер столбца с буквой
+     * @return возвращает букву слова по номеру строки и столбца
+     */
     private static String getLabelText(GridPane gridPane, int searchRow, int searchColumn) {
         Label label = getLabel(gridPane, searchRow, searchColumn);
         if (label != null)

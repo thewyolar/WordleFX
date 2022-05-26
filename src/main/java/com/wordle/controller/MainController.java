@@ -38,7 +38,7 @@ public class MainController {
     @FXML
     private VBox vboxTop;
 
-    /** wordsGridPane - таблица для ввода слов в центральной части окна приложения */
+    /** wordsGridPane - таблица со словами в центральной части окна приложения */
     @FXML
     private GridPane wordsGridPane;
 
