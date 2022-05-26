@@ -90,7 +90,7 @@ public class MainApplication extends Application {
     public static void quit() { stageReference.close(); }
 
     /**
-     * Запуск метода {@link AlertWindow#display(Stage)}
+     * Запускает метод {@link AlertWindow#display(Stage)}
      */
     public static void showAlert() { AlertWindow.display(stageReference); }
 
