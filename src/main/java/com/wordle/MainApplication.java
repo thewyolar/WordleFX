@@ -24,10 +24,10 @@ public class MainApplication extends Application {
     /** dictionaryWords - список слов из словаря */
     private static final ArrayList<String> dictionaryWords = new ArrayList<>();
 
-    /** mainControllerReference - ссылка на объект класса MainController */
+    /** mainControllerReference - ссылка на контроллер {@link MainController} */
     private static MainController mainControllerReference;
 
-    /** stageReference - ссылка на объект класса основного окна приложения */
+    /** stageReference - ссылка на графическое окно приложения */
     private static Stage stageReference;
 
     /**

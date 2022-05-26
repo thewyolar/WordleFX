@@ -14,8 +14,16 @@ import javafx.scene.layout.VBox;
 
 import java.io.IOException;
 
+/**
+ * Класс контроллера для взаимодействия графического окна приложения с FXML
+ * @author Alexey Karabanov
+ */
 public class MainController {
 
+    /**
+     * mainHandler - содержит логику, необходимую для контроллера {@link MainController}
+     * используется для сохранения "чистоты" в контроллере
+     */
     private final MainHandler mainHandler = new MainHandler();
 
     @FXML
