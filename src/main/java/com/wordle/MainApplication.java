@@ -84,19 +84,13 @@ public class MainApplication extends Application {
      */
     public static ArrayList<String> getDictionaryWords() { return dictionaryWords; }
 
-    /**
-     * Метод для выхода из приложения
-     */
+    /** Метод для выхода из приложения */
     public static void quit() { stageReference.close(); }
 
-    /**
-     * Запускает метод {@link AlertWindow#display(Stage)}
-     */
+    /** Запускает метод {@link AlertWindow#display(Stage)} */
     public static void showAlert() { AlertWindow.display(stageReference); }
 
-    /**
-     * Иницилизирует список слов {@link MainApplication#dictionaryWords}
-     */
+    /** Иницилизирует список слов {@link MainApplication#dictionaryWords} */
     public void initializeWordList() {
         InputStream dictionary = getClass().getResourceAsStream("dictionary.txt");
         Stream<String> dictionary_lines = new BufferedReader(new InputStreamReader(dictionary)).lines();

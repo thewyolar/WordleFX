@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d1e55c77-bdc5-43bd-8694-a681fae26d0b" name="Changes" comment="Update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wordle/statistics/Statistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wordle/statistics/Statistics.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/wordle/dictionary.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/wordle/dictionary.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wordle/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wordle/MainApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,6 +104,9 @@
       <workItem from="1652640927677" duration="749000" />
       <workItem from="1652650852705" duration="1689000" />
       <workItem from="1652652852255" duration="1772000" />
+      <workItem from="1653566746405" duration="1824000" />
+      <workItem from="1653572165365" duration="11399000" />
+      <workItem from="1653857914623" duration="102000" />
     </task>
     <task id="LOCAL-00001" summary="Update">
       <created>1652460710442</created>
@@ -351,7 +353,49 @@
       <option name="project" value="LOCAL" />
       <updated>1652653219509</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Update">
+      <created>1653575513780</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1653575513781</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Update">
+      <created>1653576485372</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1653576485372</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Update">
+      <created>1653578472932</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1653578472932</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Update">
+      <created>1653579223978</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1653579223978</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Update">
+      <created>1653580420025</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1653580420025</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Update">
+      <created>1653582406264</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1653582406264</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
