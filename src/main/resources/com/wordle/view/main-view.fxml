@@ -101,28 +101,76 @@
             <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="2" GridPane.rowIndex="1" />
             <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="3" GridPane.rowIndex="1" />
             <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="4" GridPane.rowIndex="1" />
-            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.rowIndex="2" />
+            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="2.0" />
+               </GridPane.margin></Label>
             <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="3" GridPane.rowIndex="2" />
-            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="4" GridPane.rowIndex="2" />
-            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.rowIndex="3" />
-            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="3" GridPane.rowIndex="3" />
-            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="4" GridPane.rowIndex="3" />
-            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.rowIndex="4" />
-            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="3" GridPane.rowIndex="4" />
-            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="2.0" />
+               </GridPane.margin></Label>
+            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="2.0" />
+               </GridPane.margin></Label>
+            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="2.0" />
+               </GridPane.margin></Label>
+            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="4" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="2.0" />
+               </GridPane.margin></Label>
+            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets top="1.0" />
+               </GridPane.margin></Label>
+            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin></Label>
+            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin></Label>
+            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin></Label>
+            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="4" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin></Label>
+            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets top="3.0" />
+               </GridPane.margin></Label>
+            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets top="3.0" />
+               </GridPane.margin></Label>
+            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets top="3.0" />
+               </GridPane.margin></Label>
+            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets top="3.0" />
+               </GridPane.margin></Label>
+            <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="4" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets top="3.0" />
+               </GridPane.margin></Label>
             <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.rowIndex="5" />
             <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="1" GridPane.rowIndex="5" />
             <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="2" GridPane.rowIndex="5" />
             <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="3" GridPane.rowIndex="5" />
             <Label styleClass="default-tile" stylesheets="@../css/main-view.css" GridPane.columnIndex="4" GridPane.rowIndex="5" />
          </children>
+         <BorderPane.margin>
+            <Insets top="5.0" />
+         </BorderPane.margin>
       </GridPane>
    </center>
 

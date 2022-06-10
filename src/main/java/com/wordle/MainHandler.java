@@ -49,7 +49,10 @@ public class MainHandler {
     private String winningWord;
 
     /** statistics - список, содержащий информацию о победах и проигрышах */
-    private ArrayList<Integer> statistics = new ArrayList<Integer>();
+    private int playedGames;
+    private int totalWins;
+    private int winsInRowNow;
+    private int winsInRowMax;
 
     /**
      * Устанавливает текст метки, т.е. побуквенно вводит слово в таблицу
@@ -290,7 +293,6 @@ public class MainHandler {
         }
         PrintStream out = new PrintStream(System.out, true, "utf-8");
         out.println(winningWord);
-        System.out.println(statistics);
     }
 
     /**
@@ -352,18 +354,29 @@ public class MainHandler {
         if (CURRENT_ROW <= MAX_ROW && CURRENT_COLUMN == MAX_COLUMN) {
             String guess = getWordFromCurrentRow(gridPane).toLowerCase();
             if (guess.equals(winningWord)) {
-                statistics.add(1);
+                playedGames += 1;
+                totalWins += 1;
+                winsInRowNow += 1;
+
+                if (winsInRowNow > winsInRowMax)
+                    winsInRowMax = winsInRowNow;
+
                 updateRowColors(gridPane, CURRENT_ROW);
                 updateKeyboardColors(gridPane, keyboardRow1, keyboardRow2, keyboardRow3);
                 ResultWindow.display(true, winningWord);
-                Statistics.writeStatistics(statistics);
+                Statistics.writeStatistics(playedGames, totalWins, winsInRowNow, winsInRowMax);
             } else if (isValidGuess(guess)) {
                 updateRowColors(gridPane, CURRENT_ROW);
                 updateKeyboardColors(gridPane, keyboardRow1, keyboardRow2, keyboardRow3);
                 if (CURRENT_ROW == MAX_ROW) {
-                    statistics.add(0);
+                    playedGames += 1;
+                    winsInRowNow = 0;
+
+                    if (winsInRowMax != 0)
+                        winsInRowMax = 0;
+
                     ResultWindow.display(false, winningWord);
-                    Statistics.writeStatistics(statistics);
+                    Statistics.writeStatistics(playedGames, totalWins, winsInRowNow, winsInRowMax);
                     if (ResultWindow.getResetGame()) {
                         resetGame(gridPane, keyboardRow1, keyboardRow2, keyboardRow3);
                     }
@@ -408,7 +421,10 @@ public class MainHandler {
      */
     public void resetGame(GridPane gridPane, GridPane keyboardRow1, GridPane keyboardRow2, GridPane keyboardRow3) {
         getRandomWord();
-        statistics = new ArrayList<Integer>();
+        playedGames = 0;
+        totalWins = 0;
+        winsInRowNow = 0;
+        winsInRowMax = 0;
         Label label;
         for (Node child : gridPane.getChildren())
             if (child instanceof Label) {

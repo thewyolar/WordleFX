@@ -1,80 +1,27 @@
 package com.wordle.statistics;
 
 import java.io.*;
-import java.util.ArrayList;
 
 public abstract class Statistics {
 
     private static final File statisticsFile = new File("src/main/java/com/wordle/statistics/stats.bin");
 
-    private static ArrayList<Integer> statisticsList = new ArrayList<>();
+    private static int[] statisticsList = new int[] {0, 0, 0, 0};
 
     public static int[] getStatistics() {
         readStatistics();
-        int[] result = new int[4];
-        result[0] = statisticsList.size();
-        result[1] = getTotalWins();
-        result[2] = getWinsInRowNow();
-        result[3] = getWinsInRowMax();
-
-        System.out.println(statisticsList.toString());
-
-        return result;
-    }
-
-    public static int getTotalWins() {
-        int totalWins = 0;
-
-        for (int i = 0; i < statisticsList.size(); i++) {
-            if (statisticsList.get(i) == 1)
-                totalWins += statisticsList.get(i);
-        }
-
-        return totalWins;
-    }
-
-    public static int getWinsInRowNow() {
-        int count = 0;
-        int lastZeroIndex = 0;
-
-        for (int i = 0; i < statisticsList.size(); i++) {
-            if (statisticsList.get(i) == 0)
-                lastZeroIndex = i;
-        }
-
-        for (int j = lastZeroIndex + 1; j < statisticsList.size(); j++) {
-            if (statisticsList.get(j) == 1)
-                count++;
-        }
-        return count;
-    }
-
-    public static int getWinsInRowMax() {
-        int count = 1;
-        int maxCount = 1;
-
-        for (int i = 1; i < statisticsList.size(); i++) {
-            if (statisticsList.get(i) == statisticsList.get(i - 1) && statisticsList.get(i) == 1) {
-                count++;
-                if (count > maxCount)
-                    maxCount = count;
-            }
-            else
-                count = 1;
-        }
-
-        return maxCount;
+        return statisticsList;
     }
 
     public static void readStatistics() {
         try {
             if (!statisticsFile.exists()) {
                 statisticsFile.createNewFile();
-                writeFile(new ArrayList<Integer>());
+                writeFile(0, 0, 0, 0);
             }
             else {
                 ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream(statisticsFile));
-                statisticsList = (ArrayList<Integer>) objectInputStream.readObject();
+                statisticsList = (int[]) objectInputStream.readObject();
                 objectInputStream.close();
             }
         } catch (IOException | ClassNotFoundException e) {
@@ -82,38 +29,35 @@ public abstract class Statistics {
         }
     }
 
-    public static void writeStatistics(ArrayList<Integer> statistics) {
+    public static void writeStatistics(int playedGames, int totalWins, int winsInRowNow, int winsInRowMax) {
         try {
             if (!statisticsFile.exists())
                 statisticsFile.createNewFile();
             else {
                 ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream(statisticsFile));
-                statisticsList = (ArrayList<Integer>) objectInputStream.readObject();
+                statisticsList = (int[]) objectInputStream.readObject();
                 objectInputStream.close();
             }
-            writeFile(statistics);
+            writeFile(playedGames, totalWins, winsInRowNow, winsInRowMax);
         } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
         }
     }
 
-    private static ArrayList<Integer> joinLists(ArrayList<Integer> firstList, ArrayList<Integer> secondList) {
-        if ((firstList == null) || (firstList.isEmpty() && (secondList != null)))
-            return secondList;
-        if ((secondList == null) || secondList.isEmpty())
-            return firstList;
+    private static void writeFile(int playedGames, int totalWins, int winsInRowNow, int winsInRowMax) throws IOException {
+        statisticsList[0] += playedGames;
+        statisticsList[1] += totalWins;
 
-        ArrayList<Integer> result = new ArrayList(firstList.size() + secondList.size());
-        result.addAll(firstList);
-        result.addAll(secondList);
+        if (winsInRowNow == 0)
+            statisticsList[2] = winsInRowNow;
+        else
+            statisticsList[2] += winsInRowNow;
 
-        return result;
-    }
+        if (statisticsList[2] > statisticsList[3])
+            statisticsList[3] = statisticsList[2];
 
-    private static void writeFile(ArrayList<Integer> statistics) throws IOException {
-        ArrayList<Integer> resultStatistics = joinLists(statisticsList, statistics);
         ObjectOutputStream objectOutputStream = new ObjectOutputStream(new FileOutputStream(statisticsFile));
-        objectOutputStream.writeObject(resultStatistics);
+        objectOutputStream.writeObject(statisticsList);
         objectOutputStream.close();
     }
 }

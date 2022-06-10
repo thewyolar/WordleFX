@@ -4,8 +4,6 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ProgressBar?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
@@ -13,7 +11,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane prefHeight="659.0" prefWidth="476.0" styleClass="main-screen" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.wordle.controller.StatisticsController">
+<BorderPane maxHeight="520.0" prefHeight="659.0" prefWidth="476.0" styleClass="main-screen" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.wordle.controller.StatisticsController">
 
    <stylesheets>
       <URL value="@../css/main-view.css" />
@@ -24,7 +22,7 @@
          <children>
             <HBox prefHeight="47.0" prefWidth="451.0">
                <children>
-                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="51.0" prefWidth="447.0" text="СТАТИСТИКА#1" textAlignment="CENTER">
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="51.0" prefWidth="447.0" text="СТАТИСТИКА#" textAlignment="CENTER">
                      <font>
                         <Font name="Arial Bold" size="18.0" />
                      </font>
@@ -34,6 +32,16 @@
                      <HBox.margin>
                         <Insets />
                      </HBox.margin>
+                     <graphic>
+                        <Label fx:id="statisticsLabel" text="0">
+                           <padding>
+                              <Insets left="150.0" />
+                           </padding>
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </graphic>
                   </Label>
                </children>
             </HBox>
@@ -46,7 +54,7 @@
       </VBox>
    </top>
    <center>
-      <VBox prefHeight="420.0" prefWidth="456.0" BorderPane.alignment="CENTER">
+      <VBox maxHeight="480.0" prefHeight="515.0" prefWidth="456.0" BorderPane.alignment="CENTER">
          <children>
             <VBox prefHeight="417.0" prefWidth="456.0">
                <children>
@@ -57,10 +65,10 @@
                               <Font size="24.0" />
                            </font>
                            <HBox.margin>
-                              <Insets top="10.0" />
+                              <Insets left="80.0" top="10.0" />
                            </HBox.margin>
                         </Label>
-                        <Label fx:id="totalWinsLabel" alignment="TOP_CENTER" contentDisplay="TOP" text="100%" textAlignment="CENTER">
+                        <Label fx:id="totalWinsLabel" alignment="TOP_CENTER" contentDisplay="TOP" text="0" textAlignment="CENTER">
                            <font>
                               <Font size="24.0" />
                            </font>
@@ -81,7 +89,7 @@
                               <Font size="24.0" />
                            </font>
                            <HBox.margin>
-                              <Insets left="80.0" top="10.0" />
+                              <Insets left="80.0" right="80.0" top="10.0" />
                            </HBox.margin>
                         </Label>
                      </children>
@@ -130,14 +138,14 @@
                         <Insets left="130.0" top="15.0" />
                      </VBox.margin>
                   </Label>
-                  <HBox prefHeight="50.0" prefWidth="456.0">
+                  <HBox prefHeight="60.0" prefWidth="456.0">
                      <children>
                         <Label text="1">
                            <HBox.margin>
-                              <Insets left="20.0" top="15.0" />
+                              <Insets left="20.0" top="20.0" />
                            </HBox.margin>
                            <font>
-                              <Font size="18.0" />
+                              <Font size="16.0" />
                            </font>
                         </Label>
                         <ProgressBar prefHeight="25.0" prefWidth="20.0" progress="0.0">
@@ -151,10 +159,10 @@
                      <children>
                         <Label text="2">
                            <font>
-                              <Font size="18.0" />
+                              <Font size="16.0" />
                            </font>
                            <HBox.margin>
-                              <Insets left="20.0" top="8.0" />
+                              <Insets left="20.0" top="10.0" />
                            </HBox.margin>
                         </Label>
                         <ProgressBar prefHeight="25.0" prefWidth="20.0" progress="0.0">
@@ -168,10 +176,10 @@
                      <children>
                         <Label text="3">
                            <font>
-                              <Font size="18.0" />
+                              <Font size="16.0" />
                            </font>
                            <HBox.margin>
-                              <Insets left="20.0" top="8.0" />
+                              <Insets left="20.0" top="10.0" />
                            </HBox.margin>
                         </Label>
                         <ProgressBar prefHeight="25.0" prefWidth="20.0" progress="0.0">
@@ -185,10 +193,10 @@
                      <children>
                         <Label text="4">
                            <font>
-                              <Font size="18.0" />
+                              <Font size="16.0" />
                            </font>
                            <HBox.margin>
-                              <Insets left="20.0" top="8.0" />
+                              <Insets left="20.0" top="10.0" />
                            </HBox.margin>
                         </Label>
                         <ProgressBar prefHeight="25.0" prefWidth="20.0" progress="0.0">
@@ -202,10 +210,10 @@
                      <children>
                         <Label text="5">
                            <font>
-                              <Font size="18.0" />
+                              <Font size="16.0" />
                            </font>
                            <HBox.margin>
-                              <Insets left="20.0" top="8.0" />
+                              <Insets left="20.0" top="10.0" />
                            </HBox.margin>
                         </Label>
                         <ProgressBar prefHeight="25.0" prefWidth="20.0" progress="0.0">
@@ -219,10 +227,10 @@
                      <children>
                         <Label text="6">
                            <font>
-                              <Font size="18.0" />
+                              <Font size="16.0" />
                            </font>
                            <HBox.margin>
-                              <Insets left="20.0" top="8.0" />
+                              <Insets left="20.0" top="10.0" />
                            </HBox.margin>
                         </Label>
                         <ProgressBar prefHeight="25.0" prefWidth="20.0" progress="0.0">
@@ -234,56 +242,12 @@
                   </HBox>
                </children>
             </VBox>
-            <Line endX="355.0" startX="-100.0" stroke="#aeaeae" />
+            <Line endX="355.0" startX="-100.0" stroke="#aeaeae">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin></Line>
          </children>
       </VBox>
    </center>
-   <bottom>
-      <HBox prefHeight="142.0" prefWidth="456.0" BorderPane.alignment="CENTER">
-         <children>
-            <VBox prefHeight="139.0" prefWidth="226.0">
-               <children>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Следующее слово появится через" wrappingWidth="188.479736328125">
-                     <font>
-                        <Font size="15.0" />
-                     </font>
-                     <VBox.margin>
-                        <Insets left="20.0" top="15.0" />
-                     </VBox.margin>
-                  </Text>
-               </children>
-            </VBox>
-            <Line endX="-100.0" endY="170.0" startX="-100.0" stroke="#838383" />
-            <VBox prefHeight="147.0" prefWidth="230.0">
-               <children>
-                  <ImageView fitHeight="41.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../image/twitter.png" />
-                     </image>
-                     <VBox.margin>
-                        <Insets left="35.0" top="20.0" />
-                     </VBox.margin>
-                  </ImageView>
-                  <ImageView fitHeight="40.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../image/share.png" />
-                     </image>
-                     <VBox.margin>
-                        <Insets left="35.0" top="3.0" />
-                     </VBox.margin>
-                  </ImageView>
-                  <ImageView fitHeight="40.0" fitWidth="161.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../image/copy.png" />
-                     </image>
-                     <VBox.margin>
-                        <Insets left="35.0" top="3.0" />
-                     </VBox.margin>
-                  </ImageView>
-               </children>
-            </VBox>
-         </children>
-      </HBox>
-   </bottom>
    
 </BorderPane>

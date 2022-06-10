@@ -23,6 +23,7 @@ public class StatisticsWindow {
 
         StatisticsController statisticsController = fxmlLoader.getController();
         statisticsController.setPlayedGames(statistics[0]);
+        statisticsController.setStatisticsLabel(statistics[0]);
         statisticsController.setTotalWins(statistics[1]);
         statisticsController.setWinsInRowNow(statistics[2]);
         statisticsController.setWinsInRowMax(statistics[3]);

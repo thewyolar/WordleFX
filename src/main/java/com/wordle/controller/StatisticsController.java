@@ -6,16 +6,19 @@ import javafx.scene.control.Label;
 public class StatisticsController {
 
     @FXML
-    private Label winsInRowMaxLabel;
+    private Label playedGamesLabel;
 
     @FXML
-    private Label playedGamesLabel;
+    private Label statisticsLabel;
 
     @FXML
     private Label totalWinsLabel;
 
     @FXML
     private Label winsInRowNowLabel;
+
+    @FXML
+    private Label winsInRowMaxLabel;
 
     public void setPlayedGames(int value) {
         this.playedGamesLabel.setText(String.valueOf(value));
@@ -29,7 +32,7 @@ public class StatisticsController {
         this.winsInRowNowLabel.setText(String.valueOf(value));
     }
 
-    public void setWinsInRowMax(int value) {
-        this.winsInRowMaxLabel.setText(String.valueOf(value));
-    }
+    public void setWinsInRowMax(int value) { this.winsInRowMaxLabel.setText(String.valueOf(value)); }
+
+    public void setStatisticsLabel(int value) { this.statisticsLabel.setText(String.valueOf(value)); }
 }
