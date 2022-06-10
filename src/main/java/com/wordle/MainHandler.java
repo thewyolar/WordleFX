@@ -371,10 +371,6 @@ public class MainHandler {
                 if (CURRENT_ROW == MAX_ROW) {
                     playedGames += 1;
                     winsInRowNow = 0;
-
-                    if (winsInRowMax != 0)
-                        winsInRowMax = 0;
-
                     ResultWindow.display(false, winningWord);
                     Statistics.writeStatistics(playedGames, totalWins, winsInRowNow, winsInRowMax);
                     if (ResultWindow.getResetGame()) {
