@@ -48,10 +48,16 @@ public class MainHandler {
     /** winningWord - загаданное слово */
     private String winningWord;
 
-    /** statistics - список, содержащий информацию о победах и проигрышах */
+    /** playedGames - кол-во сыгранных игр */
     private int playedGames;
+
+    /** totalWins - кол-во победных игр */
     private int totalWins;
+
+    /** winsInRowNow - кол-во подряд сыгранных победных игр на данный момент */
     private int winsInRowNow;
+
+    /** winsInRowMax - максимальное кол-во подряд сыгранных победных игр */
     private int winsInRowMax;
 
     /**
