@@ -4,7 +4,7 @@ import java.io.*;
 
 public abstract class Statistics {
 
-    private static final File statisticsFile = new File("src/main/java/com/wordle/statistics/stats.bin");
+    private static final File statisticsFile = new File("src/main/resources/com/wordle/stats.bin");
 
     private static int[] statisticsList = new int[] {0, 0, 0, 0};
 
