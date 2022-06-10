@@ -22,8 +22,8 @@ public class StatisticsWindow {
         Scene scene = new Scene(fxmlLoader.load());
 
         StatisticsController statisticsController = fxmlLoader.getController();
-        statisticsController.setPlayedGames(statistics[0]);
         statisticsController.setStatisticsLabel(statistics[0]);
+        statisticsController.setPlayedGames(statistics[0]);
         statisticsController.setTotalWins(statistics[1]);
         statisticsController.setWinsInRowNow(statistics[2]);
         statisticsController.setWinsInRowMax(statistics[3]);
