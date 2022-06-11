@@ -57,6 +57,7 @@ public class StatisticsWindow {
         alert.setTitle("Уведомление");
         alert.setHeaderText(null);
         alert.setContentText("Результаты статистики скопированы в буфер обмена!");
+        ((Stage)alert.getDialogPane().getScene().getWindow()).getIcons().add(new Image(StatisticsWindow.class.getResourceAsStream("image/icon.png")));
         alert.showAndWait();
     }
 }

@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d1e55c77-bdc5-43bd-8694-a681fae26d0b" name="Changes" comment="Update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wordle/ResultWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wordle/ResultWindow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wordle/StatisticsWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wordle/StatisticsWindow.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -116,13 +117,6 @@
       <workItem from="1654769381966" duration="15033000" />
       <workItem from="1654850427364" duration="24700000" />
       <workItem from="1654947127566" duration="15750000" />
-    </task>
-    <task id="LOCAL-00013" summary="Update">
-      <created>1652531352993</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1652531352993</updated>
     </task>
     <task id="LOCAL-00014" summary="Update">
       <created>1652533865147</created>
@@ -460,7 +454,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654965933058</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="Update">
+      <created>1654970987237</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1654970987237</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

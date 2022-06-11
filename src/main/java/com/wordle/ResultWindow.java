@@ -84,7 +84,7 @@ public class ResultWindow {
         alert.setTitle("Уведомление");
         alert.setHeaderText(null);
         alert.setContentText("Текст результатов скопирован в буфер обмена!");
-
+        ((Stage)alert.getDialogPane().getScene().getWindow()).getIcons().add(new Image(StatisticsWindow.class.getResourceAsStream("image/icon.png")));
         alert.showAndWait();
     }
 }
