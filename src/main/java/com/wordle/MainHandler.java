@@ -280,6 +280,11 @@ public class MainHandler {
         }
     }
 
+    /**
+     * Считывает результаты {@link ResultWindow}
+     * @param resultGrid - таблица для вывода результатов
+     * @return возвращает отфторматированное строковое представление таблицы результатов
+     */
     public static String readResultGrid(GridPane resultGrid) {
         StringBuilder stringBuilder = new StringBuilder();
 
