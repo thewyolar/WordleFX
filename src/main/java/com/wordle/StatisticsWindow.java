@@ -54,11 +54,9 @@ public class StatisticsWindow {
         clipboard.setContent(content);
 
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
-
         alert.setTitle("Уведомление");
         alert.setHeaderText(null);
         alert.setContentText("Результаты статистики скопированы в буфер обмена!");
-
         alert.showAndWait();
     }
 }
