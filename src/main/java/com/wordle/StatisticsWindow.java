@@ -45,7 +45,7 @@ public class StatisticsWindow {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("Статистика Wordle\n\n");
         stringBuilder.append(String.format("\uD83D\uDE80 Игр сыграно - %d\n", Statistics.getStatistics()[0]));
-        stringBuilder.append(String.format("\uD83C\uDFC6 Побед всего - %d\n", Statistics.getStatistics()[1]));
+        stringBuilder.append(String.format("\uD83C\uDFC6 Побед всего - %d (%d%%)\n", Statistics.getStatistics()[1], Math.round((double)Statistics.getStatistics()[1] * 100 / Statistics.getStatistics()[0])));
         stringBuilder.append(String.format("\uD83C\uDFAF Подряд максимум - %d\n", Statistics.getStatistics()[3]));
         stringBuilder.append("#вордли\n\n");
         stringBuilder.append("https://github.com/thewyolar/WordleFX");
