@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1e55c77-bdc5-43bd-8694-a681fae26d0b" name="Changes" comment="Update">
+    <list default="true" id="d1e55c77-bdc5-43bd-8694-a681fae26d0b" name="Changes" comment="Update result window appearance animation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wordle/MainHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wordle/MainHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/wordle/view/statistics-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/wordle/view/statistics-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/wordle/view/result-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/wordle/view/result-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,14 +109,7 @@
       <workItem from="1653857914623" duration="102000" />
       <workItem from="1654769381966" duration="15033000" />
       <workItem from="1654850427364" duration="24700000" />
-      <workItem from="1654947127566" duration="4896000" />
-    </task>
-    <task id="LOCAL-00004" summary="Update">
-      <created>1652461141448</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1652461141448</updated>
+      <workItem from="1654947127566" duration="6114000" />
     </task>
     <task id="LOCAL-00005" summary="Update">
       <created>1652461299207</created>
@@ -455,7 +447,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654947634284</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Update result window appearance animation">
+      <created>1654952134890</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1654952134890</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -475,7 +474,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update statistics" />
     <MESSAGE value="Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update" />
+    <MESSAGE value="Update result window appearance animation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update result window appearance animation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

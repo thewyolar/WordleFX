@@ -13,7 +13,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.wordle.controller.ResultController">
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="342.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.wordle.controller.ResultController">
 
    <stylesheets>
       <URL value="@../css/main-view.css" />
@@ -31,50 +31,34 @@
    </top>
 
    <bottom>
-      <HBox maxHeight="150.0" prefHeight="166.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+      <HBox maxHeight="150.0" prefHeight="99.0" prefWidth="450.0" BorderPane.alignment="CENTER">
          <children>
-            <VBox prefHeight="139.0" prefWidth="226.0">
+            <VBox maxHeight="110.0" prefHeight="110.0" prefWidth="230.0">
                <children>
-                  <Button fx:id="restartButton" mnemonicParsing="false" prefHeight="39.0" prefWidth="122.0" text="Сыграть еще раз">
+                  <Button fx:id="restartButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="122.0" text="Сыграть еще раз">
                      <VBox.margin>
                         <Insets left="45.0" top="20.0" />
                      </VBox.margin>
                   </Button>
-                  <Button fx:id="quitButton" mnemonicParsing="false" prefHeight="34.0" prefWidth="74.0" text="Выйти">
+                  <Button fx:id="quitButton" mnemonicParsing="false" prefHeight="18.0" prefWidth="74.0" text="Выйти">
                      <VBox.margin>
-                        <Insets left="70.0" top="20.0" />
+                        <Insets left="70.0" top="10.0" />
                      </VBox.margin>
                   </Button>
                </children>
             </VBox>
-            <Line endX="-100.0" endY="160.0" startX="-100.0" startY="15.0" stroke="#838383">
+            <Line endX="-100.0" endY="110.0" startX="-100.0" startY="15.0" stroke="#838383">
                <HBox.margin>
                   <Insets />
                </HBox.margin></Line>
-            <VBox prefHeight="171.0" prefWidth="271.0">
+            <VBox maxHeight="110.0" prefHeight="110.0" prefWidth="230.0">
                <children>
-                  <ImageView fitHeight="41.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../image/twitter.png" />
-                     </image>
-                     <VBox.margin>
-                        <Insets left="60.0" top="10.0" />
-                     </VBox.margin>
-                  </ImageView>
-                  <ImageView fitHeight="40.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../image/share.png" />
-                     </image>
-                     <VBox.margin>
-                        <Insets left="60.0" top="3.0" />
-                     </VBox.margin>
-                  </ImageView>
                   <ImageView fitHeight="40.0" fitWidth="161.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../image/copy.png" />
                      </image>
                      <VBox.margin>
-                        <Insets left="60.0" top="3.0" />
+                        <Insets left="35.0" top="20.0" />
                      </VBox.margin>
                   </ImageView>
                </children>
@@ -84,7 +68,7 @@
    </bottom>
 
    <center>
-      <VBox prefHeight="179.0" prefWidth="470.0" BorderPane.alignment="CENTER">
+      <VBox prefHeight="171.0" prefWidth="451.0" BorderPane.alignment="CENTER">
          <children>
             <GridPane fx:id="gridPane" hgap="5.0" maxHeight="150.0" maxWidth="150.0" prefHeight="150.0" prefWidth="150.0" vgap="5.0">
                <VBox.margin>
