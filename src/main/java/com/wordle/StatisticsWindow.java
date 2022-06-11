@@ -55,7 +55,7 @@ public class StatisticsWindow {
 
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
 
-        alert.setTitle("Предупреждение");
+        alert.setTitle("Уведомление");
         alert.setHeaderText(null);
         alert.setContentText("Результаты статистики скопированы в буфер обмена!");
 

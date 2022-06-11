@@ -24,20 +24,20 @@ public class StatisticsController {
     @FXML
     private ImageView shareButton;
 
+    public ImageView getShareButton() { return shareButton; }
+
     public void setPlayedGames(int value) {
-        this.playedGamesLabel.setText(String.valueOf(value));
+        playedGamesLabel.setText(String.valueOf(value));
     }
 
-    public void setTotalWins(int value) { this.totalWinsLabel.setText(String.valueOf(value)); }
+    public void setTotalWins(int value) { totalWinsLabel.setText(String.valueOf(value)); }
 
-    public void setWinsInRowNow(int value) { this.winsInRowNowLabel.setText(String.valueOf(value)); }
+    public void setWinsInRowNow(int value) {winsInRowNowLabel.setText(String.valueOf(value)); }
 
-    public void setWinsInRowMax(int value) { this.winsInRowMaxLabel.setText(String.valueOf(value)); }
+    public void setWinsInRowMax(int value) { winsInRowMaxLabel.setText(String.valueOf(value)); }
 
     public void setStatisticsLabel(int value) {
         String s = statisticsLabel.getText();
-        this.statisticsLabel.setText(s + String.valueOf(value));
+        this.statisticsLabel.setText(s + value);
     }
-
-    public ImageView getShareButton() { return this.shareButton; }
 }

@@ -280,6 +280,28 @@ public class MainHandler {
         }
     }
 
+    public static String readResultGrid(GridPane resultGrid) {
+        StringBuilder stringBuilder = new StringBuilder();
+
+        for (int i = 0; i < resultGrid.getRowCount(); i++) {
+            for (int j = 0; j < resultGrid.getColumnCount(); j++) {
+                String labelStyleClass = getLabelStyleClass(resultGrid, i, j);
+                if (labelStyleClass.contains("correct-result-tile")) {
+                    stringBuilder.append("\uD83D\uDFE9");
+                }
+                else if (labelStyleClass.contains("present-result-tile")) {
+                    stringBuilder.append("\uD83D\uDFE8");
+                }
+                else {
+                    stringBuilder.append("⬜");
+                }
+            }
+            stringBuilder.append("\n");
+        }
+
+        return stringBuilder.toString();
+    }
+
     /**
      * Обрабатывает событие нажатия клавиши на клавиатуре
      * @param gridPane - таблица, содержащая введенные слова
@@ -371,16 +393,16 @@ public class MainHandler {
 
                 updateRowColors(gridPane, CURRENT_ROW);
                 updateKeyboardColors(gridPane, keyboardRow1, keyboardRow2, keyboardRow3);
-                ResultWindow.display(true, winningWord);
                 Statistics.writeStatistics(playedGames, totalWins, winsInRowNow, winsInRowMax);
+                ResultWindow.display(true, winningWord);
             } else if (isValidGuess(guess)) {
                 updateRowColors(gridPane, CURRENT_ROW);
                 updateKeyboardColors(gridPane, keyboardRow1, keyboardRow2, keyboardRow3);
                 if (CURRENT_ROW == MAX_ROW) {
                     playedGames += 1;
                     winsInRowNow = 0;
-                    ResultWindow.display(false, winningWord);
                     Statistics.writeStatistics(playedGames, totalWins, winsInRowNow, winsInRowMax);
+                    ResultWindow.display(false, winningWord);
                     if (ResultWindow.getResetGame()) {
                         resetGame(gridPane, keyboardRow1, keyboardRow2, keyboardRow3);
                     }

@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1e55c77-bdc5-43bd-8694-a681fae26d0b" name="Changes" comment="Update result window appearance animation">
+    <list default="true" id="d1e55c77-bdc5-43bd-8694-a681fae26d0b" name="Changes" comment="Update statistics">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wordle/MainHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wordle/MainHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wordle/ResultWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wordle/ResultWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wordle/StatisticsWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wordle/StatisticsWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wordle/controller/ResultController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wordle/controller/ResultController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wordle/controller/StatisticsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wordle/controller/StatisticsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/wordle/view/result-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/wordle/view/result-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,24 +43,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Projects/Java/WordleFX&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.37011495&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "true",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "E:/Projects/Java/WordleFX/src/main/resources/com/wordle/image/screenshots",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.37011495",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Projects\Java\WordleFX\src\main\resources\com\wordle\image\screenshots" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Projects\Java\WordleFX\src\main\resources\com\wordle\image" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.wordle" />
     </key>
@@ -109,28 +120,7 @@
       <workItem from="1653857914623" duration="102000" />
       <workItem from="1654769381966" duration="15033000" />
       <workItem from="1654850427364" duration="24700000" />
-      <workItem from="1654947127566" duration="6114000" />
-    </task>
-    <task id="LOCAL-00005" summary="Update">
-      <created>1652461299207</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1652461299207</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Update">
-      <created>1652461958070</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1652461958070</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Update">
-      <created>1652463336049</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1652463336049</updated>
+      <workItem from="1654947127566" duration="13343000" />
     </task>
     <task id="LOCAL-00008" summary="Update">
       <created>1652463630175</created>
@@ -454,7 +444,28 @@
       <option name="project" value="LOCAL" />
       <updated>1654952134890</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="Update result window">
+      <created>1654953329372</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1654953329372</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Update dictionary, statistics">
+      <created>1654956725633</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1654956725633</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Update statistics">
+      <created>1654956821669</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1654956821669</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -472,10 +483,12 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update statistics" />
     <MESSAGE value="Update" />
     <MESSAGE value="Update result window appearance animation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update result window appearance animation" />
+    <MESSAGE value="Update result window" />
+    <MESSAGE value="Update dictionary, statistics" />
+    <MESSAGE value="Update statistics" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update statistics" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

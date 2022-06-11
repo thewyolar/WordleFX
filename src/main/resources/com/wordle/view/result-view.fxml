@@ -53,7 +53,7 @@
                </HBox.margin></Line>
             <VBox maxHeight="110.0" prefHeight="110.0" prefWidth="230.0">
                <children>
-                  <ImageView fitHeight="40.0" fitWidth="161.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="shareButton" fitHeight="40.0" fitWidth="161.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../image/copy.png" />
                      </image>
