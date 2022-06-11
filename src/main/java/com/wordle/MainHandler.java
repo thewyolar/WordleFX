@@ -1,7 +1,6 @@
 package com.wordle;
 
 import com.wordle.statistics.Statistics;
-import javafx.animation.FadeTransition;
 import javafx.animation.ScaleTransition;
 import javafx.animation.SequentialTransition;
 import javafx.scene.Node;
@@ -183,7 +182,7 @@ public class MainHandler {
                     styleClass = "wrong-letter";
                 }
 
-                FadeTransition firstFadeTransition = new FadeTransition(Duration.millis(300), label);
+                /*FadeTransition firstFadeTransition = new FadeTransition(Duration.millis(300), label);
                 firstFadeTransition.setFromValue(1);
                 firstFadeTransition.setToValue(0.2);
                 firstFadeTransition.setOnFinished(e -> {
@@ -196,7 +195,9 @@ public class MainHandler {
                 secondFadeTransition.setToValue(1);
 
                 SequentialTransition transition = new SequentialTransition(firstFadeTransition, secondFadeTransition);
-                transition.play();
+                transition.play();*/
+                label.getStyleClass().clear();
+                label.getStyleClass().setAll(styleClass);
             }
         }
     }

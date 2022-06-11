@@ -21,7 +21,7 @@
          <children>
             <HBox prefHeight="47.0" prefWidth="451.0">
                <children>
-                  <Label fx:id="statisticsLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="51.0" prefWidth="447.0" text="СТАТИСТИКА#" textAlignment="CENTER">
+                  <Label fx:id="statisticsLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="51.0" prefWidth="447.0" text="СТАТИСТИКА #" textAlignment="CENTER">
                      <font>
                         <Font name="Arial Bold" size="18.0" />
                      </font>
