@@ -84,7 +84,7 @@ public class MainController {
 
     /**
      * Возвращает значение поля {@link MainController#borderPane}
-     * @return возвращает ссылку на контейнер элементов верхней части окна приложения
+     * @return возвращает ссылку на контейнер элементов окна приложения
      */
     public BorderPane getBorderPane() { return borderPane; }
 
@@ -93,6 +93,12 @@ public class MainController {
      * @return возвращает ссылку на таблицу для ввода слов в центральной части окна приложения
      */
     public GridPane getWordsGridPane() { return wordsGridPane; }
+
+    /**
+     * Возвращает значение поля {@link MainController#gameTitleLabel}
+     * @return возвращает ссылку на метку с названием игры в верхней части окна приложения
+     */
+    public Label getGameTitleLabel() { return gameTitleLabel; }
 
     /**
      * Запускает метод {@link HelpWindow#display()}

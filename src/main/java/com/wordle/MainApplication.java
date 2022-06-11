@@ -45,6 +45,7 @@ public class MainApplication extends Application {
         MainController mainController = fxmlLoader.getController();
         mainControllerReference = mainController;
         mainController.getRandomWord();
+        mainController.getGameTitleLabel().setOnMouseClicked(e -> getHostServices().showDocument("https://github.com/thewyolar/WordleFX"));
 
         stage.setTitle("Wordle");
         stage.setScene(scene);
