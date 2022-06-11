@@ -54,7 +54,7 @@ public class MainHandler {
     /** totalWins - кол-во победных игр */
     private int totalWins;
 
-    /** winsInRowNow - кол-во подряд сыгранных победных игр на данный момент */
+    /** winsInRowNow - кол-во подряд сыгранных победных игр в последней попытке */
     private int winsInRowNow;
 
     /** winsInRowMax - максимальное кол-во подряд сыгранных победных игр */
@@ -165,7 +165,7 @@ public class MainHandler {
     }
 
     /**
-     * Обновляет цвет буквы из таблицу по номеру строки
+     * Обновляет цвет буквы из таблицы по номеру строки
      * @param gridPane - таблица, содержащая метки с буквами
      * @param searchRow - номер строки с буквой
      */
@@ -333,6 +333,7 @@ public class MainHandler {
             firstScaleTransition.toXProperty().setValue(1.1);
             firstScaleTransition.fromYProperty().setValue(1);
             firstScaleTransition.toYProperty().setValue(1.1);
+
             ScaleTransition secondScaleTransition = new ScaleTransition(Duration.millis(100), label);
             secondScaleTransition.fromXProperty().setValue(1.1);
             secondScaleTransition.toXProperty().setValue(1);

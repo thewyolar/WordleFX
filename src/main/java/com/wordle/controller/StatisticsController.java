@@ -30,5 +30,8 @@ public class StatisticsController {
 
     public void setWinsInRowMax(int value) { this.winsInRowMaxLabel.setText(String.valueOf(value)); }
 
-    public void setStatisticsLabel(int value) { this.statisticsLabel.setText(String.valueOf(value)); }
+    public void setStatisticsLabel(int value) {
+        String s = statisticsLabel.getText();
+        this.statisticsLabel.setText(s + String.valueOf(value));
+    }
 }
