@@ -2,6 +2,7 @@ package com.wordle.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.image.ImageView;
 
 public class StatisticsController {
 
@@ -20,6 +21,9 @@ public class StatisticsController {
     @FXML
     private Label winsInRowMaxLabel;
 
+    @FXML
+    private ImageView shareButton;
+
     public void setPlayedGames(int value) {
         this.playedGamesLabel.setText(String.valueOf(value));
     }
@@ -34,4 +38,6 @@ public class StatisticsController {
         String s = statisticsLabel.getText();
         this.statisticsLabel.setText(s + String.valueOf(value));
     }
+
+    public ImageView getShareButton() { return this.shareButton; }
 }

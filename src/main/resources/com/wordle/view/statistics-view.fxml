@@ -3,6 +3,8 @@
 <?import java.net.URL?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
@@ -32,6 +34,14 @@
                         <Insets />
                      </HBox.margin>
                   </Label>
+                  <ImageView fx:id="shareButton" fitHeight="41.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/copyShort.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </ImageView>
                </children>
             </HBox>
             <Line endX="355.0" startX="-100.0" stroke="#aeaeae">
