@@ -2,19 +2,21 @@ package com.wordle;
 
 import com.wordle.controller.SettingsController;
 import javafx.application.HostServices;
-import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
-import javafx.stage.WindowEvent;
 
 import java.io.IOException;
 
+/** Класс окна с настройками приложения */
 public class SettingsWindow {
 
+    /**
+     * Отображает окно с настройками приложения
+     * @exception IOException - исключение ввода-вывода
+     */
     public static void display() throws IOException {
         Stage stage = new Stage();
         FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("view/settings-view.fxml"));

@@ -1,21 +1,31 @@
 package com.wordle;
 
 import com.wordle.controller.HelpController;
-import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-import javafx.stage.WindowEvent;
 
 import java.io.IOException;
 import java.util.Objects;
 
+/** Класс окна приложения с правилами игры */
 public class HelpWindow {
 
+    /** helpControllerReference - ссылка на контроллер {@link HelpController} */
     private static HelpController helpControllerReference;
 
+    /**
+     * Возвращает значение поля {@link HelpWindow#helpControllerReference}
+     * @return возвращает ссылку на контроллер окна приложения с правилами игры
+     */
+    public static HelpController getController() { return helpControllerReference; }
+
+    /**
+     * Отображает окно приложения с правилами игры
+     * @exception IOException - исключение ввода-вывода
+     */
     public static void display() throws IOException {
         Stage stage = new Stage();
         FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("view/help-view.fxml"));
@@ -32,6 +42,4 @@ public class HelpWindow {
         stage.getIcons().add(new Image(Objects.requireNonNull(HelpWindow.class.getResourceAsStream("image/icon.png"))));
         stage.showAndWait();
     }
-
-    public static HelpController getController() { return helpControllerReference; }
 }

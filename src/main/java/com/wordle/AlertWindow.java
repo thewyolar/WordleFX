@@ -9,8 +9,13 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.util.Duration;
 
+/** Класс окна приложения с предупреждением об отсутствии введенного слова в словаре игры */
 public class AlertWindow {
 
+    /**
+     * Отображает окно с предупреждением
+     * @param ownerStage - ссылка на родительское окно
+     */
     public static void display(Stage ownerStage) {
         Stage stage = new Stage();
         stage.initOwner(ownerStage);

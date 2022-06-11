@@ -14,10 +14,7 @@ import javafx.scene.layout.VBox;
 
 import java.io.IOException;
 
-/**
- * Класс контроллера для взаимодействия графического окна приложения с FXML
- * @author Alexey Karabanov
- */
+/** Класс контроллера для взаимодействия основного окна приложения с FXML */
 public class MainController {
 
     /** mainHandler - содержит логику, необходимую для работы контроллера {@link MainController} */
@@ -27,7 +24,7 @@ public class MainController {
     @FXML
     private Label gameTitleLabel;
 
-    /** borderPane - контейнер со всеми элементами графического окна приложения */
+    /** borderPane - контейнер со всеми элементами основного окна приложения */
     @FXML
     private BorderPane borderPane;
 
@@ -42,7 +39,7 @@ public class MainController {
     @FXML
     private GridPane wordsGridPane;
 
-    /** helpIcon - значок окна справки {@link HelpWindow} */
+    /** helpIcon - значок окна с правилами игры {@link HelpWindow} */
     @FXML
     private ImageView helpIcon;
 
@@ -84,7 +81,7 @@ public class MainController {
 
     /**
      * Возвращает значение поля {@link MainController#borderPane}
-     * @return возвращает ссылку на контейнер элементов окна приложения
+     * @return возвращает ссылку на контейнер элементов основного окна приложения
      */
     public BorderPane getBorderPane() { return borderPane; }
 
@@ -140,17 +137,13 @@ public class MainController {
         mainHandler.onKeyPressed(wordsGridPane, keyboardRow1, keyboardRow2, keyboardRow3, keyEvent);
     }
 
-    /**
-     * Меняет тему основного окна на светлую
-     */
+    /** Устанавливает стили для отображения светлой темы основного окна приложения */
     public void mainWindowLight() {
         borderPane.setStyle("-fx-background-color: #212529");
         gameTitleLabel.setStyle("-fx-text-fill: white");
     }
 
-    /**
-     * Меняет тему основного окна на темную
-     */
+    /** Устанавливает стили для отображения темной темы основного окна приложения */
     public void mainWindowDark() {
         borderPane.setStyle("-fx-background-color: white");
         gameTitleLabel.setStyle("-fx-text-fill: black");

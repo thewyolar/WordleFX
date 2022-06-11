@@ -4,10 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1e55c77-bdc5-43bd-8694-a681fae26d0b" name="Changes" comment="Update">
+    <list default="true" id="d1e55c77-bdc5-43bd-8694-a681fae26d0b" name="Changes" comment="Add alerts  windows icons in statistics and results">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wordle/AlertWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wordle/AlertWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wordle/HelpWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wordle/HelpWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wordle/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wordle/MainApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wordle/MainHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wordle/MainHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wordle/ResultWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wordle/ResultWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wordle/SettingsWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wordle/SettingsWindow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wordle/StatisticsWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wordle/StatisticsWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wordle/controller/HelpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wordle/controller/HelpController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wordle/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wordle/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wordle/controller/ResultController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wordle/controller/ResultController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wordle/controller/SettingsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wordle/controller/SettingsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wordle/controller/StatisticsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wordle/controller/StatisticsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wordle/statistics/Statistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wordle/statistics/Statistics.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,13 +128,6 @@
       <workItem from="1654769381966" duration="15033000" />
       <workItem from="1654850427364" duration="24700000" />
       <workItem from="1654947127566" duration="15750000" />
-    </task>
-    <task id="LOCAL-00014" summary="Update">
-      <created>1652533865147</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1652533865147</updated>
     </task>
     <task id="LOCAL-00015" summary="Update">
       <created>1652537167348</created>
@@ -461,7 +465,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654970987237</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="Add alerts  windows icons in statistics and results">
+      <created>1654982701583</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1654982701583</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -486,7 +497,8 @@
     <MESSAGE value="Update statistics and results clipboard fucntions" />
     <MESSAGE value="Update MainHandler" />
     <MESSAGE value="Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update" />
+    <MESSAGE value="Add alerts  windows icons in statistics and results" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add alerts  windows icons in statistics and results" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

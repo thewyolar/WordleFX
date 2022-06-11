@@ -15,10 +15,7 @@ import java.util.ArrayList;
 import java.util.Objects;
 import java.util.stream.Stream;
 
-/**
- * Класс основного окна приложения
- * @author Alexey Karabanov
- */
+/** Класс основного окна приложения */
 public class MainApplication extends Application {
 
     /** dictionaryWords - список слов из словаря */
@@ -27,7 +24,7 @@ public class MainApplication extends Application {
     /** mainControllerReference - ссылка на контроллер {@link MainController} */
     private static MainController mainControllerReference;
 
-    /** stageReference - ссылка на графическое окно приложения */
+    /** stageReference - ссылка на основное окно приложения */
     private static Stage stageReference;
 
     /**
@@ -69,13 +66,13 @@ public class MainApplication extends Application {
 
     /**
      * Возвращает значение поля {@link MainApplication#stageReference}
-     * @return возвращает ссылку на графическое окно приложения
+     * @return возвращает ссылку на основное окно приложения
      */
     public static Stage getStage() { return stageReference; }
 
     /**
      * Возвращает значение поля {@link MainApplication#mainControllerReference}
-     * @return возвращает ссылку на контроллер графического окна приложения
+     * @return возвращает ссылку на контроллер основного окна приложения
      */
     public static MainController getController() { return mainControllerReference; }
 

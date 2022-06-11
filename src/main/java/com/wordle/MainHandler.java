@@ -19,7 +19,6 @@ import java.util.Random;
 /**
  * Класс, реализующий основную логику приложения
  * используется для сохранения "чистоты" в контроллере {@link com.wordle.controller.MainController}
- * @author Alexey Karabanov
  */
 public class MainHandler {
 

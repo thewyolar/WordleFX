@@ -15,20 +15,42 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.util.Objects;
 
+/** Класс окна приложения с результатами игры */
 public class ResultWindow {
 
+    /** Флаг, указывающий на перезапуск игры */
     private static boolean resetGame = false;
 
+    /** Флаг, указывающий на выход из приложения */
     private static boolean quitApplication = false;
 
+    /** resultControllerReference - ссылка на контроллер {@link ResultController} */
     private static ResultController resultControllerReference;
 
+    /**
+     * Возвращает значение поля {@link ResultWindow#resetGame}
+     * @return возвращает значение флага для перезапуска игры
+     */
     public static boolean getResetGame() { return resetGame; }
 
+    /**
+     * Устанавливает значение полю {@link ResultWindow#resetGame}
+     * @param value - логическое значение true или false
+     */
     public static void setResetGame(boolean value) { resetGame = value; }
 
+    /**
+     * Возвращает значение поля {@link ResultWindow#quitApplication}
+     * @return возвращает значение флага для выхода из приложения
+     */
     public static boolean getQuitApplication() { return quitApplication; }
 
+    /**
+     * Отображает окно приложения с результатами игры
+     * @param guessed - флаг, указывающий угадано ли слово (угадано - true, иначе - false)
+     * @param winningWord - загаданное слово
+     * @exception  IOException - исключение ввода-вывода
+     */
     public static void display(boolean guessed, String winningWord) throws IOException {
         Stage stage = new Stage();
         stage.initModality(Modality.APPLICATION_MODAL);
@@ -66,6 +88,7 @@ public class ResultWindow {
         stage.showAndWait();
     }
 
+    /** Копирует результаты в буфер обмена устройства */
     public static void setResultsToClipboard() {
         Clipboard clipboard = Clipboard.getSystemClipboard();
         ClipboardContent content = new ClipboardContent();

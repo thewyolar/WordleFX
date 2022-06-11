@@ -2,17 +2,31 @@ package com.wordle.statistics;
 
 import java.io.*;
 
+/** Класс, который считывает и записывает в файл статистику игры */
 public abstract class Statistics {
 
+    /** Файл, хранящий статистику игры */
     private static final File statisticsFile = new File("src/main/resources/com/wordle/stats.bin");
 
+    /**
+     * statisticsList - cписок значений, считанных из файла
+     * statisticsList[0] - playedGames
+     * statisticsList[1] - totalWins
+     * statisticsList[2] - winsInRowNow
+     * statisticsList[3] - winsInRowMax
+     */
     private static int[] statisticsList = new int[] {0, 0, 0, 0};
 
+    /**
+     * Возвращает значение поля {@link Statistics#statisticsList}
+     * @return возвращает cписок значений, считанных из файла
+     */
     public static int[] getStatistics() {
         readStatistics();
         return statisticsList;
     }
 
+    /** Считывает статистику из файла {@link Statistics#statisticsFile} */
     public static void readStatistics() {
         try {
             if (!statisticsFile.exists()) {
@@ -29,6 +43,13 @@ public abstract class Statistics {
         }
     }
 
+    /**
+     * Записывает статистику
+     * @param playedGames - кол-во сыгранных игр
+     * @param totalWins - кол-во победных игр
+     * @param winsInRowNow - кол-во подряд сыгранных победных игр в последней попытке
+     * @param winsInRowMax - максимальное кол-во подряд сыгранных победных игр
+     */
     public static void writeStatistics(int playedGames, int totalWins, int winsInRowNow, int winsInRowMax) {
         try {
             if (!statisticsFile.exists())
@@ -44,6 +65,14 @@ public abstract class Statistics {
         }
     }
 
+    /**
+     * Записывает статистику в файл {@link Statistics#statisticsFile}
+     * @param playedGames - кол-во сыгранных игр
+     * @param totalWins - кол-во победных игр
+     * @param winsInRowNow - кол-во подряд сыгранных победных игр в последней попытке
+     * @param winsInRowMax - максимальное кол-во подряд сыгранных победных игр
+     * @exception IOException - исключение ввода-вывода
+     */
     private static void writeFile(int playedGames, int totalWins, int winsInRowNow, int winsInRowMax) throws IOException {
         statisticsList[0] += playedGames;
         statisticsList[1] += totalWins;

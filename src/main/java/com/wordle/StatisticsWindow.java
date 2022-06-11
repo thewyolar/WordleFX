@@ -13,8 +13,13 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+/** Класс окна приложения со статистикой игры */
 public class StatisticsWindow {
 
+    /**
+     * Отображает окно приложения со статистикой игры
+     * @exception IOException - исключение ввода-вывода
+     */
     public static void display() throws IOException {
         int[] statistics = Statistics.getStatistics();
 
@@ -38,6 +43,7 @@ public class StatisticsWindow {
         stage.showAndWait();
     }
 
+    /** Копирует статистику в буфер обмена устройства */
     public static void setStatisticsToClipboard() {
         Clipboard clipboard = Clipboard.getSystemClipboard();
         ClipboardContent content = new ClipboardContent();
