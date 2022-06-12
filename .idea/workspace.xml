@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1e55c77-bdc5-43bd-8694-a681fae26d0b" name="Changes" comment="Update">
+    <list default="true" id="d1e55c77-bdc5-43bd-8694-a681fae26d0b" name="Changes" comment="Add unit tests on Junit 5">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wordle/MainHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wordle/MainHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/test/com/wordle/MainHandlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/com/wordle/MainHandlerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +75,20 @@
       <recent name="com.wordle" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MainHandlerTest">
+  <component name="RunManager" selected="Application.MainApplication">
+    <configuration name="MainApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wordle.MainApplication" />
+      <module name="WordleFX" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wordle.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MainHandlerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WordleFX" />
       <extension name="coverage">
@@ -86,82 +99,20 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.wordle" />
       <option name="MAIN_CLASS_NAME" value="com.wordle.MainHandlerTest" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainHandlerTest.binarySearchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="WordleFX" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wordle.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.wordle" />
-      <option name="MAIN_CLASS_NAME" value="com.wordle.MainHandlerTest" />
-      <option name="METHOD_NAME" value="binarySearchTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainHandlerTest.containsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="WordleFX" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wordle.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.wordle" />
-      <option name="MAIN_CLASS_NAME" value="com.wordle.MainHandlerTest" />
-      <option name="METHOD_NAME" value="containsTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainHandlerTest.isValidGuess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="WordleFX" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wordle.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.wordle" />
-      <option name="MAIN_CLASS_NAME" value="com.wordle.MainHandlerTest" />
-      <option name="METHOD_NAME" value="isValidGuess" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainHandlerTest.isValidGuessTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="WordleFX" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wordle.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.wordle" />
-      <option name="MAIN_CLASS_NAME" value="com.wordle.MainHandlerTest" />
-      <option name="METHOD_NAME" value="isValidGuessTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <list>
+      <item itemvalue="Application.MainApplication" />
+      <item itemvalue="JUnit.MainHandlerTest" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MainApplication" />
         <item itemvalue="JUnit.MainHandlerTest" />
-        <item itemvalue="JUnit.MainHandlerTest.containsTest" />
-        <item itemvalue="JUnit.MainHandlerTest.binarySearchTest" />
-        <item itemvalue="JUnit.MainHandlerTest.isValidGuessTest" />
-        <item itemvalue="JUnit.MainHandlerTest.isValidGuess" />
       </list>
     </recent_temporary>
   </component>
@@ -197,14 +148,7 @@
       <workItem from="1654947127566" duration="15750000" />
       <workItem from="1655031424960" duration="648000" />
       <workItem from="1655035255115" duration="2879000" />
-      <workItem from="1655039313308" duration="3752000" />
-    </task>
-    <task id="LOCAL-00020" summary="Update">
-      <created>1652547496261</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1652547496261</updated>
+      <workItem from="1655039313308" duration="4011000" />
     </task>
     <task id="LOCAL-00021" summary="Update">
       <created>1652547580963</created>
@@ -542,7 +486,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655039663689</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="Add unit tests on Junit 5">
+      <created>1655043211311</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1655043211311</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -570,7 +521,8 @@
     <MESSAGE value="Add javadoc" />
     <MESSAGE value="Update method for initialize words list" />
     <MESSAGE value="Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update" />
+    <MESSAGE value="Add unit tests on Junit 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add unit tests on Junit 5" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
