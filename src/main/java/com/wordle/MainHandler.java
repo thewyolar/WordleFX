@@ -438,7 +438,7 @@ public class MainHandler {
      * @param guess - проверяемое слово
      * @return возвращает true, если слово присутствует в словаре, иначе - false
      */
-    private boolean isValidGuess(String guess) {
+    public boolean isValidGuess(String guess) {
         return binarySearch(MainApplication.getDictionaryWords(), guess);
     }
 
