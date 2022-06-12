@@ -7,13 +7,9 @@ import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Objects;
-import java.util.stream.Stream;
 
 /** Класс основного окна приложения */
 public class MainApplication extends Application {
@@ -100,8 +96,20 @@ public class MainApplication extends Application {
 
     /** Иницилизирует список слов {@link MainApplication#dictionaryWords} */
     public void initializeWordList() {
-        InputStream dictionary = getClass().getResourceAsStream("dictionary.txt");
-        Stream<String> dictionary_lines = new BufferedReader(new InputStreamReader(dictionary)).lines();
-        dictionary_lines.forEach(dictionaryWords::add);
+        try {
+            File file = new File("src/main/resources/com/wordle/dictionary.txt");
+            FileReader fr = new FileReader(file);
+            BufferedReader reader = new BufferedReader(fr);
+            String line = reader.readLine();
+            while (line != null) {
+                line = reader.readLine();
+                dictionaryWords.add(line);
+            }
+            reader.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

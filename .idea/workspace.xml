@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1e55c77-bdc5-43bd-8694-a681fae26d0b" name="Changes" comment="Add javadoc">
+    <list default="true" id="d1e55c77-bdc5-43bd-8694-a681fae26d0b" name="Changes" comment="Update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/wordle/dictionary.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/wordle/dictionary.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wordle/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wordle/MainApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,14 +117,7 @@
       <workItem from="1654850427364" duration="24700000" />
       <workItem from="1654947127566" duration="15750000" />
       <workItem from="1655031424960" duration="648000" />
-      <workItem from="1655035255115" duration="856000" />
-    </task>
-    <task id="LOCAL-00016" summary="Update">
-      <created>1652538707140</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1652538707140</updated>
+      <workItem from="1655035255115" duration="2815000" />
     </task>
     <task id="LOCAL-00017" summary="Update">
       <created>1652539222944</created>
@@ -462,7 +455,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654989924089</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="Update">
+      <created>1655036218632</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1655036218633</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -486,10 +486,10 @@
     <MESSAGE value="Update statistics" />
     <MESSAGE value="Update statistics and results clipboard fucntions" />
     <MESSAGE value="Update MainHandler" />
-    <MESSAGE value="Update" />
     <MESSAGE value="Add alerts  windows icons in statistics and results" />
     <MESSAGE value="Add javadoc" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add javadoc" />
+    <MESSAGE value="Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
