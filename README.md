@@ -32,7 +32,7 @@
 - `Statistics`
     - `Statistics.java` reads and writes game statistics to a file.
 - `Controllers`
-  - `MainController.java` is the controller for the main class.
+  - `MainController.java` is the controller for the main class `MainApplication.java`.
   - `HelpController.java` is the controller for the `HelpWindow.java`.
   - `ResultController.java` is the controller for the `ResultWindow.java`.
   - `SettingsConroller.java` is the controller for the `SettingsWindow.java`.
