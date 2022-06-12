@@ -5,10 +5,10 @@
 ## A simple implementation of Wordle game on JavaFX with FXML and CSS.
 
 <div align="center">
-    <img src="src/main/resources/com/wordle/image/screenshots/screenshot1.png" style="width: 40%;" alt="">
-    <img src="src/main/resources/com/wordle/image/screenshots/screenshot2.png" style="width: 40%;" alt="">
-    <img src="src/main/resources/com/wordle/image/screenshots/screenshot3.png" style="width: 40%;" alt="">
-    <img src="src/main/resources/com/wordle/image/screenshots/screenshot4.png" style="width: 40%;" alt="">
+    <img src="src/main/resources/com/wordle/image/screenshots/main.png" style="width: 40%;" alt="">
+    <img src="src/main/resources/com/wordle/image/screenshots/help.png" style="width: 40%;" alt="">
+    <img src="src/main/resources/com/wordle/image/screenshots/results.png" style="width: 40%;" alt="">
+    <img src="src/main/resources/com/wordle/image/screenshots/statistics.png" style="width: 40%;" alt="">
 </div>
 
 ----

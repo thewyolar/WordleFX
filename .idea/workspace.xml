@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1e55c77-bdc5-43bd-8694-a681fae26d0b" name="Changes" comment="Update unit tests">
+    <list default="true" id="d1e55c77-bdc5-43bd-8694-a681fae26d0b" name="Changes" comment="Update statistics and dictionary">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/wordle/dictionary.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/wordle/dictionary.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/wordle/image/screenshots/screenshot1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/wordle/image/screenshots/screenshot2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/wordle/image/screenshots/screenshot3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/wordle/image/screenshots/screenshot4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/wordle/image/screenshots/screenshot5.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +56,7 @@
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "E:/Projects/Java/WordleFX/lib",
+    "last_opened_file_path": "E:/Projects/Java/WordleFX/src/main/resources/com/wordle/image/screenshots",
     "project.structure.last.edited": "Global Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.37011495",
@@ -148,14 +153,8 @@
       <workItem from="1654947127566" duration="15750000" />
       <workItem from="1655031424960" duration="648000" />
       <workItem from="1655035255115" duration="2879000" />
-      <workItem from="1655039313308" duration="4840000" />
-    </task>
-    <task id="LOCAL-00022" summary="Update">
-      <created>1652550008658</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1652550008658</updated>
+      <workItem from="1655039313308" duration="5060000" />
+      <workItem from="1655056605546" duration="461000" />
     </task>
     <task id="LOCAL-00023" summary="Update">
       <created>1652550020666</created>
@@ -493,7 +492,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655043461619</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="Update statistics and dictionary">
+      <created>1655050145829</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1655050145829</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -523,7 +529,8 @@
     <MESSAGE value="Update" />
     <MESSAGE value="Add unit tests on Junit 5" />
     <MESSAGE value="Update unit tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update unit tests" />
+    <MESSAGE value="Update statistics and dictionary" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update statistics and dictionary" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
