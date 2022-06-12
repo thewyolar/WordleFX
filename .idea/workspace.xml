@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1e55c77-bdc5-43bd-8694-a681fae26d0b" name="Changes" comment="Update statistics and dictionary">
+    <list default="true" id="d1e55c77-bdc5-43bd-8694-a681fae26d0b" name="Changes" comment="Update readme">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/wordle/image/screenshots/screenshot1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/wordle/image/screenshots/screenshot2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/wordle/image/screenshots/screenshot3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/wordle/image/screenshots/screenshot4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/wordle/image/screenshots/screenshot5.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +52,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "last_opened_file_path": "E:/Projects/Java/WordleFX/src/main/resources/com/wordle/image/screenshots",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Global Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.37011495",
@@ -154,21 +150,7 @@
       <workItem from="1655031424960" duration="648000" />
       <workItem from="1655035255115" duration="2879000" />
       <workItem from="1655039313308" duration="5060000" />
-      <workItem from="1655056605546" duration="461000" />
-    </task>
-    <task id="LOCAL-00023" summary="Update">
-      <created>1652550020666</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1652550020666</updated>
-    </task>
-    <task id="LOCAL-00024" summary="Update">
-      <created>1652550606005</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1652550606005</updated>
+      <workItem from="1655056605546" duration="1855000" />
     </task>
     <task id="LOCAL-00025" summary="Update">
       <created>1652561596651</created>
@@ -499,7 +481,21 @@
       <option name="project" value="LOCAL" />
       <updated>1655050145829</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="Update readme">
+      <created>1655057086308</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1655057086309</updated>
+    </task>
+    <task id="LOCAL-00073" summary="Update readme">
+      <created>1655057152236</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1655057152236</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -530,7 +526,8 @@
     <MESSAGE value="Add unit tests on Junit 5" />
     <MESSAGE value="Update unit tests" />
     <MESSAGE value="Update statistics and dictionary" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update statistics and dictionary" />
+    <MESSAGE value="Update readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update readme" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
