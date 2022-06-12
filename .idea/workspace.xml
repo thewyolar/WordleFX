@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1e55c77-bdc5-43bd-8694-a681fae26d0b" name="Changes" comment="Update method for initialize words list">
+    <list default="true" id="d1e55c77-bdc5-43bd-8694-a681fae26d0b" name="Changes" comment="Update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wordle/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wordle/MainApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wordle/MainHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wordle/MainHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +16,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -38,23 +39,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Projects/Java/WordleFX/lib&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.37011495&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "true",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "E:/Projects/Java/WordleFX/lib",
+    "project.structure.last.edited": "Global Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.37011495",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Projects\Java\WordleFX\src\main\resources\com\wordle\image\screenshots" />
@@ -62,13 +65,18 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Projects\Java\WordleFX\src\main\resources\com\wordle\image" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.wordle" />
     </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.wordle" />
+    </key>
   </component>
-  <component name="RunManager">
-    <configuration name="MainApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wordle.MainApplication" />
+  <component name="RunManager" selected="JUnit.MainHandlerTest">
+    <configuration name="MainHandlerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WordleFX" />
       <extension name="coverage">
         <pattern>
@@ -76,13 +84,84 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.wordle" />
+      <option name="MAIN_CLASS_NAME" value="com.wordle.MainHandlerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainHandlerTest.binarySearchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WordleFX" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wordle.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.wordle" />
+      <option name="MAIN_CLASS_NAME" value="com.wordle.MainHandlerTest" />
+      <option name="METHOD_NAME" value="binarySearchTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainHandlerTest.containsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WordleFX" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wordle.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.wordle" />
+      <option name="MAIN_CLASS_NAME" value="com.wordle.MainHandlerTest" />
+      <option name="METHOD_NAME" value="containsTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainHandlerTest.isValidGuess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WordleFX" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wordle.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.wordle" />
+      <option name="MAIN_CLASS_NAME" value="com.wordle.MainHandlerTest" />
+      <option name="METHOD_NAME" value="isValidGuess" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainHandlerTest.isValidGuessTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WordleFX" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wordle.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.wordle" />
+      <option name="MAIN_CLASS_NAME" value="com.wordle.MainHandlerTest" />
+      <option name="METHOD_NAME" value="isValidGuessTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MainApplication" />
+        <item itemvalue="JUnit.MainHandlerTest" />
+        <item itemvalue="JUnit.MainHandlerTest.containsTest" />
+        <item itemvalue="JUnit.MainHandlerTest.binarySearchTest" />
+        <item itemvalue="JUnit.MainHandlerTest.isValidGuessTest" />
+        <item itemvalue="JUnit.MainHandlerTest.isValidGuess" />
       </list>
     </recent_temporary>
   </component>
@@ -118,21 +197,7 @@
       <workItem from="1654947127566" duration="15750000" />
       <workItem from="1655031424960" duration="648000" />
       <workItem from="1655035255115" duration="2879000" />
-      <workItem from="1655039313308" duration="312000" />
-    </task>
-    <task id="LOCAL-00018" summary="Update">
-      <created>1652547196928</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1652547196928</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Update">
-      <created>1652547322236</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1652547322236</updated>
+      <workItem from="1655039313308" duration="3752000" />
     </task>
     <task id="LOCAL-00020" summary="Update">
       <created>1652547496261</created>
@@ -463,7 +528,21 @@
       <option name="project" value="LOCAL" />
       <updated>1655038228215</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="Update">
+      <created>1655039641607</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1655039641608</updated>
+    </task>
+    <task id="LOCAL-00068" summary="Update">
+      <created>1655039663689</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1655039663689</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -489,9 +568,9 @@
     <MESSAGE value="Update MainHandler" />
     <MESSAGE value="Add alerts  windows icons in statistics and results" />
     <MESSAGE value="Add javadoc" />
-    <MESSAGE value="Update" />
     <MESSAGE value="Update method for initialize words list" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update method for initialize words list" />
+    <MESSAGE value="Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

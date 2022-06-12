@@ -495,7 +495,7 @@ public class MainHandler {
      * @param string - слово, которое нужно найти
      * @return возвращает true, если слово найдено, иначе - false
      */
-    private boolean binarySearch(ArrayList<String> list, String string) {
+    public boolean binarySearch(ArrayList<String> list, String string) {
         int low = 0, high = list.size() - 1;
         while (low <= high) {
             int mid = low + (high - low) / 2;
@@ -517,7 +517,7 @@ public class MainHandler {
      * @param letter - слово, которое нужно найти
      * @return возвращает true, если слово присутствует, иначе - false
      */
-    private boolean contains(String[] array, String letter) {
+    public boolean contains(String[] array, String letter) {
         for (String string : array)
             if (string.equalsIgnoreCase(letter))
                 return true;
