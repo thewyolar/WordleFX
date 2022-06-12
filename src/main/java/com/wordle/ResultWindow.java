@@ -31,19 +31,25 @@ public class ResultWindow {
      * Возвращает значение поля {@link ResultWindow#resetGame}
      * @return возвращает значение флага для перезапуска игры
      */
-    public static boolean getResetGame() { return resetGame; }
+    public static boolean getResetGame() {
+        return resetGame;
+    }
 
     /**
      * Устанавливает значение полю {@link ResultWindow#resetGame}
      * @param value - логическое значение true или false
      */
-    public static void setResetGame(boolean value) { resetGame = value; }
+    public static void setResetGame(boolean value) {
+        resetGame = value;
+    }
 
     /**
      * Возвращает значение поля {@link ResultWindow#quitApplication}
      * @return возвращает значение флага для выхода из приложения
      */
-    public static boolean getQuitApplication() { return quitApplication; }
+    public static boolean getQuitApplication() {
+        return quitApplication;
+    }
 
     /**
      * Отображает окно приложения с результатами игры

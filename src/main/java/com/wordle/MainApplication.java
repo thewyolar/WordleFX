@@ -68,25 +68,35 @@ public class MainApplication extends Application {
      * Возвращает значение поля {@link MainApplication#stageReference}
      * @return возвращает ссылку на основное окно приложения
      */
-    public static Stage getStage() { return stageReference; }
+    public static Stage getStage() {
+        return stageReference;
+    }
 
     /**
      * Возвращает значение поля {@link MainApplication#mainControllerReference}
      * @return возвращает ссылку на контроллер основного окна приложения
      */
-    public static MainController getController() { return mainControllerReference; }
+    public static MainController getController() {
+        return mainControllerReference;
+    }
 
     /**
      * Возвращает значение поля {@link MainApplication#dictionaryWords}
      * @return возвращает список слов из словаря
      */
-    public static ArrayList<String> getDictionaryWords() { return dictionaryWords; }
+    public static ArrayList<String> getDictionaryWords() {
+        return dictionaryWords;
+    }
 
     /** Метод для выхода из приложения */
-    public static void quit() { stageReference.close(); }
+    public static void quit() {
+        stageReference.close();
+    }
 
     /** Запускает метод {@link AlertWindow#display(Stage)} */
-    public static void showAlert() { AlertWindow.display(stageReference); }
+    public static void showAlert() {
+        AlertWindow.display(stageReference);
+    }
 
     /** Иницилизирует список слов {@link MainApplication#dictionaryWords} */
     public void initializeWordList() {

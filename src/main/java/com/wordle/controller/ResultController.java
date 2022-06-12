@@ -40,25 +40,33 @@ public class ResultController {
      * Возвращает значение поля {@link ResultController#winningWordLabel}
      * @return возвращает ссылку на метку с загаданным словом
      */
-    public Label getWinningWordLabel() { return winningWordLabel; }
+    public Label getWinningWordLabel() {
+        return winningWordLabel;
+    }
 
     /**
      * Возвращает значение поля {@link ResultController#restartButton}
      * @return возвращает ссылку на кнопку для перезапуска игры
      */
-    public Button getRestartButton() { return restartButton; }
+    public Button getRestartButton() {
+        return restartButton;
+    }
 
     /**
      * Возвращает значение поля {@link ResultController#quitButton}
      * @return возвращает ссылку на кнопку для выхода из приложения
      */
-    public Button getQuitButton() { return quitButton; }
+    public Button getQuitButton() {
+        return quitButton;
+    }
 
     /**
      * Возвращает значение поля {@link ResultController#shareButton}
      * @return возвращает ссылку на кнопку для копирования результатов игры в буфер обмена устройства
      */
-    public ImageView getShareButton() { return shareButton; }
+    public ImageView getShareButton() {
+        return shareButton;
+    }
 
     /** Запускает метод {@link MainHandler#fillResultGrid(GridPane, GridPane)} */
     public void createResultGrid() {
@@ -70,6 +78,6 @@ public class ResultController {
      * @return возвращает строку, полученную из метода readResultGrid
      */
     public String readResultGrid() {
-       return MainHandler.readResultGrid(gridPane);
+        return MainHandler.readResultGrid(gridPane);
     }
 }

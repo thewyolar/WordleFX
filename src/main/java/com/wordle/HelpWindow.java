@@ -20,7 +20,9 @@ public class HelpWindow {
      * Возвращает значение поля {@link HelpWindow#helpControllerReference}
      * @return возвращает ссылку на контроллер окна приложения с правилами игры
      */
-    public static HelpController getController() { return helpControllerReference; }
+    public static HelpController getController() {
+        return helpControllerReference;
+    }
 
     /**
      * Отображает окно приложения с правилами игры

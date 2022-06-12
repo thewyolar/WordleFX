@@ -35,31 +35,41 @@ public class StatisticsController {
      * Возвращает значение поля {@link StatisticsController#shareButton}
      * @return возвращает ссылку на кнопку для копирования статистики игры в буфер обмена устройства
      */
-    public ImageView getShareButton() { return shareButton; }
+    public ImageView getShareButton() {
+        return shareButton;
+    }
 
     /**
      * Устанавливает значение в качестве текста метки {@link StatisticsController#playedGamesLabel}
      * @param value - кол-во сыгранных игр
      */
-    public void setPlayedGames(int value) { playedGamesLabel.setText(String.valueOf(value)); }
+    public void setPlayedGames(int value) {
+        playedGamesLabel.setText(String.valueOf(value));
+    }
 
     /**
      * Устанавливает значение в качестве текста метки {@link StatisticsController#totalWinsLabel}
      * @param value - кол-во победных игр
      */
-    public void setTotalWins(int value) { totalWinsLabel.setText(String.valueOf(value)); }
+    public void setTotalWins(int value) {
+        totalWinsLabel.setText(String.valueOf(value));
+    }
 
     /**
      * Устанавливает значение в качестве текста метки {@link StatisticsController#winsInRowNowLabel}
      * @param value - кол-во подряд сыгранных победных игр в последней попытке
      */
-    public void setWinsInRowNow(int value) {winsInRowNowLabel.setText(String.valueOf(value)); }
+    public void setWinsInRowNow(int value) {
+        winsInRowNowLabel.setText(String.valueOf(value));
+    }
 
     /**
      * Устанавливает значение в качестве текста метки {@link StatisticsController#winsInRowMaxLabel}
      * @param value - максимальное кол-во подряд сыгранных победных игр
      */
-    public void setWinsInRowMax(int value) { winsInRowMaxLabel.setText(String.valueOf(value)); }
+    public void setWinsInRowMax(int value) {
+        winsInRowMaxLabel.setText(String.valueOf(value));
+    }
 
     /**
      * Устанавливает значение в качестве текста метки {@link StatisticsController#statisticsLabel}
@@ -67,6 +77,6 @@ public class StatisticsController {
      */
     public void setStatisticsLabel(int value) {
         String s = statisticsLabel.getText();
-        this.statisticsLabel.setText(s + value);
+        statisticsLabel.setText(s + value);
     }
 }

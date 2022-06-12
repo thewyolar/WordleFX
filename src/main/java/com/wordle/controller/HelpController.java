@@ -25,7 +25,9 @@ public class HelpController {
      * Возвращает значение поля {@link HelpController#gameButton}
      * @return возвращает ссылку на кнопку для начала игры
      */
-    public ImageView getGameButton() { return gameButton; }
+    public ImageView getGameButton() {
+        return gameButton;
+    }
 
     /** Устанавливает стили для отображения светлой темы окна приложения с правилами игры */
     public void helpWindowLight() {

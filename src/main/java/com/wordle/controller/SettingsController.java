@@ -50,19 +50,25 @@ public class SettingsController {
      * Возвращает значение поля {@link SettingsController#emailHyperlink}
      * @return возвращает гиперссылку на email
      */
-    public Hyperlink getEmailHyperlink() { return emailHyperlink; }
+    public Hyperlink getEmailHyperlink() {
+        return emailHyperlink;
+    }
 
     /**
      * Возвращает значение поля {@link SettingsController#telegramHyperlink}
      * @return возвращает гиперссылку на telegram
      */
-    public Hyperlink getTelegramHyperlink() { return telegramHyperlink; }
+    public Hyperlink getTelegramHyperlink() {
+        return telegramHyperlink;
+    }
 
     /**
      * Возвращает значение поля {@link SettingsController#wordleHyperlink}
      * @return возвращает гиперссылку на оригинальную версию wordle
      */
-    public Hyperlink getWordleHyperlink() { return wordleHyperlink; }
+    public Hyperlink getWordleHyperlink() {
+        return wordleHyperlink;
+    }
 
     /** Устанавливает стили для отображения светлой темы окна с настройками приложения */
     public void settingsWindowLight() {
