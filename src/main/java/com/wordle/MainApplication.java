@@ -106,8 +106,6 @@ public class MainApplication extends Application {
                 dictionaryWords.add(line);
             }
             reader.close();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
