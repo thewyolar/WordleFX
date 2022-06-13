@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1e55c77-bdc5-43bd-8694-a681fae26d0b" name="Changes" comment="Update readme">
+    <list default="true" id="d1e55c77-bdc5-43bd-8694-a681fae26d0b" name="Changes" comment="Update dictionary">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/wordle/dictionary.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/wordle/dictionary.txt" afterDir="false" />
     </list>
@@ -152,14 +152,7 @@
       <workItem from="1655039313308" duration="5060000" />
       <workItem from="1655056605546" duration="1992000" />
       <workItem from="1655099993367" duration="18000" />
-      <workItem from="1655109378842" duration="3611000" />
-    </task>
-    <task id="LOCAL-00027" summary="Update">
-      <created>1652567626943</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1652567626943</updated>
+      <workItem from="1655109378842" duration="5359000" />
     </task>
     <task id="LOCAL-00028" summary="Update">
       <created>1652605257244</created>
@@ -497,7 +490,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655058544757</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="Update dictionary">
+      <created>1655113814082</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1655113814083</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -529,7 +529,8 @@
     <MESSAGE value="Update unit tests" />
     <MESSAGE value="Update statistics and dictionary" />
     <MESSAGE value="Update readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update readme" />
+    <MESSAGE value="Update dictionary" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update dictionary" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
