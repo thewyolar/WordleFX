@@ -4,22 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1e55c77-bdc5-43bd-8694-a681fae26d0b" name="Changes" comment="Update pom">
+    <list default="true" id="8c155e02-2d13-472e-9707-f4cab3a389e5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/github_martinkoster_actionfx_controlsfx.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="JUnit5 Test Class" />
-        <option value="Class" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -34,49 +28,28 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectId" id="297G0t52mXuCEyYOqiFQLM3MKqn" />
+  <component name="ProjectId" id="2Ad0AhcRKoA8Cxytl2yrpU9jUAt" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Алексей/Downloads/openjfx-18.0.1_windows-x64_bin-sdk/javafx-sdk-18.0.1/lib&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15429688&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.37011495&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Problems",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.37011495"
   }
-}</component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Projects\Java\WordleFX\src\main\resources\com\wordle\image\screenshots" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\Projects\Java\WordleFX\src\main\resources\com\wordle\image" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.wordle" />
-    </key>
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.wordle" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Application.MainApplication">
+}]]></component>
+  <component name="RunManager">
     <configuration name="MainApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.wordle.MainApplication" />
       <module name="WordleFX" />
@@ -90,423 +63,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainHandlerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="WordleFX" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wordle.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.wordle" />
-      <option name="MAIN_CLASS_NAME" value="com.wordle.MainHandlerTest" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Application.MainApplication" />
-      <item itemvalue="JUnit.MainHandlerTest" />
-    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.MainApplication" />
-        <item itemvalue="JUnit.MainHandlerTest" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d1e55c77-bdc5-43bd-8694-a681fae26d0b" name="Changes" comment="" />
-      <created>1652456492832</created>
+      <changelist id="8c155e02-2d13-472e-9707-f4cab3a389e5" name="Changes" comment="" />
+      <created>1655324013398</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1652456492832</updated>
-      <workItem from="1652456495131" duration="717000" />
-      <workItem from="1652457275216" duration="323000" />
-      <workItem from="1652459027494" duration="208000" />
-      <workItem from="1652459350203" duration="10739000" />
-      <workItem from="1652530170344" duration="3902000" />
-      <workItem from="1652535297436" duration="10945000" />
-      <workItem from="1652549680985" duration="974000" />
-      <workItem from="1652552061005" duration="7886000" />
-      <workItem from="1652602669537" duration="1965000" />
-      <workItem from="1652606804860" duration="7482000" />
-      <workItem from="1652615101611" duration="1247000" />
-      <workItem from="1652616362328" duration="50000" />
-      <workItem from="1652629754069" duration="8869000" />
-      <workItem from="1652640927677" duration="749000" />
-      <workItem from="1652650852705" duration="1689000" />
-      <workItem from="1652652852255" duration="1772000" />
-      <workItem from="1653566746405" duration="1824000" />
-      <workItem from="1653572165365" duration="11399000" />
-      <workItem from="1653857914623" duration="102000" />
-      <workItem from="1654769381966" duration="15033000" />
-      <workItem from="1654850427364" duration="24700000" />
-      <workItem from="1654947127566" duration="15750000" />
-      <workItem from="1655031424960" duration="648000" />
-      <workItem from="1655035255115" duration="2879000" />
-      <workItem from="1655039313308" duration="5060000" />
-      <workItem from="1655056605546" duration="1992000" />
-      <workItem from="1655099993367" duration="18000" />
-      <workItem from="1655109378842" duration="7000000" />
-      <workItem from="1655319298993" duration="761000" />
-      <workItem from="1655320083175" duration="1430000" />
-      <workItem from="1655321542327" duration="138000" />
-      <workItem from="1655321701427" duration="57000" />
-      <workItem from="1655321781202" duration="7000" />
-      <workItem from="1655322059804" duration="1006000" />
-      <workItem from="1655323115814" duration="5000" />
-      <workItem from="1655323225926" duration="88000" />
-      <workItem from="1655323375478" duration="516000" />
+      <updated>1655324013398</updated>
+      <workItem from="1655324014746" duration="156000" />
     </task>
-    <task id="LOCAL-00032" summary="Update">
-      <created>1652637497853</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1652637497853</updated>
-    </task>
-    <task id="LOCAL-00033" summary="Update">
-      <created>1652637539845</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1652637539845</updated>
-    </task>
-    <task id="LOCAL-00034" summary="Update">
-      <created>1652638022345</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1652638022346</updated>
-    </task>
-    <task id="LOCAL-00035" summary="Update">
-      <created>1652653219508</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1652653219509</updated>
-    </task>
-    <task id="LOCAL-00036" summary="Update">
-      <created>1653575513780</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1653575513781</updated>
-    </task>
-    <task id="LOCAL-00037" summary="Update">
-      <created>1653576485372</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1653576485372</updated>
-    </task>
-    <task id="LOCAL-00038" summary="Update">
-      <created>1653578472932</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1653578472932</updated>
-    </task>
-    <task id="LOCAL-00039" summary="Update">
-      <created>1653579223978</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1653579223978</updated>
-    </task>
-    <task id="LOCAL-00040" summary="Update">
-      <created>1653580420025</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1653580420025</updated>
-    </task>
-    <task id="LOCAL-00041" summary="Update">
-      <created>1653582406264</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1653582406264</updated>
-    </task>
-    <task id="LOCAL-00042" summary="Update">
-      <created>1654811144661</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1654811144661</updated>
-    </task>
-    <task id="LOCAL-00043" summary="Update statistics">
-      <created>1654863908876</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1654863908876</updated>
-    </task>
-    <task id="LOCAL-00044" summary="Update">
-      <created>1654865182541</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1654865182541</updated>
-    </task>
-    <task id="LOCAL-00045" summary="Update">
-      <created>1654865518188</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1654865518188</updated>
-    </task>
-    <task id="LOCAL-00046" summary="Update">
-      <created>1654865916580</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1654865916580</updated>
-    </task>
-    <task id="LOCAL-00047" summary="Update">
-      <created>1654866658123</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1654866658123</updated>
-    </task>
-    <task id="LOCAL-00048" summary="Update">
-      <created>1654867986561</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1654867986561</updated>
-    </task>
-    <task id="LOCAL-00049" summary="Update">
-      <created>1654868060025</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1654868060025</updated>
-    </task>
-    <task id="LOCAL-00050" summary="Update">
-      <created>1654893673755</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1654893673756</updated>
-    </task>
-    <task id="LOCAL-00051" summary="Update statistics">
-      <created>1654894415539</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1654894415539</updated>
-    </task>
-    <task id="LOCAL-00052" summary="Update">
-      <created>1654947634283</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1654947634284</updated>
-    </task>
-    <task id="LOCAL-00053" summary="Update result window appearance animation">
-      <created>1654952134890</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1654952134890</updated>
-    </task>
-    <task id="LOCAL-00054" summary="Update result window">
-      <created>1654953329372</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1654953329372</updated>
-    </task>
-    <task id="LOCAL-00055" summary="Update dictionary, statistics">
-      <created>1654956725633</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1654956725633</updated>
-    </task>
-    <task id="LOCAL-00056" summary="Update statistics">
-      <created>1654956821669</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1654956821669</updated>
-    </task>
-    <task id="LOCAL-00057" summary="Update statistics and results clipboard fucntions">
-      <created>1654960716742</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1654960716742</updated>
-    </task>
-    <task id="LOCAL-00058" summary="Update MainHandler">
-      <created>1654960959986</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1654960959986</updated>
-    </task>
-    <task id="LOCAL-00059" summary="Update">
-      <created>1654963152454</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1654963152454</updated>
-    </task>
-    <task id="LOCAL-00060" summary="Update">
-      <created>1654963876175</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1654963876175</updated>
-    </task>
-    <task id="LOCAL-00061" summary="Update">
-      <created>1654965933058</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1654965933058</updated>
-    </task>
-    <task id="LOCAL-00062" summary="Update">
-      <created>1654970987237</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1654970987237</updated>
-    </task>
-    <task id="LOCAL-00063" summary="Add alerts  windows icons in statistics and results">
-      <created>1654982701583</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1654982701583</updated>
-    </task>
-    <task id="LOCAL-00064" summary="Add javadoc">
-      <created>1654989924089</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1654989924089</updated>
-    </task>
-    <task id="LOCAL-00065" summary="Update">
-      <created>1655036218632</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1655036218633</updated>
-    </task>
-    <task id="LOCAL-00066" summary="Update method for initialize words list">
-      <created>1655038228215</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1655038228215</updated>
-    </task>
-    <task id="LOCAL-00067" summary="Update">
-      <created>1655039641607</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1655039641608</updated>
-    </task>
-    <task id="LOCAL-00068" summary="Update">
-      <created>1655039663689</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1655039663689</updated>
-    </task>
-    <task id="LOCAL-00069" summary="Add unit tests on Junit 5">
-      <created>1655043211311</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1655043211311</updated>
-    </task>
-    <task id="LOCAL-00070" summary="Update unit tests">
-      <created>1655043461619</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1655043461619</updated>
-    </task>
-    <task id="LOCAL-00071" summary="Update statistics and dictionary">
-      <created>1655050145829</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1655050145829</updated>
-    </task>
-    <task id="LOCAL-00072" summary="Update readme">
-      <created>1655057086308</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1655057086309</updated>
-    </task>
-    <task id="LOCAL-00073" summary="Update readme">
-      <created>1655057152236</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1655057152236</updated>
-    </task>
-    <task id="LOCAL-00074" summary="Update readme">
-      <created>1655058488644</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1655058488644</updated>
-    </task>
-    <task id="LOCAL-00075" summary="Update readme">
-      <created>1655058544757</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1655058544757</updated>
-    </task>
-    <task id="LOCAL-00076" summary="Update dictionary">
-      <created>1655113814082</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1655113814083</updated>
-    </task>
-    <task id="LOCAL-00077" summary="Update dictionary">
-      <created>1655115569207</created>
-      <option name="number" value="00077" />
-      <option name="presentableId" value="LOCAL-00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1655115569207</updated>
-    </task>
-    <task id="LOCAL-00078" summary="Update dictionary">
-      <created>1655115734817</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1655115734817</updated>
-    </task>
-    <task id="LOCAL-00079" summary="Update dictionary">
-      <created>1655116818521</created>
-      <option name="number" value="00079" />
-      <option name="presentableId" value="LOCAL-00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1655116818521</updated>
-    </task>
-    <task id="LOCAL-00080" summary="Update pom">
-      <created>1655319991497</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1655319991497</updated>
-    </task>
-    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -522,39 +94,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update result window appearance animation" />
-    <MESSAGE value="Update result window" />
-    <MESSAGE value="Update dictionary, statistics" />
-    <MESSAGE value="Update statistics" />
-    <MESSAGE value="Update statistics and results clipboard fucntions" />
-    <MESSAGE value="Update MainHandler" />
-    <MESSAGE value="Add alerts  windows icons in statistics and results" />
-    <MESSAGE value="Add javadoc" />
-    <MESSAGE value="Update method for initialize words list" />
-    <MESSAGE value="Update" />
-    <MESSAGE value="Add unit tests on Junit 5" />
-    <MESSAGE value="Update unit tests" />
-    <MESSAGE value="Update statistics and dictionary" />
-    <MESSAGE value="Update readme" />
-    <MESSAGE value="Update dictionary" />
-    <MESSAGE value="Update pom" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update pom" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.io.FileNotFoundException" package="java.io" />
-          <option name="timeStamp" value="6" />
-        </breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/WordleFX$MainApplication.ic" NAME="MainApplication Coverage Results" MODIFIED="1652560773241" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.wordle.*</FILTER>
-    </SUITE>
   </component>
 </project>
