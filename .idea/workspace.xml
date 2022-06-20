@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aea9369d-5623-48a4-93b2-63f5d7b3efd3" name="Changes" comment="Update readme">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-    </list>
+    <list default="true" id="aea9369d-5623-48a4-93b2-63f5d7b3efd3" name="Changes" comment="Add manifest to gradle" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -95,7 +92,7 @@
       <recent name="com.thewyolar.wordlefx" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.WordleFX [build]">
+  <component name="RunManager" selected="Gradle.WordleFX [run]">
     <configuration name="MainApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.thewyolar.wordlefx.MainApplication" />
       <module name="WordleFX.main" />
@@ -180,9 +177,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.WordleFX [build]" />
         <item itemvalue="Gradle.WordleFX [run]" />
         <item itemvalue="Gradle.WordleFX [clean]" />
+        <item itemvalue="Gradle.WordleFX [build]" />
         <item itemvalue="Application.MainApplication" />
       </list>
     </recent_temporary>
@@ -195,7 +192,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1655727436795</updated>
-      <workItem from="1655727438029" duration="3005000" />
+      <workItem from="1655727438029" duration="3140000" />
     </task>
     <task id="LOCAL-00001" summary="Add gradle">
       <created>1655729794715</created>
@@ -218,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655730076716</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add manifest to gradle">
+      <created>1655730577719</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1655730577719</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,7 +242,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add gradle" />
     <MESSAGE value="Update readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update readme" />
+    <MESSAGE value="Add manifest to gradle" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add manifest to gradle" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
