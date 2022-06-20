@@ -1,13 +1,11 @@
-module com.wordle {
+module com.thewyolar.wordlefx {
     requires javafx.controls;
     requires javafx.fxml;
 
-    requires org.kordamp.bootstrapfx.core;
-    requires javafx.graphics;
     requires org.controlsfx.controls;
 
-    opens com.wordle to javafx.fxml;
-    exports com.wordle;
-    exports com.wordle.controller;
-    opens com.wordle.controller to javafx.fxml;
+    opens com.thewyolar.wordlefx to javafx.fxml;
+    exports com.thewyolar.wordlefx;
+    exports com.thewyolar.wordlefx.controllers;
+    opens com.thewyolar.wordlefx.controllers to javafx.fxml;
 }
