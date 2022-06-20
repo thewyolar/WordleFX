@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aea9369d-5623-48a4-93b2-63f5d7b3efd3" name="Changes" comment="Add manifest to gradle" />
+    <list default="true" id="aea9369d-5623-48a4-93b2-63f5d7b3efd3" name="Changes" comment="Update">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thewyolar/wordlefx/SettingsWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thewyolar/wordlefx/SettingsWindow.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -73,6 +76,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "E:/Projects/Java/WordleFX",
     "nodejs_package_manager_path": "npm",
@@ -148,6 +152,27 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="WordleFX [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="WordleFX [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -172,6 +197,7 @@
     <list>
       <item itemvalue="Application.MainApplication" />
       <item itemvalue="Gradle.WordleFX [build]" />
+      <item itemvalue="Gradle.WordleFX [jar]" />
       <item itemvalue="Gradle.WordleFX [clean]" />
       <item itemvalue="Gradle.WordleFX [run]" />
     </list>
@@ -179,6 +205,7 @@
       <list>
         <item itemvalue="Gradle.WordleFX [run]" />
         <item itemvalue="Gradle.WordleFX [clean]" />
+        <item itemvalue="Gradle.WordleFX [jar]" />
         <item itemvalue="Gradle.WordleFX [build]" />
         <item itemvalue="Application.MainApplication" />
       </list>
@@ -192,7 +219,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1655727436795</updated>
-      <workItem from="1655727438029" duration="3140000" />
+      <workItem from="1655727438029" duration="6142000" />
     </task>
     <task id="LOCAL-00001" summary="Add gradle">
       <created>1655729794715</created>
@@ -222,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655730577719</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Update">
+      <created>1655730652303</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1655730652303</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,7 +277,8 @@
     <MESSAGE value="Add gradle" />
     <MESSAGE value="Update readme" />
     <MESSAGE value="Add manifest to gradle" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add manifest to gradle" />
+    <MESSAGE value="Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

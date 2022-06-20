@@ -25,6 +25,7 @@ public class SettingsWindow {
         HostServices hostServices = (HostServices)MainApplication.getStage().getProperties().get("hostServices");
         SettingsController settingsController = fxmlLoader.getController();
         settingsController.getWordleHyperlink().setOnAction(actionEvent -> hostServices.showDocument("https://www.nytimes.com/games/wordle/index.html"));
+        settingsController.getEmailHyperlink().setOnAction(actionEvent -> hostServices.showDocument("mailto:thewyolar@gmail.com"));
 
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.setTitle("Настройки");
