@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aea9369d-5623-48a4-93b2-63f5d7b3efd3" name="Changes" comment="Add gradle">
+    <list default="true" id="aea9369d-5623-48a4-93b2-63f5d7b3efd3" name="Changes" comment="Update readme">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +95,7 @@
       <recent name="com.thewyolar.wordlefx" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.WordleFX [run]">
+  <component name="RunManager" selected="Gradle.WordleFX [build]">
     <configuration name="MainApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.thewyolar.wordlefx.MainApplication" />
       <module name="WordleFX.main" />
@@ -108,6 +108,27 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="WordleFX [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
     <configuration name="WordleFX [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -135,7 +156,7 @@
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -151,8 +172,15 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Application.MainApplication" />
+      <item itemvalue="Gradle.WordleFX [build]" />
+      <item itemvalue="Gradle.WordleFX [clean]" />
+      <item itemvalue="Gradle.WordleFX [run]" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.WordleFX [build]" />
         <item itemvalue="Gradle.WordleFX [run]" />
         <item itemvalue="Gradle.WordleFX [clean]" />
         <item itemvalue="Application.MainApplication" />
@@ -167,7 +195,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1655727436795</updated>
-      <workItem from="1655727438029" duration="2590000" />
+      <workItem from="1655727438029" duration="3005000" />
     </task>
     <task id="LOCAL-00001" summary="Add gradle">
       <created>1655729794715</created>
@@ -183,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655729837337</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Update readme">
+      <created>1655730076716</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1655730076716</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,7 +237,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add gradle" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add gradle" />
+    <MESSAGE value="Update readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update readme" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
