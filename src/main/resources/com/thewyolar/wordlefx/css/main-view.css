@@ -10,6 +10,13 @@
     -correct-color: #6aaa64;
 }
 
+
+/* Цвет основного окна и плиток со словами (the color of the main window and tiles with words) */
+.main-screen {
+    -fx-background-color: -background-color;
+    -fx-padding: 10px;
+}
+
 .default-tile {
     -fx-background-color: -background-color;
     -fx-border-color: -empty-border-color;
@@ -74,11 +81,8 @@
     -fx-alignment: center;
 }
 
-.main-screen {
-    -fx-background-color: -background-color;
-    -fx-padding: 10px;
-}
 
+/* Цвета клавиш клавиатуры (keyboard tiles colors) */
 .keyboardTile {
     -fx-background-color: -key-background-color;
     -fx-text-fill: -text-fill-color;
@@ -127,6 +131,7 @@
     -fx-background-radius: 4px;
 }
 
+/* Цвета мини-плиток в окне результатов (colors of mini-tiles in the results window) */
 .default-result-tile {
     -fx-background-color: -background-color;
     -fx-border-color: black;
