@@ -1,4 +1,4 @@
-module com.thewyolar.wordlefx {
+module com.wordlefx {
     requires javafx.controls;
     requires javafx.fxml;
 
