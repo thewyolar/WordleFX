@@ -54,7 +54,7 @@ public class MainApplication extends Application {
             try {
                 mainController.onKeyPressed(keyEvent);
             } catch (IOException e) {
-                e.printStackTrace();
+                throw new RuntimeException(e);
             }
         });
     }

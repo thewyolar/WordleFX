@@ -9,6 +9,7 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Objects;
 
 /** Класс окна с настройками приложения */
 public class SettingsWindow {
@@ -26,12 +27,13 @@ public class SettingsWindow {
         SettingsController settingsController = fxmlLoader.getController();
         settingsController.getWordleHyperlink().setOnAction(actionEvent -> hostServices.showDocument("https://www.nytimes.com/games/wordle/index.html"));
         settingsController.getEmailHyperlink().setOnAction(actionEvent -> hostServices.showDocument("mailto:thewyolar@gmail.com"));
+        settingsController.getTelegramHyperlink().setOnAction(actionEvent -> hostServices.showDocument("https://t.me/thewyolar"));
 
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.setTitle("Настройки");
         stage.setResizable(false);
         stage.setScene(scene);
-        stage.getIcons().add(new Image(HelpWindow.class.getResourceAsStream("image/icon.png")));
+        stage.getIcons().add(new Image(Objects.requireNonNull(HelpWindow.class.getResourceAsStream("image/icon.png"))));
         stage.showAndWait();
     }
 }
