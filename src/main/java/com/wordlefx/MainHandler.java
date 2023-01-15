@@ -1,6 +1,6 @@
-package com.thewyolar.wordlefx;
+package com.wordlefx;
 
-import com.thewyolar.wordlefx.statistics.Statistics;
+import com.wordlefx.statistics.Statistics;
 import javafx.animation.ScaleTransition;
 import javafx.animation.SequentialTransition;
 import javafx.scene.Node;
@@ -18,7 +18,7 @@ import java.util.Random;
 
 /**
  * Класс, реализующий основную логику приложения
- * используется для сохранения "чистоты" в контроллере {@link com.thewyolar.wordlefx.controllers.MainController}
+ * используется для сохранения "чистоты" в контроллере {@link com.wordlefx.controllers.MainController}
  */
 public class MainHandler {
 

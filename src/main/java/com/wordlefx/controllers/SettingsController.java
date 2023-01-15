@@ -1,6 +1,6 @@
-package com.thewyolar.wordlefx.controllers;
+package com.wordlefx.controllers;
 
-import com.thewyolar.wordlefx.MainApplication;
+import com.wordlefx.MainApplication;
 import javafx.fxml.FXML;
 import javafx.scene.control.Hyperlink;
 import javafx.scene.control.Label;

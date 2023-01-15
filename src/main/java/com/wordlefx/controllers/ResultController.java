@@ -1,7 +1,7 @@
-package com.thewyolar.wordlefx.controllers;
+package com.wordlefx.controllers;
 
-import com.thewyolar.wordlefx.MainApplication;
-import com.thewyolar.wordlefx.MainHandler;
+import com.wordlefx.MainApplication;
+import com.wordlefx.MainHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;

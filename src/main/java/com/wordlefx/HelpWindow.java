@@ -1,6 +1,6 @@
-package com.thewyolar.wordlefx;
+package com.wordlefx;
 
-import com.thewyolar.wordlefx.controllers.HelpController;
+import com.wordlefx.controllers.HelpController;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;

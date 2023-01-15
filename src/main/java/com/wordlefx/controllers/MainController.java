@@ -1,9 +1,9 @@
-package com.thewyolar.wordlefx.controllers;
+package com.wordlefx.controllers;
 
-import com.thewyolar.wordlefx.HelpWindow;
-import com.thewyolar.wordlefx.MainHandler;
-import com.thewyolar.wordlefx.SettingsWindow;
-import com.thewyolar.wordlefx.StatisticsWindow;
+import com.wordlefx.HelpWindow;
+import com.wordlefx.MainHandler;
+import com.wordlefx.SettingsWindow;
+import com.wordlefx.StatisticsWindow;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;

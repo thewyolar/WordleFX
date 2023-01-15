@@ -1,6 +1,6 @@
-package com.thewyolar.wordlefx;
+package com.wordlefx;
 
-import com.thewyolar.wordlefx.controllers.MainController;
+import com.wordlefx.controllers.MainController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -100,7 +100,7 @@ public class MainApplication extends Application {
     /** Иницилизирует список слов {@link MainApplication#dictionaryWords} */
     public void initializeWordList() {
         try {
-            File file = new File("src/main/resources/com/thewyolar/wordlefx/dictionary.txt");
+            File file = new File("src/main/resources/com/wordlefx/dictionary.txt");
             FileReader fr = new FileReader(file);
             BufferedReader reader = new BufferedReader(fr);
             String line = reader.readLine();

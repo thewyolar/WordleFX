@@ -1,4 +1,4 @@
-package com.thewyolar.wordlefx.controllers;
+package com.wordlefx.controllers;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;

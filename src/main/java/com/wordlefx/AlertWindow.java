@@ -1,4 +1,4 @@
-package com.thewyolar.wordlefx;
+package com.wordlefx;
 
 import javafx.animation.FadeTransition;
 import javafx.scene.Scene;

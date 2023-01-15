@@ -4,8 +4,8 @@ module com.thewyolar.wordlefx {
 
     requires org.controlsfx.controls;
 
-    opens com.thewyolar.wordlefx to javafx.fxml;
-    exports com.thewyolar.wordlefx;
-    exports com.thewyolar.wordlefx.controllers;
-    opens com.thewyolar.wordlefx.controllers to javafx.fxml;
+    opens com.wordlefx to javafx.fxml;
+    exports com.wordlefx;
+    exports com.wordlefx.controllers;
+    opens com.wordlefx.controllers to javafx.fxml;
 }

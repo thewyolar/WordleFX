@@ -1,7 +1,7 @@
-package com.thewyolar.wordlefx;
+package com.wordlefx;
 
-import com.thewyolar.wordlefx.controllers.ResultController;
-import com.thewyolar.wordlefx.statistics.Statistics;
+import com.wordlefx.controllers.ResultController;
+import com.wordlefx.statistics.Statistics;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
