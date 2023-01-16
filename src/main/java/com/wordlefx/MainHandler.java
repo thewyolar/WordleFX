@@ -29,7 +29,7 @@ public class MainHandler {
     private final String[] secondRowLetters = {"Ф", "Ы", "В", "А", "П", "Р", "О", "Л", "Д", "Ж", "Э"};
 
     /** firstRowLetters - список всех букв последней строки экранной клавиатуры */
-    private final String[] thirdRowLetters = {"Я", "С", "М", "И", "Т", "Ь", "Б", "Ю"};
+    private final String[] thirdRowLetters = {"Я", "Ч", "С", "М", "И", "Т", "Ь", "Б", "Ю"};
 
     /** CURRENT_ROW - содержит номер текущей строки */
     private int CURRENT_ROW = 0;
