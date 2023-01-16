@@ -324,8 +324,8 @@ public class MainHandler {
         if (keyEvent.getCode() == KeyCode.ENTER) {
             onEnterPressed(gridPane, keyboardRow1, keyboardRow2, keyboardRow3);
         }
-        PrintStream out = new PrintStream(System.out, true, "utf-8");
-        out.println(winningWord);
+//        PrintStream out = new PrintStream(System.out, true, "utf-8");
+//        out.println(winningWord);
     }
 
     /**

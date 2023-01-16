@@ -100,6 +100,7 @@ public class MainApplication extends Application {
     /** Иницилизирует список слов {@link MainApplication#dictionaryWords} */
     public void initializeWordList() {
         try {
+            //File file = new File("dictionary.txt"); for jar
             File file = new File("src/main/resources/com/wordlefx/dictionary.txt");
             FileReader fr = new FileReader(file);
             BufferedReader reader = new BufferedReader(fr);
