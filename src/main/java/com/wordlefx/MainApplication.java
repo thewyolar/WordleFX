@@ -2,9 +2,11 @@ package com.wordlefx;
 
 import com.wordlefx.controllers.MainController;
 import javafx.application.Application;
+import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
+import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 
 import java.io.BufferedReader;
@@ -50,13 +52,21 @@ public class MainApplication extends Application {
         stage.getIcons().add(new Image(Objects.requireNonNull(getClass().getResourceAsStream("image/icon.png"))));
         stage.show();
 
-        scene.setOnKeyPressed(keyEvent -> {
+//        scene.setOnKeyPressed(keyEvent -> {
+//            try {
+//                mainController.onKeyPressed(keyEvent);
+//            } catch (IOException e) {
+//                throw new RuntimeException(e);
+//            }
+//        });
+        EventHandler<KeyEvent> filter = keyEvent -> {
             try {
                 mainController.onKeyPressed(keyEvent);
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
-        });
+        };
+        scene.addEventFilter(KeyEvent.KEY_PRESSED, filter);
     }
 
     public static void main(String[] args) {

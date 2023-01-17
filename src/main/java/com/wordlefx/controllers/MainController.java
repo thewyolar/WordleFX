@@ -4,13 +4,19 @@ import com.wordlefx.HelpWindow;
 import com.wordlefx.MainHandler;
 import com.wordlefx.SettingsWindow;
 import com.wordlefx.StatisticsWindow;
+import javafx.animation.ScaleTransition;
+import javafx.animation.SequentialTransition;
 import javafx.fxml.FXML;
+import javafx.scene.Node;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyEvent;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
+import javafx.util.Duration;
 
 import java.io.IOException;
 
@@ -78,6 +84,43 @@ public class MainController {
      */
     @FXML
     private VBox vboxBottom;
+
+    @FXML
+    public void initialize() {
+        initialKeyboardRow(keyboardRow1);
+        initialKeyboardRow(keyboardRow2);
+        initialKeyboardRow(keyboardRow3);
+    }
+
+    public void initialKeyboardRow(GridPane keyboardRow) {
+        for (Node child : keyboardRow.getChildren()) {
+            if (child instanceof Button) {
+                Button button = (Button) child;
+                button.addEventHandler(MouseEvent.MOUSE_CLICKED, mouseEvent -> {
+                    ScaleTransition firstScaleTransition = new ScaleTransition(Duration.millis(100), button);
+                    firstScaleTransition.fromXProperty().setValue(1);
+                    firstScaleTransition.toXProperty().setValue(1.1);
+                    firstScaleTransition.fromYProperty().setValue(1);
+                    firstScaleTransition.toYProperty().setValue(1.1);
+
+                    ScaleTransition secondScaleTransition = new ScaleTransition(Duration.millis(100), button);
+                    secondScaleTransition.fromXProperty().setValue(1.1);
+                    secondScaleTransition.toXProperty().setValue(1);
+                    secondScaleTransition.fromYProperty().setValue(1.1);
+                    secondScaleTransition.toYProperty().setValue(1);
+
+                    SequentialTransition transition = new SequentialTransition(firstScaleTransition, secondScaleTransition);
+                    transition.play();
+
+                    try {
+                        mainHandler.onVirtualKeyPressed(wordsGridPane, keyboardRow1, keyboardRow2, keyboardRow3, button);
+                    } catch (IOException e) {
+                        throw new RuntimeException(e);
+                    }
+                });
+            }
+        }
+    }
 
     /**
      * Возвращает значение поля {@link MainController#borderPane}

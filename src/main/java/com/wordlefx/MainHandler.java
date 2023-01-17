@@ -4,6 +4,7 @@ import com.wordlefx.statistics.Statistics;
 import javafx.animation.ScaleTransition;
 import javafx.animation.SequentialTransition;
 import javafx.scene.Node;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
@@ -11,7 +12,6 @@ import javafx.scene.layout.GridPane;
 import javafx.util.Duration;
 
 import java.io.IOException;
-import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.Objects;
 import java.util.Random;
@@ -76,7 +76,7 @@ public class MainHandler {
      * @param gridPane - таблица, содержащая метки с буквами
      * @param searchRow - номер строки с буквой
      * @param searchColumn - номер столбца с буквой
-     * @return возвращает необходимую букву из таблицы
+     * @return возвращает необходимую метку из таблицы
      */
     private static Label getLabel(GridPane gridPane, int searchRow, int searchColumn) {
         for (Node child : gridPane.getChildren()) {
@@ -91,18 +91,18 @@ public class MainHandler {
     }
 
     /**
-     * Возвращает из таблицы все объекты класса метки, содержащиеся в нужном слове
+     * Возвращает из таблицы все объекты класса кнопки, буква которой содержится в нужном слове
      * @param gridPane - таблица, содержащая метки с буквами
      * @param letter - слово, буквы которого нужно получить
-     * @return возвращает каждую букву нужного слова из таблицы
+     * @return возвращает кнопки, буквы которых содеражатся в нужном слове из таблицы
      */
-    private Label getLabel(GridPane gridPane, String letter) {
-        Label label;
+    private Button getButton(GridPane gridPane, String letter) {
+        Button button;
         for (Node child : gridPane.getChildren()) {
-            if (child instanceof Label) {
-                label = (Label) child;
-                if (letter.equalsIgnoreCase(label.getText()))
-                    return label;
+            if (child instanceof Button) {
+                button = (Button) child;
+                if (letter.equalsIgnoreCase(button.getText()))
+                    return button;
             }
         }
         return null;
@@ -211,17 +211,17 @@ public class MainHandler {
     private void updateKeyboardColors(GridPane gridPane, GridPane keyboardRow1, GridPane keyboardRow2, GridPane keyboardRow3) {
         String currentWord = getWordFromCurrentRow(gridPane).toLowerCase();
         for (int i = 0; i <= MAX_COLUMN; i++) {
-            Label keyboardLabel = new Label();
+            Button keyboardButton = new Button();
             String styleClass;
             String currentCharacter = String.valueOf(currentWord.charAt(i));
             String winningCharacter = String.valueOf(winningWord.charAt(i));
 
             if (contains(firstRowLetters, currentCharacter))
-                keyboardLabel = getLabel(keyboardRow1, currentCharacter);
+                keyboardButton = getButton(keyboardRow1, currentCharacter);
             else if (contains(secondRowLetters, currentCharacter))
-                keyboardLabel = getLabel(keyboardRow2, currentCharacter);
+                keyboardButton = getButton(keyboardRow2, currentCharacter);
             else if (contains(thirdRowLetters, currentCharacter))
-                keyboardLabel = getLabel(keyboardRow3, currentCharacter);
+                keyboardButton = getButton(keyboardRow3, currentCharacter);
 
             if (currentCharacter.equals(winningCharacter))
                 styleClass = "keyboardCorrectColor";
@@ -230,9 +230,9 @@ public class MainHandler {
             else
                 styleClass = "keyboardWrongColor";
 
-            if (keyboardLabel != null) {
-                keyboardLabel.getStyleClass().clear();
-                keyboardLabel.getStyleClass().add(styleClass);
+            if (keyboardButton != null) {
+                keyboardButton.getStyleClass().clear();
+                keyboardButton.getStyleClass().add(styleClass);
             }
         }
     }
@@ -376,6 +376,44 @@ public class MainHandler {
         }
     }
 
+    public void onVirtualKeyPressed(GridPane gridPane, GridPane keyboardRow1, GridPane keyboardRow2, GridPane keyboardRow3, Button btn) throws IOException {
+        if (btn.getText().equals("⌫")) {
+            onBackspacePressed(gridPane);
+        } else if (btn.getText().equals("↵")) {
+            onEnterPressed(gridPane, keyboardRow1, keyboardRow2, keyboardRow3);
+        } else {
+            onLetterPressed(gridPane, btn);
+        }
+//        PrintStream out = new PrintStream(System.out, true, "utf-8");
+//        out.println(winningWord);
+    }
+
+    private void onLetterPressed(GridPane gridPane, Button btn) {
+        if (getLabelText(gridPane, CURRENT_ROW, CURRENT_COLUMN).isEmpty()) {
+            setLabelText(gridPane, CURRENT_ROW, CURRENT_COLUMN, btn.getText());
+            Label label = getLabel(gridPane, CURRENT_ROW, CURRENT_COLUMN);
+
+            ScaleTransition firstScaleTransition = new ScaleTransition(Duration.millis(100), label);
+            firstScaleTransition.fromXProperty().setValue(1);
+            firstScaleTransition.toXProperty().setValue(1.1);
+            firstScaleTransition.fromYProperty().setValue(1);
+            firstScaleTransition.toYProperty().setValue(1.1);
+
+            ScaleTransition secondScaleTransition = new ScaleTransition(Duration.millis(100), label);
+            secondScaleTransition.fromXProperty().setValue(1.1);
+            secondScaleTransition.toXProperty().setValue(1);
+            secondScaleTransition.fromYProperty().setValue(1.1);
+            secondScaleTransition.toYProperty().setValue(1);
+
+            SequentialTransition transition = new SequentialTransition(firstScaleTransition, secondScaleTransition);
+            transition.play();
+
+            setLabelStyleClass(gridPane, CURRENT_ROW, CURRENT_COLUMN, "tile-with-letter");
+            if (CURRENT_COLUMN < MAX_COLUMN)
+                CURRENT_COLUMN++;
+        }
+    }
+
     /**
      * Обрабатывает событие нажатия клавиши enter
      * @param gridPane - таблица, содержащая введенные слова
@@ -456,6 +494,7 @@ public class MainHandler {
         winsInRowNow = 0;
         winsInRowMax = 0;
         Label label;
+        Button button;
         for (Node child : gridPane.getChildren())
             if (child instanceof Label) {
                 label = (Label) child;
@@ -465,24 +504,24 @@ public class MainHandler {
             }
 
         for (Node child : keyboardRow1.getChildren())
-            if (child instanceof Label) {
-                label = (Label) child;
-                label.getStyleClass().clear();
-                label.getStyleClass().add("keyboardTile");
+            if (child instanceof Button) {
+                button = (Button) child;
+                button.getStyleClass().clear();
+                button.getStyleClass().add("keyboardTile");
             }
 
         for (Node child : keyboardRow2.getChildren())
-            if (child instanceof Label) {
-                label = (Label) child;
-                label.getStyleClass().clear();
-                label.getStyleClass().add("keyboardTile");
+            if (child instanceof Button) {
+                button = (Button) child;
+                button.getStyleClass().clear();
+                button.getStyleClass().add("keyboardTile");
             }
 
         for (Node child : keyboardRow3.getChildren())
-            if (child instanceof Label) {
-                label = (Label) child;
-                label.getStyleClass().clear();
-                label.getStyleClass().add("keyboardTile");
+            if (child instanceof Button) {
+                button = (Button) child;
+                button.getStyleClass().clear();
+                button.getStyleClass().add("keyboardTile");
             }
 
         CURRENT_COLUMN = 0;
