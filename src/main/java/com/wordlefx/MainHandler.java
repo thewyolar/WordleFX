@@ -452,7 +452,11 @@ public class MainHandler {
                 CURRENT_ROW++;
                 CURRENT_COLUMN = 0;
             } else {
-                MainApplication.showAlert();
+                if (guess.length() < 5) {
+                    MainApplication.showAlert("В слове не хватает букв!");
+                } else {
+                    MainApplication.showAlert("В словаре игры нет такого слова, \nпопробуйте другое!");
+                }
             }
             if (ResultWindow.getResetGame()) {
                 resetGame(gridPane, keyboardRow1, keyboardRow2, keyboardRow3);

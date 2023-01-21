@@ -15,13 +15,14 @@ public class AlertWindow {
     /**
      * Отображает окно с предупреждением
      * @param ownerStage - ссылка на родительское окно
+     * @param message - сообщение, которое нужно отобразить
      */
-    public static void display(Stage ownerStage) {
+    public static void display(Stage ownerStage, String message) {
         Stage stage = new Stage();
         stage.initOwner(ownerStage);
         stage.initStyle(StageStyle.TRANSPARENT);
 
-        Text text = new Text("В словаре игры нет такого слова, \nпопробуйте другое!");
+        Text text = new Text(message);
         text.setFill(Color.WHITE);
         text.setStyle("-fx-font-size: 16px;");
 

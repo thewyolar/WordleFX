@@ -102,9 +102,12 @@ public class MainApplication extends Application {
         stageReference.close();
     }
 
-    /** Запускает метод {@link AlertWindow#display(Stage)} */
-    public static void showAlert() {
-        AlertWindow.display(stageReference);
+    /**
+     * Запускает метод {@link AlertWindow#display(Stage, String)}
+     * @param message - Сообщение, которое нужно отобразить
+     */
+    public static void showAlert(String message) {
+        AlertWindow.display(stageReference, message);
     }
 
     /** Иницилизирует список слов {@link MainApplication#dictionaryWords} */
