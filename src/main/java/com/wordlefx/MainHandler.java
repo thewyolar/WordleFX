@@ -423,7 +423,7 @@ public class MainHandler {
      * @exception IOException - исключение ввода-вывода
      */
     private void onEnterPressed(GridPane gridPane, GridPane keyboardRow1, GridPane keyboardRow2, GridPane keyboardRow3) throws IOException {
-        if (CURRENT_ROW <= MAX_ROW && CURRENT_COLUMN == MAX_COLUMN) {
+        if (CURRENT_ROW <= MAX_ROW && CURRENT_COLUMN <= MAX_COLUMN) {
             String guess = getWordFromCurrentRow(gridPane).toLowerCase();
             if (guess.equals(winningWord)) {
                 playedGames += 1;
