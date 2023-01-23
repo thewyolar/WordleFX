@@ -10,12 +10,12 @@ import javafx.fxml.FXML;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
+import javafx.scene.shape.SVGPath;
 import javafx.util.Duration;
 
 import java.io.IOException;
@@ -47,7 +47,7 @@ public class MainController {
 
     /** helpIcon - значок окна с правилами игры {@link HelpWindow} */
     @FXML
-    private ImageView helpIcon;
+    private SVGPath helpIcon;
 
     /**
      * keyboardRow1 - однострочная таблица в нижней части окна приложения
@@ -72,11 +72,11 @@ public class MainController {
 
     /** settingsIcon - значок окна настроек {@link SettingsWindow} */
     @FXML
-    private ImageView settingsIcon;
+    private SVGPath settingsIcon;
 
     /** statisticsIcon - значок окна статистики {@link StatisticsWindow} */
     @FXML
-    private ImageView statisticsIcon;
+    private SVGPath statisticsIcon;
 
     /**
      * vboxTop - контейнер со всеми элементами нижней части окна приложения
