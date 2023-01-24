@@ -6,8 +6,7 @@ import java.io.*;
 public abstract class Statistics {
 
     /** Файл, хранящий статистику игры */
-    // private static final File statisticsFile = new File("statistics.bin"); for jar
-    private static final File statisticsFile = new File("src/main/resources/com/wordlefx/statistics.bin");
+    private static final File statisticsFile = new File("statistics.bin");
 
     /**
      * statisticsList - cписок значений, считанных из файла
