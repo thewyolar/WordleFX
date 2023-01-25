@@ -23,6 +23,10 @@
               <transformers>
                 <transformer>
                   <mainClass>com.wordlefx.Launcher</mainClass>
+                  <manifestEntries>
+                    <Multi-Release>true</Multi-Release>
+                    <Class-Path>/src/main/resources</Class-Path>
+                  </manifestEntries>
                 </transformer>
               </transformers>
             </configuration>
