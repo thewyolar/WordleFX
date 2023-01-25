@@ -1,8 +1,8 @@
 package com.wordlefx.controllers;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.image.ImageView;
 
 /** Класс контроллера для взаимодействия окна приложения со статистикой игры с FXML */
 public class StatisticsController {
@@ -29,13 +29,13 @@ public class StatisticsController {
 
     /** shareButton - кнопка для копирования статистики игры в буфер обмена устройства */
     @FXML
-    private ImageView shareButton;
+    private Button shareButton;
 
     /**
      * Возвращает значение поля {@link StatisticsController#shareButton}
      * @return возвращает ссылку на кнопку для копирования статистики игры в буфер обмена устройства
      */
-    public ImageView getShareButton() {
+    public Button getShareButton() {
         return shareButton;
     }
 

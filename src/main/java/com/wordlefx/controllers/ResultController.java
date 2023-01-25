@@ -34,7 +34,7 @@ public class ResultController {
 
     /** shareButton - кнопка для копирования результатов игры в буфер обмена устройства */
     @FXML
-    private ImageView shareButton;
+    private Button shareButton;
 
     /**
      * Возвращает значение поля {@link ResultController#winningWordLabel}
@@ -64,7 +64,7 @@ public class ResultController {
      * Возвращает значение поля {@link ResultController#shareButton}
      * @return возвращает ссылку на кнопку для копирования результатов игры в буфер обмена устройства
      */
-    public ImageView getShareButton() {
+    public Button getShareButton() {
         return shareButton;
     }
 

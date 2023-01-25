@@ -4,16 +4,15 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.SVGPath?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="342.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.wordlefx.controllers.ResultController">
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="342.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.wordlefx.controllers.ResultController">
 
    <stylesheets>
       <URL value="@../css/main-view.css" />
@@ -53,14 +52,14 @@
                </HBox.margin></Line>
             <VBox maxHeight="110.0" prefHeight="110.0" prefWidth="230.0">
                <children>
-                  <ImageView fx:id="shareButton" fitHeight="40.0" fitWidth="161.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../image/copy.png" />
-                     </image>
+                  <Button fx:id="shareButton" mnemonicParsing="false" prefHeight="41.0" prefWidth="139.0" styleClass="btn" text="Скопировать" textFill="WHITE">
+                     <graphic>
+                        <SVGPath content="M 8 16 H 6 A 2 2 0 0 1 4 14 V 6 A 2 2 0 0 1 6 4 H 14 A 2 2 0 0 1 16 6 V 8 M 10 20 H 18 A 2 2 0 0 0 20 18 V 10 A 2 2 0 0 0 18 8 H 10 A 2 2 0 0 0 8 10 V 18 A 2 2 0 0 0 10 20 Z" fill="TRANSPARENT" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="2.0" />
+                     </graphic>
                      <VBox.margin>
-                        <Insets left="35.0" top="20.0" />
+                        <Insets left="40.0" top="30.0" />
                      </VBox.margin>
-                  </ImageView>
+                  </Button>
                </children>
             </VBox>
          </children>

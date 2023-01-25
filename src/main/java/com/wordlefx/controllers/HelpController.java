@@ -1,6 +1,7 @@
 package com.wordlefx.controllers;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.BorderPane;
@@ -18,13 +19,13 @@ public class HelpController {
 
     /** gameButton - кнопка для начала игры */
     @FXML
-    private ImageView gameButton;
+    private Button gameButton;
 
     /**
      * Возвращает значение поля {@link HelpController#gameButton}
      * @return возвращает ссылку на кнопку для начала игры
      */
-    public ImageView getGameButton() {
+    public Button getGameButton() {
         return gameButton;
     }
 
