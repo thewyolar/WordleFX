@@ -4,7 +4,6 @@ import com.wordlefx.MainApplication;
 import javafx.fxml.FXML;
 import javafx.scene.control.Hyperlink;
 import javafx.scene.control.Label;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
 import org.controlsfx.control.ToggleSwitch;
 
@@ -46,6 +45,30 @@ public class SettingsController {
     @FXML
     private Hyperlink wordleHyperlink;
 
+    private boolean isDark;
+
+    /** Переключает тему окна с настройками приложения */
+    @FXML
+    private void initialize() {
+        darkThemeSwitcher.selectedProperty().addListener((obs, wasSelected, isSelected) -> {
+            if (isSelected && !isDark) {
+                isDark = true;
+                mainController.mainWindowDark();
+                borderPane.setStyle("-fx-background-color: #212529");
+                darkThemeLabel.setStyle("-fx-text-fill: white");
+                settingsTitle.setStyle("-fx-text-fill: white");
+                contactLabel.setStyle("-fx-text-fill: white");
+            } else {
+                isDark = false;
+                mainController.mainWindowLight();
+                borderPane.setStyle("-fx-background-color: white");
+                darkThemeLabel.setStyle("-fx-text-fill: black");
+                settingsTitle.setStyle("-fx-text-fill: black");
+                contactLabel.setStyle("-fx-text-fill: black");
+            }
+        });
+    }
+
     /**
      * Возвращает значение поля {@link SettingsController#emailHyperlink}
      * @return возвращает гиперссылку на email
@@ -68,33 +91,5 @@ public class SettingsController {
      */
     public Hyperlink getWordleHyperlink() {
         return wordleHyperlink;
-    }
-
-    /** Устанавливает стили для отображения светлой темы окна с настройками приложения */
-    public void settingsWindowLight() {
-        borderPane.setStyle("-fx-background-color: #212529");
-        darkThemeLabel.setStyle("-fx-text-fill: white");
-        settingsTitle.setStyle("-fx-text-fill: white");
-        contactLabel.setStyle("-fx-text-fill: white");
-    }
-
-    /** Устанавливает стили для отображения темной темы окна с настройками приложения */
-    public void settingsWindowDark() {
-        borderPane.setStyle("-fx-background-color: white");
-        darkThemeLabel.setStyle("-fx-text-fill: black");
-        settingsTitle.setStyle("-fx-text-fill: black");
-        contactLabel.setStyle("-fx-text-fill: black");
-    }
-
-    /** Переключает тему окна с настройками приложения */
-    public void switchSettingsWindowTheme(MouseEvent mouseEvent) {
-        if (darkThemeSwitcher.isSelected()) {
-            settingsWindowLight();
-            mainController.mainWindowLight();
-        }
-        else {
-            settingsWindowDark();
-            mainController.mainWindowDark();
-        }
     }
 }

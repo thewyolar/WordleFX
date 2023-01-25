@@ -45,7 +45,7 @@
                         <Insets left="20.0" top="20.0" />
                      </HBox.margin>
                   </Label>
-                  <ToggleSwitch fx:id="darkThemeSwitcher" onMouseClicked="#switchSettingsWindowTheme" prefHeight="18.0" prefWidth="34.0">
+                  <ToggleSwitch fx:id="darkThemeSwitcher" prefHeight="18.0" prefWidth="34.0">
                      <HBox.margin>
                         <Insets left="300.0" top="20.0" />
                      </HBox.margin>

@@ -187,13 +187,13 @@ public class MainController {
     }
 
     /** Устанавливает стили для отображения светлой темы основного окна приложения */
-    public void mainWindowLight() {
+    public void mainWindowDark() {
         borderPane.setStyle("-fx-background-color: #212529");
         gameTitleLabel.setStyle("-fx-text-fill: white");
     }
 
     /** Устанавливает стили для отображения темной темы основного окна приложения */
-    public void mainWindowDark() {
+    public void mainWindowLight() {
         borderPane.setStyle("-fx-background-color: white");
         gameTitleLabel.setStyle("-fx-text-fill: black");
     }
