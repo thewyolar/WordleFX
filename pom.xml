@@ -23,7 +23,6 @@
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
-            <classifier>win</classifier>
             <version>19</version>
         </dependency>
         <dependency>
@@ -32,12 +31,12 @@
             <version>19</version>
             <classifier>win</classifier>
         </dependency>
-        <dependency>
-            <groupId>org.openjfx</groupId>
-            <artifactId>javafx-graphics</artifactId>
-            <version>19</version>
-            <classifier>linux</classifier>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.openjfx</groupId>-->
+<!--            <artifactId>javafx-graphics</artifactId>-->
+<!--            <version>19</version>-->
+<!--            <classifier>linux</classifier>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>org.controlsfx</groupId>
             <artifactId>controlsfx</artifactId>
@@ -52,6 +51,23 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
             </plugin>
+
+            <plugin>
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-maven-plugin</artifactId>
+                <version>0.0.8</version>
+                <configuration>
+                    <stripDebug>true</stripDebug>
+                    <compress>2</compress>
+                    <noHeaderFiles>true</noHeaderFiles>
+                    <noManPages>true</noManPages>
+                    <launcher>wordlefx</launcher>
+                    <jlinkImageName>wordlefx</jlinkImageName>
+                    <jlinkZipName>wordlefx-game</jlinkZipName>
+                    <mainClass>com.wordlefx/com.wordlefx.Launcher</mainClass>
+                </configuration>
+            </plugin>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>

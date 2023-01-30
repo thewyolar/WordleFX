@@ -11,6 +11,21 @@
         <version>3.8.1</version>
       </plugin>
       <plugin>
+        <groupId>org.openjfx</groupId>
+        <artifactId>javafx-maven-plugin</artifactId>
+        <version>0.0.8</version>
+        <configuration>
+          <stripDebug>true</stripDebug>
+          <compress>2</compress>
+          <noHeaderFiles>true</noHeaderFiles>
+          <noManPages>true</noManPages>
+          <launcher>wordlefx</launcher>
+          <jlinkImageName>wordlefx</jlinkImageName>
+          <jlinkZipName>wordlefx-game</jlinkZipName>
+          <mainClass>com.wordlefx/com.wordlefx.Launcher</mainClass>
+        </configuration>
+      </plugin>
+      <plugin>
         <artifactId>maven-shade-plugin</artifactId>
         <version>3.4.1</version>
         <executions>

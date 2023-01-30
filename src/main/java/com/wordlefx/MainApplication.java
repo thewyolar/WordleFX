@@ -52,13 +52,6 @@ public class MainApplication extends Application {
         stage.getIcons().add(new Image(Objects.requireNonNull(getClass().getResourceAsStream("image/icon.png"))));
         stage.show();
 
-//        scene.setOnKeyPressed(keyEvent -> {
-//            try {
-//                mainController.onKeyPressed(keyEvent);
-//            } catch (IOException e) {
-//                throw new RuntimeException(e);
-//            }
-//        });
         EventHandler<KeyEvent> filter = keyEvent -> {
             try {
                 mainController.onKeyPressed(keyEvent);
