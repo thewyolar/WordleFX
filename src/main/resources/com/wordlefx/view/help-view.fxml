@@ -5,20 +5,21 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane fx:id="borderPane" prefHeight="659.0" prefWidth="476.0" styleClass="main-screen" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.wordlefx.controllers.HelpController">
+<BorderPane fx:id="borderPane" prefHeight="659.0" prefWidth="476.0" styleClass="main-screen" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.wordlefx.controllers.HelpController">
 
    <stylesheets>
-      <URL value="@../css/main-view.css" />
+      <URL value="@../css/style.css" />
    </stylesheets>
 
    <top>
@@ -35,8 +36,8 @@
          </children>
       </VBox>
    </top>
-   <bottom>
-      <ScrollPane fx:id="scrollPane" maxWidth="548.0" prefHeight="580.0" prefWidth="456.0" vvalue="1.0" BorderPane.alignment="TOP_CENTER">
+   <right>
+      <ScrollPane fx:id="scrollPane" maxWidth="548.0" prefHeight="580.0" prefWidth="456.0" BorderPane.alignment="CENTER">
          <content>
             <VBox prefHeight="760.0" prefWidth="398.0">
                <children>
@@ -76,7 +77,7 @@
                      </children>
                   </VBox>
                   <Line endX="335.0" startX="-100.0" stroke="#aeaeae" />
-                  <VBox prefHeight="127.0" prefWidth="440.0">
+                  <VBox prefHeight="111.0" prefWidth="436.0">
                      <children>
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Первым мы ввели слово Ребус. Буква С есть в загаданном слове, но стоит в другом месте." textAlignment="JUSTIFY" wrappingWidth="401.64886474609375">
                            <VBox.margin>
@@ -86,18 +87,36 @@
                               <Font size="14.0" />
                            </font>
                         </Text>
-                        <ImageView fitHeight="51.0" fitWidth="204.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../image/example1.png" />
-                           </image>
+                        <GridPane prefHeight="41.0" prefWidth="185.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="75.0" minWidth="10.0" prefWidth="42.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="75.0" minWidth="0.0" prefWidth="42.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="75.0" minWidth="10.0" prefWidth="42.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="75.0" minWidth="10.0" prefWidth="42.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="75.4" minWidth="10.0" prefWidth="42.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label prefHeight="48.0" prefWidth="48.0" styleClass="default-help-tile" text="Р">
+                                 <GridPane.margin>
+                                    <Insets />
+                                 </GridPane.margin>
+                              </Label>
+                              <Label prefHeight="48.0" prefWidth="48.0" styleClass="default-help-tile" text="Е" GridPane.columnIndex="1" />
+                              <Label prefHeight="48.0" prefWidth="48.0" styleClass="default-help-tile" text="Б" GridPane.columnIndex="2" />
+                              <Label prefHeight="49.0" prefWidth="46.0" styleClass="default-help-tile" text="У" GridPane.columnIndex="3" />
+                              <Label prefHeight="49.0" prefWidth="46.0" styleClass="present-help-letter" text="С" GridPane.columnIndex="4" />
+                           </children>
                            <VBox.margin>
-                              <Insets left="20.0" top="10.0" />
+                              <Insets bottom="10.0" left="20.0" right="200.0" top="10.0" />
                            </VBox.margin>
-                        </ImageView>
+                        </GridPane>
                      </children>
                   </VBox>
                   <Line endX="335.0" startX="-100.0" stroke="#aeaeae" />
-                  <VBox fillWidth="false" prefHeight="200.0" prefWidth="440.0">
+                  <VBox fillWidth="false" prefHeight="181.0" prefWidth="436.0">
                      <children>
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Затем ввели слово Сосна. Буква С и О есть в загаданном слове и стоят на правильных местах." textAlignment="JUSTIFY" wrappingWidth="400.7296142578125">
                            <font>
@@ -107,17 +126,35 @@
                               <Insets left="20.0" top="10.0" />
                            </VBox.margin>
                         </Text>
-                        <ImageView fitHeight="51.0" fitWidth="204.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../image/example2.png" />
-                           </image>
+                        <GridPane prefHeight="42.0" prefWidth="214.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="75.0" minWidth="10.0" prefWidth="42.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="75.0" minWidth="0.0" prefWidth="42.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="75.0" minWidth="10.0" prefWidth="42.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="75.0" minWidth="10.0" prefWidth="42.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="75.4" minWidth="10.0" prefWidth="42.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label prefHeight="48.0" prefWidth="48.0" styleClass="default-help-tile" text="С">
+                                 <GridPane.margin>
+                                    <Insets />
+                                 </GridPane.margin>
+                              </Label>
+                              <Label prefHeight="48.0" prefWidth="48.0" styleClass="correct-help-letter" text="О" GridPane.columnIndex="1" />
+                              <Label prefHeight="48.0" prefWidth="48.0" styleClass="correct-help-letter" text="С" GridPane.columnIndex="2" />
+                              <Label prefHeight="49.0" prefWidth="46.0" styleClass="default-help-tile" text="Н" GridPane.columnIndex="3" />
+                              <Label prefHeight="49.0" prefWidth="46.0" styleClass="default-help-tile" text="А" GridPane.columnIndex="4" />
+                           </children>
                            <VBox.margin>
-                              <Insets left="20.0" top="10.0" />
+                              <Insets bottom="10.0" left="20.0" right="200.0" top="10.0" />
                            </VBox.margin>
-                        </ImageView>
+                        </GridPane>
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Обратите внимание, что если в введенном слове две одинаковых буквы, а в загаданном слове только одна такая буква, то выделяется только одна буква." textAlignment="JUSTIFY" wrappingWidth="402.26524735689145">
                            <VBox.margin>
-                              <Insets left="20.0" top="10.0" />
+                              <Insets left="20.0" />
                            </VBox.margin>
                            <font>
                               <Font size="14.0" />
@@ -126,7 +163,7 @@
                      </children>
                   </VBox>
                   <Line endX="335.0" layoutX="111.0" layoutY="263.0" startX="-100.0" stroke="#aeaeae" />
-                  <VBox prefHeight="108.0" prefWidth="440.0">
+                  <VBox prefHeight="96.0" prefWidth="436.0">
                      <children>
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Если слово угадано правильно, то все буквы будут выделены!" wrappingWidth="399.8701171875">
                            <VBox.margin>
@@ -136,18 +173,36 @@
                               <Font size="14.0" />
                            </font>
                         </Text>
-                        <ImageView fitHeight="51.0" fitWidth="204.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../image/example3.png" />
-                           </image>
+                        <GridPane prefHeight="42.0" prefWidth="214.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="75.0" minWidth="10.0" prefWidth="42.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="75.0" minWidth="0.0" prefWidth="42.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="75.0" minWidth="10.0" prefWidth="42.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="75.0" minWidth="10.0" prefWidth="42.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="75.4" minWidth="10.0" prefWidth="42.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label prefHeight="48.0" prefWidth="48.0" styleClass="correct-help-letter" text="Г">
+                                 <GridPane.margin>
+                                    <Insets />
+                                 </GridPane.margin>
+                              </Label>
+                              <Label prefHeight="48.0" prefWidth="48.0" styleClass="correct-help-letter" text="О" GridPane.columnIndex="1" />
+                              <Label prefHeight="48.0" prefWidth="48.0" styleClass="correct-help-letter" text="С" GridPane.columnIndex="2" />
+                              <Label prefHeight="49.0" prefWidth="46.0" styleClass="correct-help-letter" text="Т" GridPane.columnIndex="3" />
+                              <Label prefHeight="49.0" prefWidth="46.0" styleClass="correct-help-letter" text="Ь" GridPane.columnIndex="4" />
+                           </children>
                            <VBox.margin>
-                              <Insets left="20.0" top="10.0" />
+                              <Insets bottom="10.0" left="20.0" right="200.0" top="10.0" />
                            </VBox.margin>
-                        </ImageView>
+                        </GridPane>
                      </children>
                   </VBox>
                   <Line endX="335.0" layoutX="111.0" layoutY="435.0" startX="-100.0" stroke="#aeaeae" />
-                  <VBox prefHeight="164.0" prefWidth="440.0">
+                  <VBox prefHeight="152.0" prefWidth="436.0">
                      <children>
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Если буквы нет в загаданном слове, то она выделяется серым. Также важно знать, что в загаданном слове могут быть одинаковые буквы. По правилам русских кроссвордов буква Ё в словах заменена на E!" textAlignment="JUSTIFY" wrappingWidth="406.9769163131714">
                            <VBox.margin>
@@ -157,14 +212,32 @@
                               <Font size="14.0" />
                            </font>
                         </Text>
-                        <ImageView fitHeight="51.0" fitWidth="204.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../image/example4.png" />
-                           </image>
+                        <GridPane prefHeight="42.0" prefWidth="214.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="75.0" minWidth="10.0" prefWidth="42.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="75.0" minWidth="0.0" prefWidth="42.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="75.0" minWidth="10.0" prefWidth="42.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="75.0" minWidth="10.0" prefWidth="42.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="75.4" minWidth="10.0" prefWidth="42.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label prefHeight="48.0" prefWidth="48.0" styleClass="wrong-help-letter" text="П">
+                                 <GridPane.margin>
+                                    <Insets />
+                                 </GridPane.margin>
+                              </Label>
+                              <Label prefHeight="48.0" prefWidth="48.0" styleClass="default-help-tile" text="И" GridPane.columnIndex="1" />
+                              <Label prefHeight="48.0" prefWidth="48.0" styleClass="default-help-tile" text="Р" GridPane.columnIndex="2" />
+                              <Label prefHeight="49.0" prefWidth="46.0" styleClass="default-help-tile" text="А" GridPane.columnIndex="3" />
+                              <Label prefHeight="49.0" prefWidth="46.0" styleClass="default-help-tile" text="Т" GridPane.columnIndex="4" />
+                           </children>
                            <VBox.margin>
-                              <Insets left="20.0" top="10.0" />
+                              <Insets bottom="10.0" left="20.0" right="200.0" top="10.0" />
                            </VBox.margin>
-                        </ImageView>
+                        </GridPane>
                      </children>
                   </VBox>
                   <Line endX="335.0" layoutX="111.0" layoutY="501.0" startX="-100.0" stroke="#aeaeae" />
@@ -191,6 +264,6 @@
                </children>
             </VBox>
          </content></ScrollPane>
-   </bottom>
+   </right>
    
 </BorderPane>

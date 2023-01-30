@@ -131,6 +131,67 @@
     -fx-background-radius: 4px;
 }
 
+/* Цвета плиток в окне помощи (colors of mini-tiles in the help window) */
+.default-help-tile {
+    -fx-background-color: -background-color;
+    -fx-border-color: -empty-border-color;
+    -fx-text-fill: -text-fill-color;
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-border-width: 2px;
+    -fx-min-width: 40px;
+    -fx-min-height: 40px;
+    -fx-pref-width: 40px;
+    -fx-pref-height: 40px;
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+}
+
+.present-help-letter {
+    -fx-background-color: -present-color;
+    -fx-border-color: -present-color;
+    -fx-text-fill: white;
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-border-width: 2px;
+    -fx-min-width: 40px;
+    -fx-min-height: 40px;
+    -fx-pref-width: 40px;
+    -fx-pref-height: 40px;
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+}
+
+.wrong-help-letter {
+    -fx-background-color: -wrong-color;
+    -fx-border-color: -wrong-color;
+    -fx-text-fill: white;
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-border-width: 2px;
+    -fx-min-width: 40px;
+    -fx-min-height: 40px;
+    -fx-pref-width: 40px;
+    -fx-pref-height: 40px;
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+}
+
+.correct-help-letter {
+    -fx-background-color: -correct-color;
+    -fx-border-color: -correct-color;
+    -fx-text-fill: white;
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-border-width: 2px;
+    -fx-min-width: 40px;
+    -fx-min-height: 40px;
+    -fx-pref-width: 40px;
+    -fx-pref-height: 40px;
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+}
+
 /* Цвета мини-плиток в окне результатов (colors of mini-tiles in the results window) */
 .default-result-tile {
     -fx-background-color: -background-color;

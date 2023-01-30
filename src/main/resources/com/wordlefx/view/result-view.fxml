@@ -15,7 +15,7 @@
 <BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="342.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.wordlefx.controllers.ResultController">
 
    <stylesheets>
-      <URL value="@../css/main-view.css" />
+      <URL value="@../css/style.css" />
    </stylesheets>
 
    <top>
