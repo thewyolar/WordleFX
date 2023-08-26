@@ -62,7 +62,7 @@ public class ResultWindow {
         stage.initModality(Modality.APPLICATION_MODAL);
         //stage.initStyle(StageStyle.UNDECORATED);
 
-        FXMLLoader fxmlLoader = new FXMLLoader(ResultWindow.class.getResource("view/result-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(ResultWindow.class.getResource("/com/wordlefx/view/result-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
 
         ResultController resultController = fxmlLoader.getController();
@@ -90,7 +90,7 @@ public class ResultWindow {
 
         stage.setScene(scene);
         stage.setResizable(false);
-        stage.getIcons().add(new Image(Objects.requireNonNull(ResultWindow.class.getResourceAsStream("image/icon.png"))));
+        stage.getIcons().add(new Image(Objects.requireNonNull(ResultWindow.class.getResourceAsStream("/com/wordlefx/image/icon.png"))));
         stage.showAndWait();
     }
 
@@ -113,7 +113,7 @@ public class ResultWindow {
         alert.setTitle("Уведомление");
         alert.setHeaderText(null);
         alert.setContentText("Текст результатов скопирован в буфер обмена!");
-        ((Stage)alert.getDialogPane().getScene().getWindow()).getIcons().add(new Image(StatisticsWindow.class.getResourceAsStream("image/icon.png")));
+        ((Stage)alert.getDialogPane().getScene().getWindow()).getIcons().add(new Image(Objects.requireNonNull(StatisticsWindow.class.getResourceAsStream("/com/wordlefx/image/icon.png"))));
         alert.showAndWait();
     }
 }

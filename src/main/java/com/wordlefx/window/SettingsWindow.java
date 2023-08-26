@@ -22,7 +22,7 @@ public class SettingsWindow {
      */
     public static void display() throws IOException {
         Stage stage = new Stage();
-        FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("view/settings-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("/com/wordlefx/view/settings-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
 
         HostServices hostServices = (HostServices)MainApplication.getStage().getProperties().get("hostServices");
@@ -35,7 +35,7 @@ public class SettingsWindow {
         stage.setTitle("Настройки");
         stage.setResizable(false);
         stage.setScene(scene);
-        stage.getIcons().add(new Image(Objects.requireNonNull(HelpWindow.class.getResourceAsStream("image/icon.png"))));
+        stage.getIcons().add(new Image(Objects.requireNonNull(SettingsWindow.class.getResourceAsStream("/com/wordlefx/image/icon.png"))));
         stage.showAndWait();
     }
 }

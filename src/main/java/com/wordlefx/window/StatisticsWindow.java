@@ -13,6 +13,7 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Objects;
 
 /** Класс окна приложения со статистикой игры */
 public class StatisticsWindow {
@@ -25,7 +26,7 @@ public class StatisticsWindow {
         int[] statistics = Statistics.getStatistics();
 
         Stage stage = new Stage();
-        FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("view/statistics-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("/com/wordlefx/view/statistics-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
 
         StatisticsController statisticsController = fxmlLoader.getController();
@@ -40,7 +41,7 @@ public class StatisticsWindow {
         stage.setTitle("Статистика");
         stage.setResizable(false);
         stage.setScene(scene);
-        stage.getIcons().add(new Image(StatisticsWindow.class.getResourceAsStream("image/icon.png")));
+        stage.getIcons().add(new Image(Objects.requireNonNull(StatisticsWindow.class.getResourceAsStream("/com/wordlefx/image/icon.png"))));
         stage.showAndWait();
     }
 
@@ -64,7 +65,7 @@ public class StatisticsWindow {
         alert.setTitle("Уведомление");
         alert.setHeaderText(null);
         alert.setContentText("Результаты статистики скопированы в буфер обмена!");
-        ((Stage)alert.getDialogPane().getScene().getWindow()).getIcons().add(new Image(StatisticsWindow.class.getResourceAsStream("image/icon.png")));
+        ((Stage)alert.getDialogPane().getScene().getWindow()).getIcons().add(new Image(Objects.requireNonNull(StatisticsWindow.class.getResourceAsStream("/com/wordlefx/image/icon.png"))));
         alert.showAndWait();
     }
 }

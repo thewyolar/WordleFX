@@ -31,7 +31,7 @@ public class HelpWindow {
      */
     public static void display() throws IOException {
         Stage stage = new Stage();
-        FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("view/help-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("/com/wordlefx/view/help-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
 
         HelpController helpController = fxmlLoader.getController();
@@ -42,7 +42,7 @@ public class HelpWindow {
         stage.setTitle("Правила игры");
         stage.setResizable(false);
         stage.setScene(scene);
-        stage.getIcons().add(new Image(Objects.requireNonNull(HelpWindow.class.getResourceAsStream("image/icon.png"))));
+        stage.getIcons().add(new Image(Objects.requireNonNull(HelpWindow.class.getResourceAsStream("/com/wordlefx/image/icon.png"))));
         stage.showAndWait();
     }
 }
