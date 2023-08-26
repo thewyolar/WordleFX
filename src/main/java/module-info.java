@@ -6,8 +6,8 @@ module com.wordlefx {
 
     opens com.wordlefx to javafx.fxml;
     exports com.wordlefx;
-    exports com.wordlefx.controllers;
-    opens com.wordlefx.controllers to javafx.fxml;
+    exports com.wordlefx.controller;
+    opens com.wordlefx.controller to javafx.fxml;
     exports com.wordlefx.util;
     opens com.wordlefx.util to javafx.fxml;
     exports com.wordlefx.window;

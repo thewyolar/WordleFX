@@ -20,7 +20,7 @@ import java.util.Random;
 
 /**
  * Класс, реализующий основную логику приложения
- * используется для сохранения "чистоты" в контроллере {@link com.wordlefx.controllers.MainController}
+ * используется для сохранения "чистоты" в контроллере {@link com.wordlefx.controller.MainController}
  */
 public class MainHandler {
 

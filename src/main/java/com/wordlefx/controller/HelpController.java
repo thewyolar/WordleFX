@@ -1,9 +1,8 @@
-package com.wordlefx.controllers;
+package com.wordlefx.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.image.ImageView;
 import javafx.scene.layout.BorderPane;
 
 /** Класс контроллера для взаимодействия окна приложения c правилами игры с FXML */

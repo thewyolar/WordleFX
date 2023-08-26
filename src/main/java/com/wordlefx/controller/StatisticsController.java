@@ -1,4 +1,4 @@
-package com.wordlefx.controllers;
+package com.wordlefx.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;

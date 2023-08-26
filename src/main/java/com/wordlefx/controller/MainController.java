@@ -1,4 +1,4 @@
-package com.wordlefx.controllers;
+package com.wordlefx.controller;
 
 import com.wordlefx.window.HelpWindow;
 import com.wordlefx.util.MainHandler;

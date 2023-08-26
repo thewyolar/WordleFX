@@ -1,7 +1,7 @@
 package com.wordlefx.window;
 
 import com.wordlefx.MainApplication;
-import com.wordlefx.controllers.StatisticsController;
+import com.wordlefx.controller.StatisticsController;
 import com.wordlefx.statistics.Statistics;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;

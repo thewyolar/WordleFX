@@ -1,7 +1,7 @@
 package com.wordlefx.window;
 
 import com.wordlefx.MainApplication;
-import com.wordlefx.controllers.HelpController;
+import com.wordlefx.controller.HelpController;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;

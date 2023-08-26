@@ -1,6 +1,6 @@
 package com.wordlefx;
 
-import com.wordlefx.controllers.MainController;
+import com.wordlefx.controller.MainController;
 import com.wordlefx.window.AlertWindow;
 import javafx.application.Application;
 import javafx.event.EventHandler;

@@ -1,6 +1,6 @@
 package com.wordlefx.window;
 
-import com.wordlefx.controllers.ResultController;
+import com.wordlefx.controller.ResultController;
 import com.wordlefx.statistics.Statistics;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
