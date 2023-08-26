@@ -1,7 +1,7 @@
 package com.wordlefx.controllers;
 
 import com.wordlefx.window.HelpWindow;
-import com.wordlefx.helper.MainHandler;
+import com.wordlefx.util.MainHandler;
 import com.wordlefx.window.SettingsWindow;
 import com.wordlefx.window.StatisticsWindow;
 import javafx.animation.ScaleTransition;

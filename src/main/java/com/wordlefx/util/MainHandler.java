@@ -1,4 +1,4 @@
-package com.wordlefx.helper;
+package com.wordlefx.util;
 
 import com.wordlefx.MainApplication;
 import com.wordlefx.statistics.Statistics;

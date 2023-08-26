@@ -1,7 +1,7 @@
 package com.wordlefx.controllers;
 
 import com.wordlefx.MainApplication;
-import com.wordlefx.helper.MainHandler;
+import com.wordlefx.util.MainHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
