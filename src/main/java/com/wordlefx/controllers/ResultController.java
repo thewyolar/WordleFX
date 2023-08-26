@@ -1,11 +1,10 @@
 package com.wordlefx.controllers;
 
 import com.wordlefx.MainApplication;
-import com.wordlefx.MainHandler;
+import com.wordlefx.helper.MainHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.image.ImageView;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 

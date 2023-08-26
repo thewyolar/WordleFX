@@ -1,4 +1,4 @@
-package com.wordlefx;
+package com.wordlefx.window;
 
 import javafx.animation.FadeTransition;
 import javafx.scene.Scene;

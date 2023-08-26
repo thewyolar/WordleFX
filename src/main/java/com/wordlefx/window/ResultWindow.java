@@ -1,4 +1,4 @@
-package com.wordlefx;
+package com.wordlefx.window;
 
 import com.wordlefx.controllers.ResultController;
 import com.wordlefx.statistics.Statistics;

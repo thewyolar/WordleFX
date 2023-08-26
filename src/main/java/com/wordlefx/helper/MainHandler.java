@@ -1,6 +1,8 @@
-package com.wordlefx;
+package com.wordlefx.helper;
 
+import com.wordlefx.MainApplication;
 import com.wordlefx.statistics.Statistics;
+import com.wordlefx.window.ResultWindow;
 import javafx.animation.ScaleTransition;
 import javafx.animation.SequentialTransition;
 import javafx.scene.Node;

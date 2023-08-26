@@ -1,9 +1,9 @@
 package com.wordlefx.controllers;
 
-import com.wordlefx.HelpWindow;
-import com.wordlefx.MainHandler;
-import com.wordlefx.SettingsWindow;
-import com.wordlefx.StatisticsWindow;
+import com.wordlefx.window.HelpWindow;
+import com.wordlefx.helper.MainHandler;
+import com.wordlefx.window.SettingsWindow;
+import com.wordlefx.window.StatisticsWindow;
 import javafx.animation.ScaleTransition;
 import javafx.animation.SequentialTransition;
 import javafx.fxml.FXML;

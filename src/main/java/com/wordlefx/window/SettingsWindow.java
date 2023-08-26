@@ -1,6 +1,8 @@
-package com.wordlefx;
+package com.wordlefx.window;
 
+import com.wordlefx.MainApplication;
 import com.wordlefx.controllers.SettingsController;
+import com.wordlefx.window.HelpWindow;
 import javafx.application.HostServices;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
