@@ -10,10 +10,8 @@ import javafx.scene.image.Image;
 import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Objects;
 
@@ -107,14 +105,15 @@ public class MainApplication extends Application {
     /** Иницилизирует список слов {@link MainApplication#dictionaryWords} */
     public void initializeWordList() {
         try {
-            File file = new File("dictionary.txt");
-            FileReader fr = new FileReader(file);
-            BufferedReader reader = new BufferedReader(fr);
+            InputStream inputStream = getClass().getResourceAsStream("/com/wordlefx/dictionary.txt");
+            BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream, StandardCharsets.UTF_8));
             String line = reader.readLine();
+
             while (line != null) {
-                line = reader.readLine();
                 dictionaryWords.add(line);
+                line = reader.readLine();
             }
+
             reader.close();
         } catch (IOException e) {
             e.printStackTrace();
