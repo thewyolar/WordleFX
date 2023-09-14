@@ -1,0 +1,41 @@
+# This workflow will build a Java project with Maven, and cache/restore any dependencies to improve the workflow execution time
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-java-with-maven
+
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+name: Releases
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up JDK
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+
+      - name: Build and Deploy Release
+        uses: qcastel/github-actions-maven-release@v1.12.31
+
+      - name: Set up Git Config
+        run: |
+          git config --global user.name "thewyolar"
+          git config --global user.email "thewyolar@gmail.com"
+        # Замените "Your Name" и "youremail@example.com" своими данными
+
+      - name: Push Tag and Changes
+        run: |
+          git tag -a v${{ steps.release.outputs.version }} -m "Release v${{ steps.release.outputs.version }}"
+          git push origin v${{ steps.release.outputs.version }}
