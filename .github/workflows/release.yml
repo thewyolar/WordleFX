@@ -11,7 +11,7 @@ name: Releases
 on:
   push:
     branches:
-      - main
+      - thewyolar-patch-1
 
 jobs:
   release:
